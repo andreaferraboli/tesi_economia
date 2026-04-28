@@ -1,0 +1,1212 @@
+﻿%% ───────────────────────────────────────────────────────────────────
+\chapter{Adeguatezza e Correttivi Tecnici al NDC}
+%% ───────────────────────────────────────────────────────────────────
+
+\noindent
+Il sistema NDC (Notional Defined Contribution), introdotto dalla Riforma Dini del
+1995 e generalizzato a tutti i lavoratori dalla Riforma Fornero del 2011, ha
+risolto il problema della sostenibilità finanziaria del sistema pensionistico
+italiano al prezzo di un progressivo deterioramento dell'adeguatezza delle
+prestazioni per le generazioni più giovani \cite{Bosi2018, MEFRGS2025}.
+Il meccanismo è matematicamente coerente: la pensione è proporzionale ai
+contributi versati, capitalizzati a un tasso legato alla crescita del PIL
+nominale, e inversamente proporzionale alla speranza di vita al pensionamento.
+Ma proprio questa coerenza tecnica nasconde una trappola distributiva: in
+un'economia stagnante e in rapido invecchiamento come quella italiana, il
+sistema garantisce il pareggio dei conti pubblici scaricando il rischio
+demografico e macroeconomico sul singolo lavoratore, non sulla collettività
+\cite{Artoni2014, Fornero2018}.
+
+Il presente capitolo svolge tre compiti distinti.
+Nella Sezione \ref{sec:meccanica} si espone la meccanica formale del NDC,
+con la derivazione del montante contributivo e il calcolo della pensione
+tramite il coefficiente di trasformazione, illustrando tre scenari
+numerici di riferimento.
+Nella Sezione \ref{sec:adeguatezza} si documenta empiricamente il crollo del
+tasso di sostituzione attraverso le generazioni, con particolare attenzione
+alla Gen Z e alle lavoratrici.
+Nella Sezione \ref{sec:correttivi} si propongono quattro correttivi tecnici al
+primo pilastro, analizzandone il meccanismo, l'impatto atteso e i limiti.
+Infine, nella Sezione \ref{sec:confronto}, il confronto sistematico con i
+sistemi svedese e olandese fornisce una bussola operativa per la riforma.
+
+
+%% ───────────────────────────────────────────────────────────────────
+\section{La meccanica NDC e il calcolo formale della pensione}
+\label{sec:meccanica}
+%% ───────────────────────────────────────────────────────────────────
+
+\noindent
+Il sistema NDC è, nella sua essenza, un sistema a ripartizione (PAYG) che
+\emph{simula} la logica di un conto individuale a capitalizzazione.
+I contributi versati non vengono investiti sul mercato dei capitali, ma
+servono a pagare le pensioni correnti; ciononostante, ciascun lavoratore
+accumula un ``conto virtuale'' che frutta un tasso d'interesse nozionale
+fissato per legge \cite[slide~28]{SlideCorso2025}.
+È questa natura ibrida — apparentemente contributiva nella formula,
+sostanzialmente redistributiva nei flussi — a generare molte delle distorsioni
+che si documenteranno nelle sezioni successive.
+
+%% ---
+\subsection{Il montante contributivo: formula, variabili e dipendenza critica
+            dalla crescita del PIL nominale \texorpdfstring{$g$}{g}}
+\label{sub:montante}
+%% ---
+
+\noindent
+Sia $L$ l'anno di pensionamento (calcolato come distanza dall'ingresso nel
+mercato del lavoro), $j \in \{1, \ldots, L\}$ il generico anno di lavoro,
+$S$ il salario di ingresso, $m > 0$ il tasso di crescita reale annuo del salario,
+$c$ l'aliquota contributiva e $g$ il tasso nozionale di capitalizzazione.
+Il montante contributivo al momento del pensionamento è dato da:
+\begin{equation}
+    MC_{NDC} = \sum_{j=1}^{L} \left[ c \cdot S \cdot (1+m)^{j-1} \cdot
+               (1+g)^{L-j} \right]
+    \label{eq:MC}
+\end{equation}
+Il termine $c \cdot S \cdot (1+m)^{j-1}$ è il contributo versato nell'anno
+$j$ (pari all'aliquota $c$ applicata al salario dell'anno $j$), mentre il
+fattore $(1+g)^{L-j}$ rappresenta la capitalizzazione nozionale di quel
+contributo dai versamenti fino al pensionamento \cite[slide~28]{SlideCorso2025}.
+
+\medskip
+\noindent\textbf{Le variabili in dettaglio.}
+\begin{itemize}
+    \item $c$: l'aliquota contributiva è pari al 33\% per i lavoratori dipendenti
+          e al 24\% per gli autonomi (innalzata gradualmente dall'originario
+          20\% a partire dal 2012, Riforma Fornero) \cite[appendice]{MEFRGS2025}.
+    \item $S$ e $m$: il salario iniziale e la sua crescita reale dipendono dal
+          profilo di carriera individuale; una carriera ``piatta''
+          ($m \approx 0$) penalizza il montante rispetto a una carriera
+          ``veloce'' ad alto $m$ \cite{Bosi2018}.
+    \item $g$: il tasso politico di capitalizzazione nozionale è fissato per legge
+          come media mobile quinquennale del tasso di crescita del PIL nominale.
+          È definito ``politico'' perché non è determinato dal mercato bensì da
+          una scelta legislativa, il che lo espone alle conseguenze delle
+          stagflazioni o delle fasi di bassa crescita che caratterizzano
+          strutturalmente l'economia italiana \cite[slide~28]{SlideCorso2025}.
+    \item $L$: l'anno di pensionamento, che determina sia la lunghezza della
+          sommatoria sia l'esponente di capitalizzazione di ogni contributo.
+          Un anno in più di lavoro aumenta il montante attraverso due canali:
+          un contributo aggiuntivo e un ulteriore anno di capitalizzazione
+          per tutti i versamenti precedenti.
+\end{itemize}
+
+\medskip
+\noindent\textbf{Perché $g$ è la variabile critica.}
+In un'economia a crescita robusta ($g \approx 3\text{--}4\%$), la capitalizzazione
+nozionale erode il valore reale dei contributi meno di quanto faccia l'inflazione,
+e il montante risulta adeguato.
+Nell'economia italiana del primo quarto del XXI secolo, tuttavia, la crescita
+reale media annua del PIL si è attestata allo 0,5\% \cite{MEFRGS2025}: con
+un'inflazione media del 2\%, il PIL nominale è cresciuto in media di circa 2,5\%
+annuo, ben al di sotto del 4\% ipotizzato nelle simulazioni degli anni Novanta.
+In un arco di 40 anni di carriera, la riduzione del PIL nominale da $g=3\%$ a
+$g=1{,}5\%$ riduce il montante finale di circa il 28\%, come si dimostrerà
+nell'esempio numerico seguente.
+
+%% ---
+\subsection{Il coefficiente di trasformazione: funzione inversa della speranza di
+            vita \texorpdfstring{$e(L)$}{e(L)} e i valori correnti (2024)}
+\label{sub:coefficiente}
+%% ---
+
+\noindent
+Una volta determinato il montante, la pensione annua lorda $P$ si ottiene
+eguagliando il montante al valore attuale delle pensioni future.
+Nell'ipotesi semplificativa di tasso di sconto delle pensioni $r_z = 0$
+(utilizzata nel corso come approssimazione standard) \cite[slide~29]{SlideCorso2025}:
+\begin{equation}
+    P = \frac{MC_{NDC}}{e(L)}
+    \label{eq:pensione}
+\end{equation}
+dove $e(L)$ è la \emph{speranza di vita residua} all'età di pensionamento $L$.
+Il coefficiente di trasformazione, che nei documenti ufficiali viene espresso
+in forma percentuale come $\gamma(L) = 1/e(L)$, è dunque \emph{inversamente
+proporzionale} alla speranza di vita: più si vive in media, meno si riceve
+anno per anno, a parità di montante accumulato.
+
+\medskip
+\noindent\textbf{I valori ufficiali per il biennio 2023--2024.}
+Il decreto ministeriale vigente fissa i seguenti coefficienti di trasformazione
+\cite[appendice~1]{MEFRGS2025}:
+
+\begin{table}[h!]
+\centering
+\caption{Coefficienti di trasformazione in vigore per il biennio 2023--2024}
+\label{tab:coeff}
+\begin{tabular}{cc}
+\toprule
+\textbf{Età al pensionamento} & \textbf{Coefficiente $\gamma(L)$ (\%)} \\
+\midrule
+57 & 4,270 \\
+60 & 4,615 \\
+63 & 5,020 \\
+67 & 5,723 \\
+69 & 6,154 \\
+71 & 6,655 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent
+Due osservazioni quantitative meritano attenzione.
+\emph{Prima}: tra 63 e 71 anni la pensione mensile aumenta del 32,5\% a parità
+di montante — un incentivo potente al posticipo, che tuttavia non è mai stato
+comunicato in modo trasparente ai lavoratori.
+\emph{Seconda}: la revisione biennale dei coefficienti riflette l'aumento
+della speranza di vita; le proiezioni RGS indicano che la vita media maschile
+passerà da 81 anni (2023) a 85,8 anni (2070), quella femminile da 85,1 a
+89,2 anni \cite{MEFRGS2025}.
+Questo implica che il coefficiente a 67 anni, oggi al 5,723\%, scenderà
+ulteriormente nelle decadi future, riducendo strutturalmente la pensione a
+parità di montante.
+
+%% ---
+\subsection{Esempio numerico in tre scenari:
+            carriera standard, stagnazione economica e carriera discontinua}
+\label{sub:esempio}
+%% ---
+
+\noindent
+Per rendere tangibile la meccanica della formula \eqref{eq:MC}--\eqref{eq:pensione}
+e per isolare l'impatto delle variabili critiche, si sviluppano tre scenari
+a partire dall'esempio-base presentato nelle lezioni del corso
+\cite[slide~30]{SlideCorso2025}.
+
+\medskip
+\noindent\textbf{Parametri comuni.} $c = 0{,}33$; $S = 100$; $m = 0{,}05$;
+$L = 4$ (tre anni di lavoro: $j=1,2,3$, pensionamento a $L=4$);
+$e(L) = 2$ (due anni di speranza di vita residua); $r_z = 0$.
+
+\medskip
+\noindent\textbf{Scenario A — Carriera standard (replicante il corso):}
+$g = 0{,}02$.
+\begin{align}
+    MC_A &= 33 \cdot \left[ (1{,}02)^3 + (1{,}05)(1{,}02)^2 +
+           (1{,}05)^2(1{,}02) \right] \notag \\
+         &= 33 \cdot [1{,}0612 + 1{,}0924 + 1{,}1246] \notag \\
+         &= 33 \cdot 3{,}2782 = \mathbf{108{,}18}
+\end{align}
+\[
+    P_A = \frac{108{,}18}{2} = \mathbf{54{,}09}
+\]
+
+\medskip
+\noindent\textbf{Scenario B — Stagnazione economica:} $g = 0{,}01$
+(approssima la crescita media del PIL nominale italiano nel periodo 2000--2020,
+con PIL reale quasi fermo e inflazione bassa).
+\begin{align}
+    MC_B &= 33 \cdot \left[ (1{,}01)^3 + (1{,}05)(1{,}01)^2 +
+           (1{,}05)^2(1{,}01) \right] \notag \\
+         &= 33 \cdot [1{,}0303 + 1{,}0711 + 1{,}1135] \notag \\
+         &= 33 \cdot 3{,}2149 = \mathbf{106{,}09}
+\end{align}
+\[
+    P_B = \frac{106{,}09}{2} = \mathbf{53{,}05}
+\]
+\noindent
+In questo esempio a 3 anni l'effetto della stagnazione è modesto ($-1{,}9\%$).
+Su una carriera realistica di 40 anni, tuttavia, la differenza si amplifica
+enormemente per l'effetto composto della capitalizzazione: sostituendo nella
+formula la somma geometrica approssimata
+$\sum_{k=0}^{39}(1+g)^k = [(1+g)^{40}-1]/g$,
+il passaggio da $g=3\%$ a $g=1{,}5\%$ riduce il montante del \textbf{28\%}
+(da un fattore moltiplicativo di 75,4 a 54,3 per contributi costanti),
+traducendosi in una pensione inferiore di quasi un terzo
+\cite{Bosi2018, MEFRGS2025}.
+
+\medskip
+\noindent\textbf{Scenario C — Carriera discontinua:} $g = 0{,}02$, ma il
+lavoratore non versa contributi nell'anno $j=2$ (il contributo centrale è
+azzerato, rappresentando un anno di inattività o lavoro in nero).
+\begin{align}
+    MC_C &= c \cdot S \cdot (1+g)^{3} + 0 +
+           c \cdot S \cdot (1+m)^2 \cdot (1+g)^{1} \notag \\
+         &= 33 \cdot (1{,}02)^3 + 33 \cdot (1{,}05)^2 \cdot 1{,}02 \notag \\
+         &= 35{,}02 + 37{,}11 = \mathbf{72{,}13}
+\end{align}
+\[
+    P_C = \frac{72{,}13}{2} = \mathbf{36{,}07}
+\]
+
+\begin{table}[h!]
+\centering
+\caption{Riepilogo dei tre scenari numerici}
+\label{tab:scenari}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Scenario} & \textbf{$g$} & \textbf{$MC_{NDC}$} & \textbf{$P$} \\
+\midrule
+A — Carriera standard   & 2,0\% & 108,18 & 54,09 \\
+B — Stagnazione ($g$ basso) & 1,0\% & 106,09 & 53,05 \\
+C — Carriera discontinua ($C_2=0$) & 2,0\% & 72,13  & 36,07 \\
+\bottomrule
+\multicolumn{4}{l}{\small Parametri: $c=0{,}33$; $S=100$; $m=0{,}05$;
+$L=4$; $e(L)=2$; $r_z=0$.}
+\end{tabular}
+\end{table}
+
+\noindent
+La Tabella \ref{tab:scenari} rivela in modo netto le due vulnerabilità
+strutturali del sistema NDC: la \emph{dipendenza da $g$} (Scenario B) e la
+\emph{punizione della discontinuità contributiva} (Scenario C, con una
+pensione inferiore del 33,3\% rispetto allo Scenario A).
+Entrambe colpiscono con maggiore intensità le generazioni più giovani
+e le categorie lavorative più esposte alla precarietà e al lavoro autonomo
+\cite{Raitano2020, MEFRGS2025}.
+
+
+%% ───────────────────────────────────────────────────────────────────
+\section{Il problema dell'adeguatezza: dati e proiezioni}
+\label{sec:adeguatezza}
+%% ───────────────────────────────────────────────────────────────────
+
+\noindent
+Le formule della sezione precedente assumono toni differenti una volta che
+si inseriscono i parametri reali dell'economia italiana degli ultimi trent'anni.
+Questa sezione documenta il crollo del tasso di sostituzione attraverso le
+generazioni, con evidenze empiriche tratte dai Rapporti della Ragioneria
+Generale dello Stato (RGS), dall'OCSE e dal CeRP (Centro di Ricerca sui
+Sistemi Pensionistici dell'Università Carlo Alberto di Torino).
+
+%% ---
+\subsection{Il tasso di sostituzione per generazione: dal retributivo al puro
+            contributivo, dati RGS, OCSE e CERP a confronto}
+\label{sub:ts_generazione}
+%% ---
+
+\noindent
+Il tasso di sostituzione lordo (TSL) misura il rapporto tra la prima pensione
+percepita e l'ultima retribuzione da lavoro.
+Esso è l'indicatore sintetico per eccellenza dell'adeguatezza delle prestazioni
+e, nelle proiezioni RGS, il suo andamento descrive una traiettoria
+strutturalmente discendente al progressivo affermarsi del metodo contributivo
+\cite{MEFRGS2025}.
+
+\begin{table}[h!]
+\centering
+\caption{Tasso di sostituzione lordo della previdenza obbligatoria
+         per anno di pensionamento e categoria lavorativa\\
+         (ipotesi base, 38 anni di contribuzione, scenario nazionale RGS)}
+\label{tab:ts_generazioni}
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Categoria} & \textbf{2010} & \textbf{2020} & \textbf{2030}
+                   & \textbf{2040} & \textbf{2050} & \textbf{2060}
+                   & \textbf{2070} \\
+\midrule
+Dipendenti privati (lordo)  & 73,6 & 71,7 & 72,1 & 61,8 & 60,3 & 58,8 & 58,4 \\
+Dipendenti privati (netto)  & 82,7 & 81,5 & 77,0 & 67,4 & 66,0 & 64,6 & 64,1 \\
+Autonomi (lordo)            & 72,1 & 54,9 & 50,0 & 46,8 & 47,8 & 47,0 & 46,7 \\
+\midrule
+Dip.\ privati + complementare & 73,6 & 77,1 & 79,7 & 71,0 & 69,2 & 66,4 & 66,0 \\
+Autonomi + complementare    & 72,1 & 60,2 & 57,7 & 56,9 & 57,6 & 55,4 & 55,2 \\
+\bottomrule
+\multicolumn{8}{l}{\small Fonte: RGS, \emph{Tendenze di medio-lungo periodo},
+Aggiornamento 2025 \cite{MEFRGS2025}, Tabelle 6.1, 6.3, 6.4.}
+\end{tabular}
+\end{table}
+
+\noindent
+Tre dati della Tabella \ref{tab:ts_generazioni} meritano un'analisi separata.
+
+\emph{Primo}: il crollo più marcato riguarda i lavoratori \textbf{autonomi},
+il cui TSL lordo scende da 72,1\% nel 2010 a 46,7\% nel 2070:
+una riduzione di 25,4 punti percentuali, imputabile all'aliquota contributiva
+inferiore (24\% contro 33\%) che si traduce in un montante strutturalmente
+più basso \cite{MEFRGS2025}.
+
+\emph{Secondo}: anche per i dipendenti privati il TSL lordo scende di 15,2
+punti percentuali nello stesso arco (da 73,6\% a 58,4\%), con il grosso
+della riduzione concentrato nel decennio 2030--2040, quando le prime coorti
+interamente contributive inizieranno a pensionarsi.
+
+\emph{Terzo}: la previdenza complementare, se attivata, attenua ma non
+azzera il divario: i dipendenti con secondo pilastro raggiungono il 66,0\%
+nel 2070, gli autonomi il 55,2\% \cite{MEFRGS2025}.
+Questi valori sono ancora al di sotto della soglia del 70\% generalmente
+indicata dalla letteratura come necessaria per mantenere il tenore di vita
+nella fase di quiescenza \cite{Bosi2018, OCSE2023}.
+
+%% ---
+\subsection{Il caso-tipo Gen Z: simulazione del tasso di sostituzione atteso
+            per chi è entrato nel mercato del lavoro nel 2022}
+\label{sub:genz}
+%% ---
+
+\noindent
+Per ancorare l'analisi a una dimensione concreta, si considera il profilo
+di Marco — il lavoratore-tipo introdotto nell'Introduzione della tesi —
+e si stima il suo tasso di sostituzione atteso in tre sotto-scenari di carriera.
+
+\medskip
+\noindent\textbf{Caratteristiche del profilo.}
+\begin{itemize}
+    \item Età di ingresso nel mercato del lavoro: 29 anni (2022).
+    \item Tipologia contrattuale: mix dipendente--autonomo; aliquota
+          contributiva media effettiva stimata pari al 27\%
+          (media ponderata tra 33\% da dipendente e 24\% da autonomo
+          per circa 12--13 anni di ciascuna tipologia).
+    \item Anni di contribuzione attesi: 38 (pensionamento a 67 anni nel 2060).
+    \item Speranza di vita residua a 67 anni nel 2060: circa 19--21 anni
+          (coerente con le proiezioni RGS che stimano una speranza di vita
+          maschile alla nascita di 84--85 anni nel 2060) \cite{MEFRGS2025}.
+    \item Tasso di crescita del PIL nominale $g$: scenario ottimistico 3\%,
+          scenario base 2,7\% (inflazione 2\% + crescita reale 0,7\%),
+          scenario pessimistico 1,5\%.
+\end{itemize}
+
+\begin{table}[h!]
+\centering
+\caption{Simulazione del tasso di sostituzione atteso per Marco (Gen Z, 2022--2060)}
+\label{tab:marco}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Scenario} & \textbf{$g$ nominale} & \textbf{Stima TSL lordo}
+                  & \textbf{Gap rispetto a pensionati 2020} \\
+\midrule
+Ottimistico (PIL +1\% reale)    & 3,0\% & $\approx$60--62\% & $-$10 pp \\
+Base (PIL +0,7\% reale, DFP)    & 2,7\% & $\approx$55--58\% & $-$14 pp \\
+Pessimistico (stagnazione pura) & 1,5\% & $\approx$48--52\% & $-$20 pp \\
+\midrule
+\multicolumn{4}{l}{\small Stima per carriera ibrida con $c_{medio}=27\%$,
+38 anni contribuzione, $e(67)\approx 20$ anni.}\\
+\multicolumn{4}{l}{\small Confronto: TSL netto dipendenti 2020 = 81,5\%
+\cite{MEFRGS2025}.}
+\end{tabular}
+\end{table}
+
+\noindent
+La Tabella \ref{tab:marco} conferma che un lavoratore della Generazione Z con
+una carriera ibrida e uno scenario di crescita moderata (scenario base) può
+attendersi un tasso di sostituzione lordo del 55--58\%: ovvero circa
+17 punti percentuali in meno rispetto al 72\% dei pensionati
+del 2020 \cite{MEFRGS2025}, e una distanza ancora maggiore
+rispetto agli 81,5\% di tasso netto.
+Nel caso di bassa crescita strutturale (scenario pessimistico), il tasso di
+sostituzione potrebbe scendere al di sotto del 52\%, determinando un rischio
+concreto di povertà relativa in età anziana per chi si affidi esclusivamente
+al primo pilastro \cite{Raitano2020, MEFRGS2025}.
+
+%% ---
+\subsection{La ``trappola della bassa crescita'': 30 anni di PIL stagnante come
+            fattore di erosione del montante contributivo}
+\label{sub:trappola}
+%% ---
+
+\noindent
+La dipendenza del montante contributivo dalla crescita del PIL nominale $g$
+non è una vulnerabilità contingente, bensì strutturale per un'economia come
+quella italiana.
+Nel primo quarto del XXI secolo, l'Italia ha registrato una crescita reale
+media annua dello 0,5\%, la più bassa tra i paesi del G7 \cite{MEFRGS2025}.
+Con un'inflazione media del 2\% circa, il PIL nominale è cresciuto in media
+di circa 2,5\%, contro il 4\% che sarebbe necessario per capitalizzare i
+contributi a un ritmo compatibile con l'adeguatezza delle prestazioni.
+
+\medskip
+\noindent
+Per quantificare l'impatto, si utilizza la formula della somma geometrica
+del montante a contribuzione costante annua $C$:
+\begin{equation}
+    MC(g, L) = C \cdot \frac{(1+g)^L - 1}{g}
+    \label{eq:MC_approx}
+\end{equation}
+Il rapporto tra montante in scenario di stagnazione ($g = 1{,}5\%$) e
+montante in scenario di crescita ($g = 3{,}0\%$), su un orizzonte di
+$L = 40$ anni, è:
+\begin{equation}
+    \frac{MC(1{,}5\%,\, 40)}{MC(3{,}0\%,\, 40)} =
+    \frac{(1{,}015)^{40}-1}{0{,}015} \cdot \frac{0{,}03}{(1{,}03)^{40}-1}
+    = \frac{54{,}27}{75{,}40} \approx 0{,}72
+    \label{eq:rapporto}
+\end{equation}
+Un'economia che cresce nominalmente dell'1,5\% invece del 3\% per 40 anni
+consegna al lavoratore un montante contributivo inferiore del
+\textbf{28\%}: a parità di carriera, anzianità e stipendio, la pensione sarà
+quasi un terzo più bassa per il solo effetto della stagnazione del PIL.
+Questa è la ``trappola della bassa crescita'' che imprigiona le prospettive
+previdenziali della Generazione Z italiana: un meccanismo di trasferimento del
+rischio macroeconomico dagli equilibri di bilancio pubblico al tenore di vita
+futuro dei singoli lavoratori \cite{Bosi2018, Lavoce2024}.
+
+\medskip
+\noindent
+Va sottolineato che la dinamica salariale entra nella formula attraverso il
+parametro $m$, ma quest'ultimo a sua volta dipende dalla produttività del
+lavoro, che in Italia è cresciuta in media di soli 0,2--0,3 punti percentuali
+annui nel 2025--2027 secondo le previsioni del DFP 2025 \cite{MEFRGS2025}.
+Il rischio è quindi un circolo vizioso: bassa crescita → basso $g$ → basso
+montante → bassa pensione → bassa propensione al consumo degli anziani →
+ulteriore depressione della crescita.
+
+%% ---
+\subsection{Il gender pension gap nel NDC: triplo svantaggio strutturale per
+            le lavoratrici}
+\label{sub:gender}
+%% ---
+
+\noindent
+Nel sistema NDC, il divario pensionistico di genere non è un'anomalia
+correttiva: è un \emph{risultato atteso} della formula, che amplifica le
+disuguaglianze del mercato del lavoro attraverso tre meccanismi distinti e
+simultanei \cite{Fornero2018, CERP2008, PMC2022}.
+
+\medskip
+\noindent\textbf{Svantaggio 1 — Il gender pay gap.}
+La retribuzione media annua delle donne dipendenti è pari a circa 18.305
+euro contro i 26.227 euro degli uomini (Osservatorio INPS sui lavoratori
+del settore privato, 2023): una differenza di quasi 8.000 euro annui
+\cite{Repubblica2026}.
+Poiché i contributi annui sono $C_j = c \cdot S_j$, un salario inferiore
+si traduce immediatamente in un montante contributivo inferiore nella stessa
+proporzione.
+
+\medskip
+\noindent\textbf{Svantaggio 2 — Le carriere più corte e discontinue.}
+Le donne presentano tassi di attività strutturalmente inferiori (48,7\%
+contro 66,1\% per i maschi nel 2023, fascia 15--64 anni) e più frequenti
+interruzioni da maternità \cite{MEFRGS2025}.
+Tra le madri con figli sotto i 6 anni, il tasso di occupazione scende al
+53,3\%, 30 punti percentuali sotto il tasso maschile \cite{Repubblica2026}.
+Nel NDC, ogni anno di contribuzione mancante riduce il montante in modo
+proporzionale, senza alcun meccanismo di compensazione pubblica per la
+funzione di cura (solo i contributi figurativi del congedo di maternità
+obbligatoria offrono una parziale copertura, del tutto insufficiente per
+periodi di cura prolungati).
+
+\medskip
+\noindent\textbf{Svantaggio 3 — La speranza di vita più elevata.}
+Le donne vivono in media 4 anni più degli uomini (85,1 anni contro 81,0 anni
+alla nascita nel 2023, proiettati a 89,2 contro 85,8 nel 2070)
+\cite{MEFRGS2025}.
+Poiché il coefficiente di trasformazione $\gamma(L) = 1/e(L)$ penalizza la
+speranza di vita più lunga con una pensione annua più bassa,
+a parità di montante e di età di uscita una donna riceve una pensione
+strutturalmente inferiore rispetto a un uomo coevo, per via dei soli
+differenziali di mortalità.
+
+\medskip
+\noindent
+Il risultato combinato di questi tre svantaggi è documentato dall'INPS: nel
+2025, le pensioni anticipate femminili nel Fondo lavoratori dipendenti
+presentano importi medi del 25,1\% inferiori a quelle maschili; nelle
+pensioni di vecchiaia del lavoro dipendente privato il divario raggiunge
+il \textbf{46,2\%} \cite{INPS2025}.
+Nel 2021, secondo la Commissione Europea, l'importo medio della pensione di
+vecchiaia femminile era del 37\% inferiore a quello maschile, con un divario
+in tendenziale aumento con l'affermarsi del sistema contributivo
+\cite{Assofondipensione2023, PMC2022}.
+La ricerca empirica di Fornero e Monticone (CERP) aveva già documentato
+come la transizione al contributivo, riducendo la portata redistributiva del
+sistema, stesse aumentando il gender gap pensionistico per le coorti più
+giovani \cite{ForneroMonticone2008}.
+
+%% ---
+\subsection{L'equità intergenerazionale violata: confronto IRR tra Baby Boomers
+            e Gen Z --- chi ha pagato meno e riceve di più}
+\label{sub:irr}
+%% ---
+
+\noindent
+Un indicatore particolarmente rivelatore della (in)equità del sistema
+pensionistico è il \emph{tasso di rendimento implicito} (IRR, Internal Rate
+of Return) dei contributi versati nel corso della vita lavorativa.
+Formalmente, l'IRR è il tasso $\rho$ che uguaglia il valore attuale dei
+contributi versati al valore attuale delle pensioni percepite:
+\begin{equation}
+    \sum_{j=1}^{L} \frac{C_j}{(1+\rho)^j} =
+    \sum_{k=1}^{e(L)} \frac{P}{(1+\rho)^{L+k}}
+    \label{eq:IRR}
+\end{equation}
+In un sistema NDC in equilibrio attuariale, l'IRR dovrebbe tendenzialmente
+uguagliare $g$ (il tasso di capitalizzazione nozionale), che in Italia è
+approssimato dalla crescita del PIL nominale \cite{Bosi2018, Artoni2014}.
+Per le generazioni che hanno beneficiato in tutto o in parte del sistema
+retributivo, tuttavia, l'IRR reale è stato sistematicamente superiore a $g$,
+per ragioni di generosità normativa non coperta dalla contribuzione.
+
+\medskip
+\begin{table}[h!]
+\centering
+\caption{IRR implicito stimato per generazione di lavoratori italiani}
+\label{tab:irr}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Generazione} & \textbf{Ingresso mercato lavoro} & \textbf{Metodo calcolo}
+                     & \textbf{IRR reale stimato} \\
+\midrule
+Baby Boomers        & 1968--1980 & Retributivo puro   & $\approx 4$--$6\%$ \\
+Generazione X (pre-Dini) & 1981--1995 & Retributivo/misto  & $\approx 2$--$4\%$ \\
+Millennials (misto) & 1996--2010 & Contributivo misto & $\approx 1$--$2\%$ \\
+Generazione Z (puro NDC) & 2011--oggi  & Contributivo puro  & $\approx 0$--$1\%$ \\
+\bottomrule
+\multicolumn{4}{l}{\small Stime calcolate sulla base del modello
+                   a generazioni sovrapposte (Aaron-Samuelson theorem);}\\
+\multicolumn{4}{l}{\small fonti: \cite{Bosi2018, Artoni2014, CERP2008,
+                   MEFRGS2025}.}
+\end{tabular}
+\end{table}
+
+\noindent
+La Tabella \ref{tab:irr} sintetizza una realtà politicamente scomoda:
+i Baby Boomers hanno percepito pensioni che incorporano un IRR implicito
+del 4--6\% reale, corrispondente ai decenni di alta crescita economica
+(1960--1990) e alla generosità del sistema retributivo.
+I lavoratori della Generazione Z, per contro, possono attendersi un IRR
+reale intorno allo 0--1\%: cioè, nell'ipotesi di bassa inflazione, un
+rendimento appena superiore al tenere i contributi sotto un materasso.
+Non si tratta di una distorsione tecnica, ma dell'esito strutturale di un
+sistema che ha finanziato la generosità presente con il rigore futuro:
+le riforme Dini e Fornero hanno essenzialmente scaricato i costi
+dell'invecchiamento demografico sulle coorti più giovani
+\cite{Fornero2018, Artoni2014}.
+
+\medskip
+\noindent
+Il teorema di Aaron-Samuelson stabilisce che in un sistema PAYG in equilibrio
+di lungo periodo il tasso di rendimento implicito tende a $m + n$ (somma dei
+tassi di crescita della produttività e dell'occupazione).
+Con la demografia italiana che proietta una riduzione della forza lavoro del
+14,4\% tra il 2023 e il 2070 ($n < 0$) e una crescita della produttività
+di appena lo 0,5\%/anno ($m \approx 0{,}5\%$) \cite{MEFRGS2025},
+l'IRR di lungo equilibrio del sistema PAYG italiano converge verso valori
+sostanzialmente nulli o negativi in termini reali.
+La Generazione Z è la prima generazione italiana a sperimentare questa condizione
+nella sua forma più pura e implacabile.
+
+
+%% ───────────────────────────────────────────────────────────────────
+\section{I correttivi tecnici al primo pilastro}
+\label{sec:correttivi}
+%% ───────────────────────────────────────────────────────────────────
+
+\noindent
+La diagnosi delle sezioni precedenti converge su un punto essenziale:
+il sistema NDC italiano non è disfunzionale nella sua logica interna,
+ma è incompleto e mal calibrato rispetto all'obiettivo dell'adeguatezza.
+Quattro correttivi tecnici, tra loro complementari, possono correggerne le
+principali distorsioni senza smantellarne l'architettura
+\cite{Raitano2020, Lavoce2024a, Bosi2018}.
+
+%% ---
+\subsection{Correttivo 1: aggiornamento annuale automatico del coefficiente di
+            trasformazione --- neutralità attuariale vs opacità italiana}
+\label{sub:c1}
+%% ---
+
+\noindent
+\textbf{Il problema.}
+In Italia il coefficiente di trasformazione $\gamma(L)$ viene aggiornato ogni
+due anni tramite decreto ministeriale, con un procedimento che — pur
+tecnicamente definito — manca di automatismo, trasparenza e continuità.
+Ogni revisione si svolge in un clima di tensione politica, con pressioni delle
+categorie organizzate per rallentare l'adeguamento, producendo ritardi che
+creano disomogeneità tra le coorti che escono prima e dopo la revisione.
+Nessuno strumento sistematico comunica ai lavoratori attivi come si
+modificheranno i loro coefficienti nel tempo.
+
+\medskip
+\noindent
+\textbf{Il meccanismo proposto.}
+Il correttivo consiste nell'indicizzare automaticamente e annualmente i
+coefficienti alle tavole di mortalità ISTAT aggiornate, secondo la relazione:
+\begin{equation}
+    \gamma(L,\, t) = \frac{1}{e(L,\, t)}
+    \label{eq:gamma_auto}
+\end{equation}
+dove $e(L, t)$ è la speranza di vita residua all'età $L$ nell'anno $t$,
+ricavata dall'ultima tavola di mortalità disponibile.
+L'aggiornamento avverrebbe in modo trasparente e prevedibile, eliminando la
+discrezionalità politica e garantendo la \emph{neutralità attuariale} del
+sistema: ogni coorte contribuisce e riceve in misura coerente con la propria
+speranza di vita, senza trasferimenti impliciti tra generazioni
+\cite{Lavoce2024}.
+
+\medskip
+\noindent
+\textbf{Impatto atteso.}
+Le simulazioni RGS mostrano che la disattivazione del meccanismo di revisione
+dal 2027 produrrebbe un tasso di sostituzione più alto di 5,8 punti percentuali
+per i dipendenti al 2070 (da 58,4\% a 64,1\%), ma al costo di un aumento
+insostenibile della spesa pensionistica in rapporto al PIL \cite{MEFRGS2025}.
+Un aggiornamento annuale automatico, al contrario, renderebbe il percorso di
+discesa del coefficiente graduale e prevedibile, consentendo ai lavoratori
+di pianificare in anticipo e alle imprese di non subire shock occupazionali.
+
+\medskip
+\noindent
+\textbf{Modello di riferimento.}
+La Svezia applica esattamente questo meccanismo: i coefficienti vengono
+ricalcolati ogni anno sulle ultime tavole di mortalità dell'Agenzia statistica
+svedese (SCB), e il risultato è comunicato a ciascun lavoratore attraverso
+la \emph{busta arancione} annuale \cite{Lavoce2024, Prestiter2024}.
+Il confronto con l'Italia è impietoso: da noi il lavoratore scopre in media
+soltanto pochi anni prima del pensionamento quanto riceverà, spesso
+attraverso la piattaforma INPS ``La mia pensione'', il cui utilizzo è basso
+e la cui comprensione è ostile ai non-esperti.
+
+%% ---
+\subsection{Correttivo 2: la pensione contributiva di garanzia
+            (proposta CERP/Raitano) per le carriere discontinue}
+\label{sub:c2}
+%% ---
+
+\noindent
+\textbf{Il problema.}
+Il sistema NDC, nella sua formulazione pura, non contiene alcun meccanismo
+di garanzia per chi accumula un montante contributivo insufficiente a
+finanziare una pensione dignitosa.
+I lavoratori con carriere discontinue — esattamente la figura dominante
+nella Gen Z italiana (lavoro atipico, alternanza dipendente/autonomo,
+disoccupazione frizionale, periodi all'estero) — rischiano di non
+raggiungere nemmeno la soglia minima per il pensionamento (attualmente
+fissata a importi pari ad almeno 3 volte l'assegno sociale per il canale
+anticipato contributivo) \cite{MEFRGS2025, Raitano2020}.
+
+\medskip
+\noindent
+\textbf{La proposta.}
+Michele Raitano (Sapienza, Università di Roma; collaboratore del CeRP)
+ha sviluppato e iterato nel tempo la proposta di una
+\emph{pensione contributiva di garanzia} (PCG):
+un'integrazione pubblica che copre la
+%% ─── CONTINUA DA: "...un'integrazione pubblica che copre la" ───────
+
+distanza tra la pensione NDC calcolata sui contributi effettivi e una soglia
+di garanzia, pari a circa 1,2 volte l'assegno sociale
+(circa 600--650 euro mensili ai valori 2024)
+\cite{Raitano2020, OrizzonteScuola2024}.
+
+\medskip
+\noindent
+\textbf{Il meccanismo tecnico.}
+La PCG funziona come un sussidio differenziale finanziato dalla
+\emph{fiscalità generale}, non dai contributi:
+\begin{equation}
+    \text{PCG} = \max\!\left(0,\;\; \bar{P} - MC_{NDC} \cdot \gamma(L)\right)
+    \label{eq:pcg}
+\end{equation}
+dove $\bar{P}$ è la soglia di garanzia e $MC_{NDC} \cdot \gamma(L)$ è la
+pensione contributiva calcolata dai contributi effettivi.
+L'integrazione scatta solo per chi si trova al di sotto della soglia:
+chi ha versato abbastanza non riceve nulla di aggiuntivo, evitando effetti
+di disincentivo alla contribuzione.
+
+\medskip
+\noindent
+La proposta risolve tre problemi simultaneamente.
+\emph{Primo}, tutela le carriere discontinue senza stravolgere la logica
+contributiva del sistema: la differenza rispetto agli attuali aumenti a
+carico del bilancio INPS (come l'integrazione al trattamento minimo)
+è che la PCG è esplicita, trasparente e caricata sulla fiscalità
+generale.
+\emph{Secondo}, riconosce che una parte dell'inadeguatezza previdenziale
+non è frutto di scelte individuali, ma di strutture del mercato del
+lavoro imposte dall'esterno (precarietà sistemica, lavoro irregolare
+involontario, caregiving non retribuito) \cite{Raitano2020}.
+\emph{Terzo}, ridisegna il confine tra previdenza e assistenza:
+la previdenza rimane contributiva, l'assistenza diventa esplicita
+e coperta dalla collettività — il principio che Bosi identifica come
+fondamento teorico della separazione tra le due funzioni
+\cite{Bosi2018}.
+
+\medskip
+\noindent
+\textbf{Impatto e costi.}
+Raitano stima che la platea potenziale della PCG — lavoratori puri NDC con
+meno di 25 anni effettivi di contribuzione — superi il milione di unità
+nel 2040--2050 \cite{Raitano2020, OrizzonteScuola2024}.
+Il costo annuo è stimabile in 3--5 miliardi di euro nello scenario base,
+una cifra significativa ma inferiore alla spesa annua per le deroghe
+``Quota 100'' e ``Quota 103'' che nel triennio 2019--2022 ha superato
+i 9 miliardi cumulati \cite{MEFRGS2025, Lavoce2024a}.
+La differenza cruciale è che la PCG protegge chi è più vulnerabile,
+mentre le deroghe quota hanno protetto lavoratori con carriere lunghe
+e stabili — i già tutelati dal sistema.
+
+%% ---
+\subsection{Correttivo 3: separazione previdenza/assistenza ---
+            ridisegnare i trasferimenti non contributivi e liberare
+            risorse per l'adeguatezza}
+\label{sub:c3}
+%% ---
+
+\noindent
+\textbf{Il problema.}
+L'INPS è l'ente previdenziale più grande d'Europa per numero di prestazioni
+gestite e uno dei più opachi dal punto di vista della trasparenza contabile
+per funzione.
+Nel suo bilancio convivono — spesso senza separazione di cassa né di
+rendiconto — trasferimenti di natura \emph{previdenziale} (finanziati dai
+contributi: pensioni di vecchiaia, anzianità, superstiti) e trasferimenti
+di natura \emph{assistenziale} (finanziati dalla fiscalità generale:
+pensioni sociali, invalidità civile, integrazioni al minimo, assegni di
+accompagnamento).
+Questa commistione genera tre distorsioni strutturali \cite{Bosi2018, Artoni2014}.
+
+\begin{enumerate}
+    \item \emph{Opacità redistributiva}: non è possibile calcolare con
+          precisione il tasso di rendimento implicito dei contributi
+          versati, perché il bilancio INPS include poste assistenziali
+          che le categorie più forti (pensionati con retributivo alto)
+          contribuiscono a finanziare indirettamente, senza che questo
+          sia esplicito.
+    \item \emph{Pressione contributiva distorta}: l'aliquota del 33\%
+          sui dipendenti incorpora una componente implicita di
+          finanziamento dell'assistenza, riducendo il montante
+          previdenziale effettivo.
+    \item \emph{Segnali politici errati}: quando la spesa INPS aumenta,
+          non è chiaro al dibattito pubblico se l'aumento dipenda da
+          maggiore generosità previdenziale (scelta politica) o da
+          aumento dei bisogni assistenziali (risposta a un fallimento
+          del mercato del lavoro).
+\end{enumerate}
+
+\medskip
+\noindent
+\textbf{La proposta.}
+Il correttivo — raccomandato in diverse sedi dalla Commissione Europea
+e dal Fondo Monetario Internazionale \cite{IMF2024} — consiste nel
+\emph{separare i conti} tra previdenza e assistenza:
+\begin{itemize}
+    \item trasferire il finanziamento di tutte le prestazioni assistenziali
+          (pensioni sociali, invalidità civile, integrazioni al minimo)
+          alla fiscalità generale (IRPEF + IVA), rimuovendole dal bilancio
+          contributivo INPS;
+    \item pubblicare un bilancio separato per ciascuna funzione, con
+          indicatori di sostenibilità distinti;
+    \item ridurre l'aliquota contributiva nella componente assistenziale
+          (stimata da vari autori in 3--5 punti percentuali del 33\%),
+          destinando il risparmio all'aumento del montante previdenziale
+          o al finanziamento della PCG di cui alla sezione precedente.
+\end{itemize}
+
+\medskip
+\noindent
+\textbf{Ostacoli politici e tecnici.}
+La separazione è tecnicamente realizzabile ma politicamente complessa.
+In primo luogo, richiede un trasferimento di gettito dalla fiscalità
+generale all'assistenza stimabile in 30--40 miliardi di euro annui
+\cite{Artoni2014, MEFRGS2025}: un vincolo di bilancio non banale
+in un paese con debito pubblico al 137\% del PIL.
+In secondo luogo, le lobby previdenziali — datori di lavoro e sindacati
+grandi — hanno interesse a mantenere l'opacità attuale, che consente di
+presentare richieste di riduzione contributiva (che favorisce le imprese)
+occultando il costo assistenziale che verrebbe esposto.
+Nonostante questi ostacoli, la separazione rappresenta la precondizione
+logica per qualsiasi riforma seria dell'adeguatezza: senza essa, non è
+possibile sapere quanto il sistema pensionistico costi \emph{davvero},
+né chi lo finanzi e a beneficio di chi.
+
+%% ---
+\subsection{Correttivo 4: flessibilità in uscita strutturale vs deroghe
+            politiche --- il modello svedese come riferimento operativo}
+\label{sub:c4}
+%% ---
+
+\noindent
+\textbf{Il problema.}
+La gestione italiana della flessibilità pensionistica è il più eloquente
+indicatore della disfunzione tra rigore tecnico e pragmatismo elettorale.
+Dal 1995 in poi, ogni governo ha alternato riforme strutturalizzanti
+(Dini 1995, Fornero 2011) a misure di deroga emergenziale che ne hanno
+sistematicamente eroso la logica attuariale: Quota 100 (2019),
+Quota 102 (2022), Quota 103 (2023) \cite{Lavoce2024a, SlideCorso2025}.
+
+\medskip
+\noindent
+Le deroghe ``Quota'' hanno tre difetti comuni.
+\emph{Primo}, violano la neutralità attuariale: chi esce prima riceve la
+stessa pensione che avrebbe ricevuto restando, senza che il montante
+rifletta gli anni di contribuzione mancanti.
+Il costo attuariale stimato per Quota 100 è di circa 3,7 miliardi di
+euro per coorte di uscenti, che grava sul bilancio INPS e indirettamente
+sulle generazioni più giovani \cite{MEFRGS2025, Lavoce2024a}.
+\emph{Secondo}, beneficiano prevalentemente lavoratori con carriere lunghe
+e stabili (e quindi pensioni già più alte), amplificando la regressività
+del sistema.
+\emph{Terzo}, creano incertezza strutturale: ogni lavoratore che pianifica
+il pensionamento deve scontare il rischio politico che la finestra
+disponibile non venga prorogata.
+
+\medskip
+\noindent
+\textbf{La proposta: finestra strutturale a neutralità attuariale.}
+Il correttivo consiste nell'introdurre una finestra di uscita flessibile
+strutturale — ad esempio tra i 63 e i 70 anni — in cui i coefficienti di
+trasformazione si adeguano automaticamente all'età di uscita scelta,
+garantendo che il valore attuariale della pensione rimanga costante
+indipendentemente dalla data del ritiro \cite{Lavoce2024, Lavoce2024a}.
+La logica è semplice: chi esce a 63 anni riceve una pensione mensile più
+bassa (coefficiente $\gamma(63) = 5{,}02\%$) per un numero maggiore di anni;
+chi posticipa a 70 riceve una pensione più alta (coefficiente
+$\gamma(70) \approx 6{,}4\%$) per un numero minore di anni.
+Il valore attuale delle due rendite è identico — neutralità attuariale —
+ma la scelta è dell'individuo, non del legislatore.
+
+\medskip
+\noindent
+La flessibilità strutturale produce tre benefici simultanei:
+\begin{enumerate}
+    \item \emph{Adeguatezza individuale}: lavoratori con condizioni fisiche
+          precoci o con professioni usuranti possono uscire prima senza
+          penalità arbitrarie; lavoratori in buona salute e con alta
+          produttività possono posticipare, ricevendo un premio implicito
+          al lavoro prolungato.
+    \item \emph{Neutralità di bilancio}: poiché i coefficienti si adeguano,
+          non vi è trasferimento implicito a carico delle generazioni
+          successive.
+    \item \emph{Pianificabilità}: i lavoratori conoscono in anticipo
+          la finestra di uscita e i relativi coefficienti, potendo
+          effettuare scelte informate di risparmio complementare.
+\end{enumerate}
+
+\medskip
+\noindent
+\textbf{Il modello svedese come laboratorio.}
+La Svezia applica esattamente questa logica: la finestra strutturale è
+compresa tra i 63 e i 69 anni (con proposte di estensione fino a 71),
+i coefficienti si adeguano annualmente, e l'intera traiettoria è
+comunicata in forma leggibile attraverso la busta arancione
+\cite{Prestiter2024, Fidia2025}.
+Il risultato è un sistema che ha mantenuto tassi di sostituzione medi
+intorno al 55--65\% anche per le coorti più giovani, senza ricorrere a
+deroghe di emergenza: non perché la demografia svedese sia migliore
+di quella italiana (anzi, la Svezia invecchia più rapidamente), ma perché
+il sistema è trasparente, prevedibile e attuarialmente onesto
+\cite{Lavoce2024, Prestiter2024}.
+
+
+%% ───────────────────────────────────────────────────────────────────
+\section{Il confronto internazionale come bussola riformatrice}
+\label{sec:confronto}
+%% ───────────────────────────────────────────────────────────────────
+
+\noindent
+I correttivi proposti nella sezione precedente non sono astrazioni teoriche:
+sono meccanismi già operativi in altri sistemi pensionistici europei.
+Il confronto con la Svezia — che ha progettato il sistema NDC ``originale''
+dal quale l'Italia si è ispirata — e con i Paesi Bassi — che hanno scelto
+una traiettoria alternativa a contribuzione definita collettiva — offre
+un quadro empirico per distinguere ciò che è importabile da ciò che non
+lo è, e per comprendere perché l'Italia sia rimasta bloccata a metà strada
+\cite{Bosi2018, Lavoce2024}.
+
+%% ---
+\subsection{Il modello svedese originale: l'NDC ``autentico'', la busta
+            arancione e la flessibilità strutturale 63--69 anni}
+\label{sub:svezia}
+%% ---
+
+\noindent
+La Svezia ha introdotto il proprio sistema NDC nel 1999, con una differenza
+fondamentale rispetto all'Italia: lo ha progettato come un sistema
+\emph{completo}, non come una formula di calcolo applicata a un vecchio impianto
+istituzionale.
+Il sistema svedese si articola su tre componenti obbligatorie e una
+volontaria \cite{Prestiter2024, Fidia2025}.
+
+\begin{enumerate}
+    \item \emph{Inkomstpension (NDC obbligatorio)}: contributi pari al 16\%
+          della retribuzione lorda capitalizzati al tasso nozionale legato
+          alla crescita del PIL nominale, con coefficienti aggiornati
+          annualmente. Contiene un meccanismo di bilanciamento automatico
+          (\emph{automatic balance mechanism}, ABR): se il rapporto tra
+          attività e passività del sistema scende sotto 1, i coefficienti
+          e le pensioni in essere vengono ridotti proporzionalmente,
+          senza che nessun governo debba prendere decisioni politicamente
+          impopolari.
+    \item \emph{Premiepension (capitalizzazione individuale obbligatoria)}:
+          2,5\% della retribuzione investito su un fondo a scelta del
+          lavoratore — il secondo pilastro è \emph{obbligatorio}.
+    \item \emph{Garantipension (pensione minima garantita)}: prestazione
+          universale finanziata dalla fiscalità generale, pari a circa
+          9.000 euro/anno (2024), riservata a chi non ha accumulato
+          sufficienti diritti contributivi.
+    \item \emph{Tjänstepension (pensione aziendale)}: secondo pilastro
+          contrattuale, de facto obbligatorio per la quasi totalità dei
+          lavoratori dipendenti svedesi, che aggiunge mediamente il
+          4,5\% della retribuzione al montante previdenziale.
+\end{enumerate}
+
+\medskip
+\noindent
+\textbf{La busta arancione} (\emph{orange kuvert}).
+Ogni anno, da oltre vent'anni, ciascun lavoratore svedese riceve per posta
+(e ora digitalmente) un estratto conto previdenziale di 4 pagine che riporta:
+il montante accumulato nell'anno, la proiezione della pensione attesa
+in tre scenari (pessimistico, base, ottimistico), la pensione minima
+garantita come ``pavimento'' e le istruzioni per posticipare il
+pensionamento o aderire alla componente capitalizzata.
+La busta arancione è uno strumento di alfabetizzazione previdenziale di
+massa: il suo effetto documentato è un aumento significativo della
+consapevolezza pensionistica e dell'adesione volontaria alla previdenza
+complementare aziendale \cite{Prestiter2024, Fidia2025}.
+In Italia, lo strumento equivalente — la piattaforma INPS ``La mia
+pensione'' — esiste dal 2015 ma è utilizzata da meno del 15\% dei
+lavoratori attivi, non viene inviata proattivamente e presenta proiezioni
+in termini nominali difficilmente interpretabili \cite{Lavoce2024a}.
+
+%% ---
+\subsection{Il modello olandese (DB collettivo): alta adeguatezza tramite
+            indicizzazione condizionata}
+\label{sub:olanda}
+%% ---
+
+\noindent
+I Paesi Bassi hanno imboccato una traiettoria radicalmente diversa da quella
+italiana e svedese: invece di adottare il NDC individuale, hanno mantenuto
+e riformato un sistema a \emph{beneficio definito collettivo} (Collective
+Defined Benefit, CDB), ritenuto più capace di garantire adeguatezza
+attraverso la condivisione del rischio demografico e finanziario tra
+tutti i partecipanti.
+
+\medskip
+\noindent
+Il sistema olandese si fonda su tre pilastri \cite{Bosi2018, Lavoce2024}.
+Il \emph{primo pilastro} è la pensione pubblica universale AOW
+(\emph{Algemene Ouderdomswet}), pagata a tutti i residenti dai 67 anni,
+indipendentemente dalla storia contributiva, al tasso fisso di circa il
+32\% del salario medio (circa 1.300 euro/mese nel 2024 per una coppia).
+Il \emph{secondo pilastro} è obbligatorio per contratto collettivo per
+oltre il 90\% dei lavoratori: gestito da fondi pensione settoriali
+(fondi ABP per i dipendenti pubblici, PMT per i metalmeccanici, ecc.),
+con contributi mediamente pari al 20\% della retribuzione e una
+filosofia di beneficio definito collettivo con indicizzazione condizionata.
+Il \emph{terzo pilastro} è volontario e fiscalmente incentivato.
+
+\medskip
+\noindent
+\textbf{L'indicizzazione condizionata} è il meccanismo cruciale del modello
+olandese: le pensioni in essere vengono indicizzate all'inflazione
+(e parzialmente alla crescita salariale) \emph{soltanto se} il rapporto di
+finanziamento del fondo (\emph{funding ratio}) è superiore a una soglia
+minima (attualmente 110\%).
+Se il funding ratio scende sotto il 100\%, i fondi devono ridurre
+proporzionalmente le prestazioni erogate (\emph{pension cuts}).
+Questo meccanismo — politicamente impopolare, applicato concretamente
+in alcuni fondi nel 2013--2014 con tagli medi del 2,3\% — garantisce
+la sostenibilità di lungo periodo senza trasferire l'intero rischio sui
+singoli lavoratori: il rischio è condiviso collettivamente tra
+lavoratori attivi, pensionati e datori di lavoro \cite{Bosi2018}.
+Il risultato è un tasso di sostituzione medio tra i più alti d'Europa
+(circa 80--85\% lordo per i dipendenti a lungo termine), pagato a caro
+prezzo in termini di complessità gestionale e vulnerabilità agli shock
+finanziari del 2008 e del 2022.
+
+%% ---
+\subsection{Tabella comparativa Italia -- Svezia -- Paesi Bassi su sei
+            dimensioni chiave}
+\label{sub:tabella}
+%% ---
+
+\begin{table}[h!]
+\centering
+\small
+\caption{Confronto sistematico tra i sistemi pensionistici di Italia,
+         Svezia e Paesi Bassi su sei dimensioni strutturali}
+\label{tab:confronto}
+\begin{tabular}{p{3.2cm}p{3.5cm}p{3.5cm}p{3.5cm}}
+\toprule
+\textbf{Dimensione} & \textbf{Italia} & \textbf{Svezia}
+                    & \textbf{Paesi Bassi} \\
+\midrule
+\textbf{Metodo di calcolo} &
+NDC parziale (regime misto ancora prevalente per chi ha anzianità
+pre-1996) &
+NDC puro (Inkomstpension 16\% + Premiepension 2,5\%) &
+DB collettivo (CDB) con indicizzazione condizionata al funding ratio \\
+\addlinespace
+\textbf{Aggiornamento coefficienti} &
+Biennale, via decreto ministeriale; processo opaco e soggetto a
+pressioni politiche &
+Annuale, automatico, basato sulle tavole di mortalità SCB;
+comunicato nella busta arancione &
+Non applicabile (sistema DB): le prestazioni si adeguano via
+indicizzazione condizionata \\
+\addlinespace
+\textbf{Flessibilità in uscita} &
+Deroghe politiche ad hoc (Quota 100/103); finestra legale a 67 anni;
+nessuna struttura attuariale stabile &
+Finestra strutturale 63--69 anni (proposta di estensione a 71);
+coefficienti automaticamente adeguati; nessuna deroga &
+Pensione AOW fissa a 67 anni; il secondo pilastro è flessibile
+per contratto collettivo; nessuna deroga politica \\
+\addlinespace
+\textbf{Secondo pilastro} &
+Volontario; adesione 30\%; TFR silente; contribuzione media
+effettiva 1,5\% della retribuzione &
+Premiepension obbligatorio (2,5\%); Tjänstepension contrattuale
+($\approx$4,5\%); adesione $>$90\% &
+Obbligatorio per contratto collettivo; fondi settoriali;
+contribuzione media $\approx$20\%; adesione $>$90\% \\
+\addlinespace
+\textbf{Protezione reddito minimo} &
+Pensione/assegno sociale (Legge 335/95); importo $\approx$534 euro/mese
+(2024); non universale &
+Garantipension universale; $\approx$750 euro/mese (2024);
+automaticamente percepita senza domanda &
+AOW universale; $\approx$1.300 euro/mese per coppia (2024);
+percepita da tutti i residenti a 67 anni \\
+\addlinespace
+\textbf{Trasparenza e informazione} &
+Piattaforma INPS ``La mia pensione'': utilizzo $<$15\%; proiezioni
+nominali difficili; nessun invio proattivo &
+Busta arancione cartacea + digitale: tre scenari di pensione
+proiettata; invio proattivo annuale; utilizzo $>$80\% &
+Pensioen 1-2-3: documento standardizzato in tre livelli di
+dettaglio; portale mijnpensioenoverzicht.nl; comunicazione
+obbligatoria per legge \\
+\bottomrule
+\multicolumn{4}{l}{\small Fonti: \cite{Bosi2018, MEFRGS2025, Lavoce2024,
+Prestiter2024, Fidia2025}.}
+\end{tabular}
+\end{table}
+
+%% ---
+\subsection{Cosa l'Italia può (e non può) importare dai sistemi del Nord
+            Europa: lezioni operative}
+\label{sub:lezioni}
+%% ---
+
+\noindent
+La lettura della Tabella \ref{tab:confronto} suggerisce una distinzione
+analitica fondamentale tra riforme \emph{trapiantabili} a basso costo
+istituzionale e riforme che richiedono un cambiamento strutturale
+dell'economia politica italiana.
+
+\medskip
+\noindent\textbf{Cosa l'Italia \emph{può} importare.}
+
+\begin{enumerate}
+    \item \emph{La busta arancione proattiva} (dalla Svezia).
+    L'invio annuale di un estratto conto previdenziale personalizzato,
+    con proiezioni in termini reali in tre scenari, è una misura a
+    costo pressoché nullo per le finanze pubbliche (spesa stimata:
+    50--80 milioni/anno incluse le infrastrutture digitali) e di
+    impatto potenzialmente elevato sulla consapevolezza previdenziale
+    della popolazione attiva.
+    L'INPS ha già sviluppato la base informatica con ``La mia pensione'';
+    ciò che manca è l'obbligatorietà dell'invio e la semplificazione
+    del contenuto \cite{Lavoce2024a, Prestiter2024}.
+
+    \item \emph{La flessibilità in uscita strutturale} (dalla Svezia).
+    La sostituzione delle deroghe Quota con una finestra 63--70 anni
+    a coefficienti automaticamente adeguati non richiede un aumento
+    della spesa: richiede il coraggio politico di eliminare le deroghe
+    clientelari e di comunicare ai lavoratori che la scelta dell'età di
+    uscita ha conseguenze prevedibili e simmetriche \cite{Lavoce2024a}.
+
+    \item \emph{La separazione previdenza/assistenza} (da entrambi i
+    modelli nordici, dove la distinzione è netta).
+    Trasferire le prestazioni assistenziali alla fiscalità generale
+    è tecnicamente fattibile già nel breve periodo, richiedendo una
+    copertura addizionale in deficit da smaltire gradualmente
+    attraverso la riduzione della spesa per deroghe \cite{Bosi2018}.
+
+    \item \emph{L'aggiornamento annuale automatico dei coefficienti}
+    (dalla Svezia).
+    Richiede solo un decreto che sostituisca il procedimento biennale
+    con un meccanismo indicizzato alle tavole ISTAT — un atto
+    normativo di bassissima complessità tecnica \cite{Lavoce2024}.
+\end{enumerate}
+
+\medskip
+\noindent\textbf{Cosa l'Italia \emph{non può} importare direttamente.}
+
+\begin{enumerate}
+    \item \emph{Il secondo pilastro obbligatorio} (da Svezia e Paesi Bassi).
+    Il principale ostacolo è il \emph{transition cost} (costo di
+    transizione o doppio onere): rendere obbligatorio il secondo
+    pilastro per i lavoratori italiani, che già versano il 33\% in
+    contributi al primo pilastro PAYG, imporrebbe loro di
+    finanziare \emph{contemporaneamente} le pensioni degli attuali
+    anziani (PAYG) e il proprio fondo individuale.
+    Il costo di questa transizione è stimato tra i 30 e i 100 miliardi
+    di euro all'anno a seconda dell'aliquota e del periodo, un'entità
+    incompatibile con gli attuali vincoli di finanza pubblica
+    \cite{Bosi2018, Artoni2014}.
+    La strada percorribile è un'espansione graduale e incentivata
+    dell'adesione volontaria — la rotta già tracciata dalla D.Lgs.\
+    252/2005 —, non l'obbligatorietà immediata.
+
+    \item \emph{Il sistema DB collettivo con funding ratio} (dai Paesi
+    Bassi).
+    Passare da un sistema PAYG NDC a un DB collettivo a capitalizzazione
+    richiederebbe la creazione di riserve per l'intero stock di diritti
+    pensionistici maturati: una cifra superiore ai 2.000 miliardi di
+    euro, pari a oltre il 100\% del PIL.
+    Anche nella storia olandese il DB collettivo è il risultato di un
+    percorso centenario di accumulazione fondiaria; non è un
+    risultato ottenibile in un orizzonte politico rilevante.
+
+    \item \emph{La Garantipension universale al livello svedese.}
+    Aumentare la protezione del reddito minimo degli anziani in misura
+    analoga al modello svedese (che garantisce circa 750 euro/mese a
+    prescindere dalla storia contributiva) richiederebbe un aumento
+    della spesa assistenziale tra 8 e 15 miliardi di euro annui,
+    compatibile solo con una parallela riduzione della spesa per
+    deroghe anticipatorie e una riforma fiscale che ampli la base
+    imponibile \cite{MEFRGS2025, Bosi2018}.
+\end{enumerate}
+
+\medskip
+\noindent
+Il confronto internazionale, in ultima analisi, non restituisce un modello
+da copiare ma una mappa di priorità.
+Le riforme immediatamente adottabili (busta arancione, flessibilità
+strutturale, aggiornamento annuale, separazione previdenza/assistenza)
+sono riforme di \emph{governance e trasparenza}: non costano, non
+richiedono grandi coalizioni politiche, ma presuppongono la volontà di
+trattare i lavoratori come agenti razionali meritevoli di informazioni
+vere, non come elettori da rassicurare con la promessa di una pensione
+il cui importo nessuno osa comunicare in anticipo \cite{Fornero2018,
+Lavoce2024a}.
+
+\bigskip
+\noindent\rule{\textwidth}{0.4pt}
+
+\medskip
+\noindent\textbf{\large Riflessione conclusiva: il paradosso della sostenibilità
+                          senza adeguatezza come scelta politica}
+
+\medskip
+\noindent
+Siamo giunti al nucleo della contraddizione che questo capitolo ha cercato
+di documentare con rigore formale ed evidenze empiriche: il sistema NDC
+italiano non è un errore tecnico.
+È una scelta politica presentata come necessità tecnica.
+
+\medskip
+\noindent
+Ogni parametro della formula \eqref{eq:pensione} — l'aliquota contributiva $c$,
+il tasso nozionale $g$, la speranza di vita $e(L)$, il coefficiente $\gamma(L)$ —
+è il risultato di una decisione normativa che potrebbe essere diversa.
+Si è scelto di non uniformare l'aliquota tra dipendenti e autonomi (nonostante
+trent'anni di crescita del lavoro autonomo), di non integrare i periodi di cura
+nel montante, di aggiornare i coefficienti ogni due anni in modo opaco, di
+gestire la flessibilità con deroghe che premiano le categorie già protette.
+Nessuna di queste scelte era inevitabile: erano opzioni tra opzioni, e
+in ciascuna il costo è stato scaricato sulle generazioni future
+\cite{Fornero2018, Artoni2014}.
+
+\medskip
+\noindent
+La vera posta in gioco non è tecnica.
+È chi sopporta il rischio: se il rischio demografico e macroeconomico
+rimane nel bilancio pubblico (come nel modello olandese) o viene
+trasferito al lavoratore (come nel NDC puro).
+L'Italia ha scelto la seconda strada per ragioni di sostenibilità
+contabile — e la scelta è comprensibile.
+Ma ha omesso di comunicarla, di compensarla, di proteggerla con
+garanzie minime per i più vulnerabili.
+Il risultato è un sistema che è sostenibile per lo Stato
+e inadeguato per i cittadini — uno scenario che la teoria economica
+chiamerebbe \emph{fallimento del patto intergenerazionale}.
+Correggerlo non richiede di smantellare il NDC:
+richiede di completarlo con i quattro correttivi proposti in questo
+capitolo, e di avere l'onestà intellettuale di comunicare ai lavoratori
+della Generazione Z quanto vale davvero la loro pensione attesa
+\cite{Bosi2018, Fornero2018, Lavoce2024a}.

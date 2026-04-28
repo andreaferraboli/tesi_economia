@@ -1,0 +1,288 @@
+\chapter*{Introduzione}
+\addcontentsline{toc}{chapter}{Introduzione}
+
+% =========================================================
+% INTRODUZIONE DELLA TESI -- versione rivista
+% File: 00_introduzione.tex
+% =========================================================
+
+% --- §0 EPIGRAFE -------------------------------------------------------
+\begin{flushright}
+\itshape
+«Un sistema pensionistico non è una macchina\\
+per pagare assegni: è un meccanismo\\
+per redistribuire il rischio tra le generazioni.»\\[4pt]
+\upshape
+Elsa Fornero, \textit{Chi ha paura delle riforme} (2018)
+\end{flushright}
+
+\vspace{1em}
+
+% --- §1 AGGANCIO NARRATIVO ---------------------------------------------
+\noindent
+Proviamo a rovesciare la prospettiva con cui si discute solitamente di previdenza
+in Italia. Invece di chiederci \textit{quando} si può andare in pensione o
+\textit{quanto} costerà farlo, partiamo dalle domande che quasi nessuna riforma
+si è mai posta con sufficiente onestà intellettuale.
+
+Prima. \textbf{Perché una quota del mio stipendio, ogni mese, va a pagare la pensione
+di qualcuno che non sono io?} Non è un'ingiustizia: è la logica di un meccanismo
+collettivo preciso, costruito su una promessa intergenerazionale. I lavoratori
+attivi finanziano, tramite i contributi sociali, le pensioni degli anziani coevi,
+nella fiducia che le generazioni successive faranno altrettanto per loro
+\cite{Fornero2018, Bosi2018}. Si chiama sistema a ripartizione, e ha una
+giustificazione economica solida: i mercati privati non riescono a offrire copertura
+contro il rischio demografico aggregato, le asimmetrie informative rendono i mercati
+assicurativi inefficienti, e la miopia intertemporale degli individui porta a risparmi
+insufficienti senza un obbligo di legge \cite{Artoni2014}. La previdenza pubblica
+obbligatoria risolve questi fallimenti del mercato. Non è paternalismo fine a sé stesso.
+
+Seconda. \textbf{Si può tornare a un sistema in cui ognuno accumula i propri risparmi,
+invece di pagare le pensioni altrui?} In teoria sì. Il sistema a capitalizzazione
+esiste, funziona in diversi paesi, e ha un rendimento legato ai mercati finanziari
+invece che alla crescita del PIL \cite{Bosi2018}. In pratica, però, il passaggio
+da un sistema a ripartizione a uno a capitalizzazione comporta un costo di transizione
+enorme: la generazione che effettua il passaggio dovrebbe finanziare sia le pensioni
+degli anziani già in essere, sia il proprio accumulo futuro, pagando in sostanza due
+volte \cite{Artoni2014}. Per l'Italia, con una spesa pensionistica al 15,4\% del
+PIL nel 2024 \cite{MEF_RGS2025}, la transizione sarebbe fiscalmente insostenibile.
+Non è un tabù ideologico: è un'equazione che non torna.
+
+Terza. \textbf{Cosa dovrebbe fare oggi un lavoratore di 28 anni, con un contratto
+a tempo determinato, per non avere paura della propria situazione quando andrà in
+pensione?} Questa è la domanda più scomoda. Anche quella a cui quasi nessuna riforma
+ha mai risposto in modo diretto.
+
+La risposta non è mai arrivata perché il dibattito previdenziale italiano ha
+attraversato decenni di interventi che hanno cambiato \textit{come} si calcola la
+pensione (riforma Dini, 1995), \textit{quando} ci si può ritirare (riforma Fornero,
+2011), e \textit{quanto tempo prima} è possibile farlo cedendo a pressioni di breve
+periodo (Quota~100 nel 2019, Quota~103 nel 2023). Ogni riforma ha risposto al
+\textbf{Come} o al \textbf{Quando}, senza mai tornare al \textbf{Perché fondativo}:
+garantire a tutti, e non soltanto ai lavoratori già pensionati, un'esistenza dignitosa
+nella vecchiaia. Il risultato è un paradosso strutturale che questa tesi pone al centro
+dell'analisi: le riforme hanno funzionato. Il sistema è sostenibile. Ma non è adeguato.
+
+% --- §2 IL PARADOSSO CENTRALE -----------------------------------------
+\section*{Il paradosso della sostenibilità senza adeguatezza}
+
+Il sistema previdenziale italiano si trova, all'alba degli anni Venti del Ventunesimo
+secolo, in una condizione che potremmo definire di \textbf{sostenibilità fragile}.
+Dal punto di vista contabile e macroeconomico, la situazione appare rassicurante:
+la spesa per pensioni si attesta al 15,4\% del PIL nel 2024 \cite{MEF_RGS2025},
+un valore che, pur elevato nel confronto europeo, è destinato strutturalmente a
+ridursi dopo il picco previsto intorno al 2042--2044. In quel biennio l'ultima
+coorte del \emph{baby boom} raggiungerà l'età pensionabile, portando il rapporto
+spesa/PIL vicino al 17\%, per poi scendere al di sotto del 14\% nel 2070 grazie
+all'applicazione generalizzata del metodo contributivo e alla stabilizzazione del
+rapporto demografico tra pensionati e occupati \cite{MEF_RGS2025}.
+
+Questa traiettoria discendente è, a prima vista, una buona notizia. Ma essa è
+il prodotto di una scelta tecnica con un costo sociale profondo. Il sistema
+contributivo nozionale (NDC, \emph{Notional Defined Contribution}), introdotto
+dalla riforma Dini e generalizzato dalla riforma Fornero, calcola la pensione come
+funzione dell'intera vita lavorativa e la comprime sistematicamente all'aumentare
+della speranza di vita, attraverso la revisione periodica dei coefficienti di
+trasformazione. In formula, la pensione annua lorda è:
+
+\begin{equation}
+P = \frac{MC_{NDC}}{e_L}
+\qquad \text{con} \qquad
+MC_{NDC} = \sum_{j=1}^{L} C_j \,(1+g)^{L-j}
+\label{eq:ndc}
+\end{equation}
+
+\noindent dove $MC_{NDC}$ è il montante contributivo nozionale,
+$C_j = c \cdot S_j$ i contributi versati nell'anno di lavoro $j$
+(con $c$ l'aliquota contributiva e $S_j$ la retribuzione),
+$g$ il tasso di capitalizzazione nozionale pari alla media mobile quinquennale
+del PIL nominale, $e_L$ la speranza di vita all'età di pensionamento $L$
+\cite{Bosi2018, MEF_RGS2025}.
+
+\paragraph{Un esempio numerico rapido.}
+Si consideri un lavoratore dipendente con 35 anni di contributi, stipendio lordo
+costante di 30.000 euro, aliquota $c = 33\%$ (contributi annui: 9.900 euro) e
+tasso nozionale $g = 1{,}5\%$ (ipotesi prudenziale sulla crescita del PIL nominale).
+Il montante nozionale accumulato è:
+
+\[
+MC_{NDC} = 9.900 \cdot \frac{(1{,}015)^{35} - 1}{0{,}015}
+         = 9.900 \times 45{,}6 \approx 451.000 \text{ euro}
+\]
+
+Con il coefficiente di trasformazione a 67 anni fissato dalla normativa per il
+biennio 2025--2026 al 5,608\% \cite{MEF_RGS2025}, la pensione lorda annua è:
+
+\[
+P_{lordo} = 0{,}05608 \times 451.000 \approx 25.300 \text{ euro annui}
+\]
+
+Il confronto al lordo è però incompleto: il reddito da lavoro e il reddito da
+pensione subiscono un trattamento fiscale e contributivo diverso. Il lavoratore
+in attività versa contributi previdenziali a proprio carico pari al 9,19\% della
+retribuzione lorda (circa 2.757 euro), che riducono l'imponibile IRPEF, e sconta
+un prelievo complessivo -- contributi, IRPEF e addizionali -- di circa il 27,7\%
+sul lordo. Il pensionato, invece, non versa contributi: la pensione è tassata
+soltanto con l'IRPEF ordinaria e le addizionali locali. Per un reddito di
+25.300 euro, la detrazione spettante ai pensionati nel 2025
+\[
+D_{pens} = 700 \times \frac{55.000 - 25.300}{40.000} \approx 520 \text{ euro}
+\]
+riduce l'IRPEF lorda (23\% $\times$ 25.300 = 5.819 euro) a circa 5.299 euro
+netti; aggiungendo le addizionali regionali e comunali (media nazionale circa
+1,5\%) l'aliquota media effettiva si attesta al 22,4\%, per una pensione netta di:
+\[
+P_{netto} \approx 25.300 \times (1 - 0{,}224) \approx 19.600 \text{ euro annui}
+\approx 1.508 \text{ euro mensili}
+\]
+Lo stipendio netto, al netto di contributi e IRPEF, vale circa 21.700 euro annui
+(1.668 euro mensili). Il \textbf{tasso di sostituzione netto} è quindi:
+\[
+TS_{netto} = \frac{19.600}{21.700} \approx 90{,}5\%
+\]
+contro l'84\% lordo. Il gap si riduce perché sul pensionato non gravano i
+contributi IVS, che sul lavoratore equivalgono a un prelievo implicito di quasi
+10 punti percentuali. Questa differenza di trattamento fiscale è tutt'altro che
+trascurabile nella valutazione dell'adeguatezza: confrontare tassi di sostituzione
+lordi sistematicamente sottostima il reddito disponibile del pensionato rispetto
+all'ultimo anno di lavoro.
+
+La correzione non attenua il problema demografico, però lo inquadra meglio.
+Se il coefficiente scende al 5,2\% nel 2040 -- per effetto dell'aumento della
+speranza di vita -- la pensione lorda cala a:
+\[
+P_{lordo,2040} = 0{,}052 \times 451.000 \approx 23.450 \text{ euro}
+\]
+e, con la stessa aliquota media effettiva del 22,1\% (l'imponibile è minore, la
+detrazione cresce leggermente), la pensione netta diventa circa 18.260 euro,
+pari a 1.404 euro mensili. Il tasso di sostituzione netto scende all'84,2\%: una
+perdita reale di 6,3 punti percentuali rispetto allo scenario base, conseguenza
+di un solo parametro -- la longevità -- su cui il lavoratore non ha alcuna leva.
+
+In carriere ibride con discontinuità contributiva, tipiche della Generazione Z,
+le proiezioni della Ragioneria Generale dello Stato portano il tasso di
+sostituzione \textit{lordo} dei dipendenti privati al 58,4\% nel 2070, contro il
+73,6\% del 2010 \cite{MEF_RGS2025}. Convertendo al netto, secondo la relazione
+tra prelievo fiscale e livello della pensione stimata in letteratura
+\cite{Galasso2015}, i tassi salgono di circa 8--10 punti percentuali in entrambi
+gli scenari, ma il \textbf{divario intergenerazionale rimane praticamente
+invariato}: il guadagno fiscale è simmetrico tra generazioni, e non compensa la
+perdita strutturale di rendimento del sistema a contribuzione definita.
+
+All'aumentare di $e_L$ -- la speranza di vita al pensionamento -- come impone la
+demografia italiana, che proietta la speranza di vita maschile da 81 anni nel
+2023 a circa 85,8 anni nel 2070 \cite{MEF_RGS2025}, la pensione si riduce a
+parità di contributi versati, tanto al lordo quanto al netto. Un lavoratore
+entrato nel 1982 e andato in pensione nel 2020 ha percepito un tasso di
+sostituzione lordo dell'81,5\% dell'ultima retribuzione, che al netto sale
+all'incirca all'87\%. Un giovane entrato nel 2022 che andrà in pensione nel 2060
+otterrà il 64,8\% lordo: quasi \textbf{17 punti percentuali in meno}
+\cite{Censis_Confcooperative2026}, circa 14 al netto. La previdenza complementare
+risale al 66\% lordo \cite{MEF_RGS2025}, ma con un'ipotesi di adesione piena che
+per i lavoratori discontinui rimane, di fatto, una finzione attuariale.
+
+La contraddizione è dunque strutturale, non contingente.
+\textbf{La sostenibilità finanziaria del sistema è stata acquistata al prezzo
+dell'adeguatezza futura delle prestazioni.}
+Le riforme hanno risolto il problema del «come pagare le pensioni di domani» senza
+rispondere al problema del «se quelle pensioni saranno sufficienti a garantire una
+vecchiaia dignitosa». Questo trade-off è il nucleo analitico attorno al quale si
+sviluppa la presente tesi.
+
+% --- §3 IL CASO-TIPO ---------------------------------------------------
+\section*{Il «paziente zero»: Marco, lavoratore ibrido della Generazione Z}
+
+Per ancorare l'analisi a una dimensione concreta, la tesi costruisce attorno a una
+figura rappresentativa il proprio apparato simulativo. Chiamiamolo Marco: nato nel
+1993, ha conseguito una laurea magistrale nel 2019 e ha fatto il suo ingresso stabile
+nel mercato del lavoro nel 2022, a 29 anni, con un primo contratto a tempo
+determinato nel settore dei servizi. La sua carriera è, e sarà presumibilmente,
+\emph{ibrida}: alternanza tra rapporti di lavoro dipendente e periodi di autonomia
+(partita IVA, collaborazione a progetto), con fasi di discontinuità lavorativa legate
+alla ciclicità settoriale e alle transizioni tra impieghi. Marco verserà contributi
+per circa 38 anni, con un'aliquota media effettiva sensibilmente inferiore al teorico
+33\% dei dipendenti per via dei periodi autonomi, e si aspetta di andare in pensione
+non prima dei 67 anni, con una speranza di vita residua superiore a 18 anni
+\cite{MEF_RGS2025}.
+
+Marco non è un caso biografico. È il \textbf{soggetto rappresentativo} su cui le
+proiezioni dei capitoli successivi costruiranno le simulazioni del montante
+contributivo atteso e del tasso di sostituzione risultante. È, per dirla con una
+metafora clinica, il \emph{paziente zero} del problema pensionistico italiano: colui
+nel cui percorso lavorativo si materializzano in modo paradigmatico tutte le
+fragilità strutturali del sistema, dalla contribuzione discontinua al rendimento
+implicito in calo con la bassa crescita del PIL, fino ai coefficienti di
+trasformazione compressi dall'allungamento della vita.
+
+% --- §4 LE TRE DOMANDE DI RICERCA -------------------------------------
+\section*{Le domande di ricerca}
+
+La tesi si articola attorno a tre domande di ricerca strettamente interconnesse,
+che procedono dal livello macroeconomico-istituzionale a quello individuale.
+
+\begin{description}
+\item[\textbf{Domanda 1 -- Adeguatezza.}]
+Il sistema NDC italiano, nella sua configurazione attuale e nelle sue proiezioni di
+lungo periodo, è in grado di garantire alle generazioni future un tenore di vita
+dignitoso nella vecchiaia? In che misura il tasso di sostituzione atteso è compatibile
+con le funzioni previdenziale, assicurativa e assistenziale che la teoria economica
+assegna alla previdenza pubblica \cite{Bosi2018}?
+
+\item[\textbf{Domanda 2 -- Riforme strutturali.}]
+Quali interventi di politica economica, dai correttivi tecnici al sistema NDC
+(revisione delle aliquote di capitalizzazione, garanzie di minimo pensionistico,
+flessibilità attuarialmente neutra dell'età di uscita) al più radicale
+\emph{Contributo sull'Automazione} come fonte alternativa di finanziamento,
+possono correggere il trade-off tra sostenibilità e adeguatezza? E perché, pur
+essendo tecnicamente disponibili, questi interventi rimangono politicamente difficili
+da attuare?
+
+\item[\textbf{Domanda 3 -- Agentività individuale.}]
+In assenza di riforme tempestive, quali strategie concrete, dalla previdenza
+complementare al risparmio finanziario e alla pianificazione della carriera, può
+adottare il singolo lavoratore per ridurre l'esposizione al rischio di inadeguatezza
+pensionistica? Queste strategie sono accessibili indipendentemente dal livello di
+reddito e dalla discontinuità contributiva, o rischiano di ampliare le disuguaglianze
+esistenti?
+\end{description}
+
+% --- §5 MAPPA DEL LAVORO -----------------------------------------------
+\section*{Struttura della tesi}
+
+La tesi è organizzata in tre parti logicamente consequenziali, che corrispondono a
+tre livelli di analisi progressivamente più orientati all'azione.
+
+La \textbf{Prima Parte} (Capitoli 1--3) costruisce le fondamenta teoriche e
+istituzionali. Il Capitolo 1 ricostruisce la logica economica della previdenza
+pubblica, i fallimenti del mercato, la funzione del patto intergenerazionale, i
+modelli a ripartizione e a capitalizzazione, con riferimento alla letteratura
+canonica \cite{Bosi2018, Artoni2014, Fornero2018}. Il Capitolo 2 ripercorre
+l'evoluzione del sistema pensionistico italiano dalla riforma Amato del 1992 alla
+riforma Fornero del 2011, analizzando le deroghe di Quota 100, Quota 102 e Quota 103
+come manifestazioni di un conflitto irrisolto tra equità attuariale e consenso
+elettorale. Il Capitolo 3 descrive il funzionamento del sistema NDC e ne calcola il
+tasso di rendimento implicito, applicando la formula \eqref{eq:ndc} al profilo
+contributivo del lavoratore-tipo Marco.
+
+La \textbf{Seconda Parte} (Capitoli 4--6) analizza il trade-off tra sostenibilità e
+adeguatezza attraverso le evidenze empiriche più recenti. Il Capitolo 4 discute le
+proiezioni di lungo periodo della Ragioneria Generale dello Stato, identificando il
+picco di spesa atteso e la discesa strutturale successiva \cite{MEF_RGS2025}.
+Il Capitolo 5 quantifica il crollo del tasso di sostituzione per le generazioni
+future, confrontando scenari con e senza previdenza complementare. Il Capitolo 6
+mappa le proposte di riforma in discussione nel dibattito internazionale, dalla
+letteratura di \textsc{VoxEU} ai contributi di \textsc{Lavoce.info} e del
+\textsc{CERP}, valutandone l'efficacia e la fattibilità politica.
+
+La \textbf{Terza Parte} (Capitoli 7--8) sposta il fuoco dall'analisi di sistema
+all'azione del singolo, ponendo una domanda scomoda: in un contesto di riforme
+rinviate e rischio demografico crescente, quanto può davvero fare il lavoratore
+per tutelarsi? Il \textbf{Capitolo 7}, attraverso simulazioni su diversi profili
+di carriera della Generazione Z, dimostra la \textbf{regressività implicita} della
+previdenza complementare. Il \textbf{Capitolo 8} delinea un \textit{framework} di
+pianificazione individuale basato su risparmio e riscatti contributivi, condizionato
+però da soglie minime di reddito.
+
+Le Conclusioni raccolgono le risposte alle tre domande di ricerca e formulano
+raccomandazioni di policy, distinguendo tra misure adottabili nel breve periodo,
+senza necessità di riforma organica, e interventi strutturali di lungo respiro.

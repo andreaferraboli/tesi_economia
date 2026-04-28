@@ -1,0 +1,142 @@
+\documentclass[12pt, a4paper, openright]{report}
+% openright: ogni capitolo inizia su pagina dispari (destra), come da linee guida
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{mathptmx}   % Times New Roman (consigliato dalle linee guida)
+\usepackage{setspace}   % Gestione interlinea
+\usepackage{microtype}  % Migliore giustificazione del testo
+
+% -------------------------------------------------------
+% MARGINI: tutti 3 cm (linee guida: 3 sx, 3 dx, 3 sup, 3 inf)
+% -------------------------------------------------------
+\geometry{top=3cm, bottom=3cm, left=3cm, right=3cm}
+
+% -------------------------------------------------------
+% INTERLINEA 1,5 per il corpo del testo
+% NB: il pacchetto setspace mantiene automaticamente
+%     le note a piè di pagina a interlinea singola
+% -------------------------------------------------------
+\onehalfspacing
+
+% -------------------------------------------------------
+% NOTE A PIÈ DI PAGINA: 10pt, giustificate, interlinea singola
+% (setspace gestisce già la singola spaziatura automaticamente)
+% -------------------------------------------------------
+\renewcommand{\footnotesize}{\fontsize{10pt}{12pt}\selectfont}
+
+% -------------------------------------------------------
+% FORMATO TITOLI CAPITOLI
+% "Capitolo N" su una riga, titolo sulla riga successiva
+% -------------------------------------------------------
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\large}
+  {\chaptername\ \thechapter}
+  {8pt}
+  {\Large}
+
+\titleformat{\section}
+  {\normalfont\bfseries\normalsize}
+  {\thesection.}
+  {0.5em}
+  {}
+
+\titleformat{\subsection}
+  {\normalfont\itshape\normalsize}
+  {\thesubsection.}
+  {0.5em}
+  {}
+
+% -------------------------------------------------------
+% HYPERREF: link in nero per la stampa
+% -------------------------------------------------------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+    pdftitle={Titolo della Tesi},
+    pdfauthor={Nome Cognome},
+}
+
+
+% =======================================================
+\begin{document}
+% =======================================================
+
+% -------------------------------------------------------
+% FRONTESPIZIO (template da linee guida EMA)
+% -------------------------------------------------------
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        {\large \textsc{Università degli Studi di Milano}} \\[0.4cm]
+        {\normalsize Facoltà di Scienze Politiche Economiche e Sociali} \\[0.2cm]
+        {\normalsize Corso di Laurea in Economia e Management}
+
+        \vspace{3.5cm}
+
+        {\LARGE \textbf{TITOLO DELLA TESI}}
+
+        \vspace{4cm}
+
+        \begin{flushleft}
+            {\normalsize \textbf{Relatore:} Prof.\ Nome Cognome} \\[0.3cm]
+            {\normalsize \textbf{Correlatore:} Prof.\ Nome Cognome}
+                % Rimuovere la riga sopra se non presente
+        \end{flushleft}
+
+        \vfill
+
+        \begin{flushleft}
+            {\normalsize Tesi di Laurea di:} \\[0.2cm]
+            {\normalsize \textbf{Nome Cognome Studente}} \\
+            {\normalsize Matr.\ XXXXXX}
+        \end{flushleft}
+
+        \vspace{1cm}
+
+        {\normalsize Anno Accademico 20XX\,/\,20XX}
+    \end{center}
+\end{titlepage}
+
+% -------------------------------------------------------
+% PAGINA BIANCA dopo il frontespizio (opzionale)
+% -------------------------------------------------------
+\thispagestyle{empty}
+\cleardoublepage
+
+% -------------------------------------------------------
+% INDICE
+% (inizia su pagina dispari, numerazione in romano)
+% -------------------------------------------------------
+\pagenumbering{roman}
+\tableofcontents
+\cleardoublepage
+
+% -------------------------------------------------------
+% TESTO PRINCIPALE
+% (numerazione araba dalla prima pagina di testo)
+% -------------------------------------------------------
+\pagenumbering{arabic}
+
+% Introduzione: non numerata, ma presente nell'indice
+\input{capitoli/00_introduzione}   % usare \chapter*{Introduzione} + \addcontentsline
+
+% Capitoli numerati
+\input{capitoli/01_fondamenta}     % usare \chapter{Titolo}
+\input{capitoli/02_riforme}
+\input{capitoli/03_modelli}
+\input{capitoli/04_futuro}
+
+% Conclusioni: non numerate, ma presenti nell'indice
+\input{capitoli/05_conclusioni}    % usare \chapter*{Conclusioni} + \addcontentsline
+
+% Bibliografia e Sitografia: non numerate
+\input{capitoli/06_bibliografia}   % usare \chapter*{Bibliografia} + \addcontentsline
+
+\end{document}

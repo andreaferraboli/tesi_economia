@@ -1,0 +1,56 @@
+﻿# === LaTeX auxiliary files ===
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.idx
+*.ind
+*.ilg
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.acn
+*.acr
+*.alg
+*.glo
+*.gls
+*.glg
+*.ist
+*.maf
+*.mtc
+*.mtc0
+*.mtc[0-9]
+*.xdy
+*.figlist
+*.dpth
+*.makefile
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# === Editor backups / temp ===
+*~
+*.bak
+*.swp
+*.swo
+
+# === MS Word lock/backup ===
+~$*
+*.tmp
+.~lock.*
+
+# === Python (if any) ===
+__pycache__/
+*.pyc
