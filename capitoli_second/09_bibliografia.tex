@@ -1,49 +1,10 @@
 ﻿%% ═══════════════════════════════════════════════════════════════════
-\chapter*{Bibliografia e Sitografia}
-\addcontentsline{toc}{chapter}{Bibliografia e Sitografia}
+%% Bibliografia generata da BibTeX (references.bib)
 %% ═══════════════════════════════════════════════════════════════════
-
-%% ─── PROMPT LLM ─────────────────────────────────────────────────
-%% Genera la bibliografia completa in formato accademico italiano
-%% (stile Chicago Author-Date o APA, coerente con le linee guida
-%% dell'ateneo). Organizza in sezioni:
-%%
-%% A) MANUALI E MONOGRAFIE (fonti teoriche primarie):
-%%    - Artoni R. (ultima ed.) -- Elementi di Scienza delle Finanze,
-%%      Il Mulino
-%%    - Bosi P. (ultima ed.) -- Corso di Scienza delle Finanze,
-%%      Il Mulino
-%%    - Fornero E. (2018) -- Chi ha paura delle riforme, Egea, Milano
-%%    - Rosen H.S., Gayer T., Rapallini C. (2023) --
-%%      Scienza delle Finanze, 6a ed., McGraw-Hill Education, Milano
-%%    - Thaler R.H., Sunstein C.R. (2008) -- Nudge: Improving Decisions
-%%      About Health, Wealth, and Happiness, Yale University Press
-%%
-%% B) RAPPORTI ISTITUZIONALI (dati e proiezioni):
-%%    - MEF/RGS -- Rapporto n.24 sulle tendenze di medio-lungo periodo
-%%      del sistema pensionistico e socio-sanitario (2023)
-%%    - UPB -- Rapporto sulla politica di bilancio, giugno 2025
-%%    - Banca d'Italia -- Relazione del Governatore sul 2024 (2025)
-%%    - OCSE -- Pensions at a Glance (ultima edizione disponibile)
-%%    - IMF -- Italy Article IV Consultation (anno più recente)
-%%    - COVIP -- Relazione Annuale (anno più recente)
-%%    - INPS -- Rapporto Annuale (anno più recente)
-%%
-%% C) ARTICOLI ACCADEMICI E WORKING PAPER:
-%%    - Acemoglu D., Restrepo P. (2020) -- "Robots and Jobs: Evidence
-%%      from US Labor Markets", Journal of Political Economy, 128(6)
-%%    - Fornero E., Monticone C. (CERP) -- studi su adeguatezza
-%%      e pensionamento flessibile
-%%    - Raitano M. -- proposta pensione contributiva di garanzia,
-%%      working paper CERP/INAPP
-%%    - Thaler R.H., Benartzi S. (2004) -- "Save More Tomorrow",
-%%      Journal of Political Economy, 112(S1)
-%%    - Favero C. (2018) -- "Quando le pensioni generose aumentano
-%%      il debito", Lavoce.info, 30 novembre 2018
-%%
-%% D) FONTI DIGITALI E SITOGRAFIA:
-%%    - Lavoce.info -- sezione "Pensioni" (articoli citati nel testo)
-%%    - VoxEU.org -- articoli su NDC, ageing e automation
-%%    - INPS "La Mia Pensione" -- https://www.inps.it
-%%    - RGS -- https://www.rgs.mef.gov.it
-%% ────────────────────────────────────────────────────────────────
+\renewcommand{\bibsection}{%
+  \chapter*{Bibliografia e Sitografia}%
+  \addcontentsline{toc}{chapter}{Bibliografia e Sitografia}%
+}
+%% unsrtnat = ordine di prima citazione (coerente con [1], [2], … nel testo)
+\bibliographystyle{unsrtnat}
+\bibliography{references}
