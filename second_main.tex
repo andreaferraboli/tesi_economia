@@ -7,7 +7,10 @@
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{amsmath}
-\usepackage{booktabs}
+\usepackage{graphicx}
+\graphicspath{{./images/}} % Specifica la cartella delle immagini
+\usepackage{subcaption}    % Per sottofigure (alternativa più moderna: subcaption)
+\usepackage{booktabs}      % Per tabelle più professionali
 \usepackage[numbers,sort&compress]{natbib}
 \usepackage{url}
 \usepackage{hyperref}
@@ -17,13 +20,57 @@
 \title{%
     \textbf{Adeguatezza pensionistica e autonomia previdenziale:}\\[0.4em]
     \large riforme del sistema pensionistico italiano e strategie di integrazione complementare per i nuovi entranti nel mercato del lavoro\\[0.5em]
-    \normalsize Tesi di Laurea triennale in Economia e Management
 }
-\author{Nome Cognome}
-\date{Anno Accademico 20XX--20XX}
+\author{Andrea Ferraboli}
+
+% Frontespizio: relatore, correlatore (opzionale), matricola, anno accademico
+\makeatletter
+\newcommand{\relatore}[1]{\def\@relatore{#1}}
+\newcommand{\correlatore}[1]{\def\@correlatore{#1}}
+\newcommand{\matricola}[1]{\def\@matricola{#1}}
+\newcommand{\annoaccademico}[1]{\def\@anno{#1}}
+\makeatother
+
+\relatore{Michele Santoni}
+\matricola{38241A} % sostituire con la propria matricola
+\annoaccademico{2025/2026}
 
 \begin{document}
-\maketitle
+
+\makeatletter
+\begin{titlepage}%
+    \thispagestyle{empty}%
+    %\null\vskip1in%
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{set_logo}
+        \vspace{1cm}
+    \end{center}
+    \vskip0.5in
+    \begin{center}
+% 		{\Large\uppercase\expandafter{\@title}}
+    \begin{doublespace}
+        {\Large\uppercase\expandafter{\@title}}
+    \end{doublespace}
+    \end{center}
+    \vfill
+    \begin{description}
+    \item[Relatore:] \@relatore
+    \end{description}
+    \vskip0.5in
+    \null\hfill
+    \parbox{1.5in}{
+      Tesi di: \\
+      \expandafter{\@author}
+      \\ Matricola: \@matricola
+      }
+    \vfill
+    \begin{center}
+     \large   Anno Accademico \@anno
+    \end{center}
+    \newpage
+  \end{titlepage}%
+\makeatother
+
 \tableofcontents
 
 \include{capitoli_second/00_introduzione}
