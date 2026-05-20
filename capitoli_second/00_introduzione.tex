@@ -35,13 +35,13 @@ funge da meccanismo di redistribuzione del rischio demografico collettivo
 \cite{Bosi2018}.
 
 Un sistema alternativo, quello a capitalizzazione, lega il rendimento ai mercati
-finanziari anziché alla crescita del PIL. Il passaggio da uno all'altro comporta
-però un costo di transizione che per l'Italia, con una spesa pensionistica al
-15,4\% del PIL nel 2024 \cite{MEF_RGS2025}, sarebbe fiscalmente insostenibile:
-la generazione del passaggio dovrebbe finanziare simultaneamente le pensioni già
-in erogazione e il proprio accumulo futuro. Il dibattito tra i due modelli è
-quindi rilevante sul piano teorico ma irrilevante sul piano pratico di breve
-e medio periodo \cite{Artoni2014}.
+finanziari anziché alla crescita del PIL. Il passaggio da un sistema all'altro 
+comporta però un costo di transizione di estrema complessità per l'Italia, 
+data una spesa pensionistica attestata al 15,4\% del PIL nel 2024 \cite{MEF_RGS2025}: 
+la generazione che affronta il passaggio si troverebbe infatti a dover finanziare 
+simultaneamente le pensioni già in erogazione e il proprio accumulo futuro. 
+Il dibattito tra i due modelli, pur fondamentale sul piano teorico, si scontra 
+quindi con ostacoli attuativi di notevole portata nel breve e medio periodo \cite{Artoni2014}.
 
 La domanda che rimane aperta, e che quasi nessuna riforma ha mai affrontato
 con rigore, riguarda l'adeguatezza delle prestazioni future. Il dibattito
@@ -92,12 +92,15 @@ del PIL nominale, $e_L$ la speranza di vita all'età di pensionamento $L$
 \paragraph{Applicazione numerica.}
 Si consideri un lavoratore dipendente con 35 anni di contributi, retribuzione
 lorda costante di 30.000 euro e aliquota $c = 33\%$ (contributi annui: 9.900 euro),
-con tasso nozionale $g = 1{,}5\%$ secondo l'ipotesi prudenziale sulla crescita
-del PIL nominale. Il montante nozionale accumulato è:
-
+con tasso nozionale $g = 1{,}5\%$, assunto a fini esemplificativi come ipotesi
+prudenziale di crescita del PIL nominale \cite{ISTATCapitalizzazione2025, ISTATCapitalizzazione2024, ISTATCapitalizzazione2023}.
 \[
-MC_{NDC} = 9.900 \cdot \frac{(1{,}015)^{35} - 1}{0{,}015}
-= 9.900 \times 45{,}6 = 451.440 \text{ euro}
+\begin{aligned}
+MC_{NDC}
+  &= 9.900 \cdot \frac{(1{,}015)^{35} - 1}{0{,}015} \\
+  &\approx 9.900 \times 45{,}6 \\
+  &\approx 451.440 \text{ euro}
+\end{aligned}
 \]
 
 Con il coefficiente di trasformazione a 67 anni fissato al 5,608\% per il
@@ -109,34 +112,33 @@ P_{\text{lordo}} = 0{,}05608 \times 451.440 = 25.320 \text{ euro annui}
 
 Il confronto al lordo è però parziale: il trattamento fiscale e contributivo
 di lavoratori e pensionati diverge in modo significativo. Il lavoratore versa
-contributi a proprio carico pari al 9,19\% della retribuzione lorda (circa
+contributi a proprio carico pari al 9,19\% della retribuzione lorda \cite{INPSAliquote2023}(circa
 2.757 euro), che riducono l'imponibile IRPEF; la sua aliquota media effettiva
-complessiva si colloca attorno al 27,7\% sul lordo. Il pensionato non versa
-contributi: per un reddito di 25.320 euro, la detrazione spettante ai pensionati
-nel 2025 è:
+complessiva si colloca attorno al 27,7\% sul lordo. 
+
+Per capire in che misura la pensione riesca a sostituire il precedente reddito lavorativo, dobbiamo calcolare la pensione netta e confrontarla con l'ultimo stipendio netto. Il pensionato non versa contributi e gode di un regime fiscale disciplinato dall'art. 13 del Testo Unico delle Imposte sui Redditi (TUIR) \cite{TUIR917_1986}. Per un reddito di 25.320 euro, che rientra nello scaglione tra 8.500 e 28.000 euro (comma 3, lett. b), a cui si aggiunge la maggiorazione per i redditi tra 25.000 e 29.000 euro (comma 3-bis), la detrazione spettante nel 2025 è:
 
 \[
-D_{\text{pens}} = 700 \times \frac{55.000 - 25.320}{40.000} = 519 \text{ euro}
+D_{\text{pens}} = 700 + \left[ 1.255 \times \frac{28.000 - 25.320}{19.500} \right] + 50 \approx 922 \text{ euro}
 \]
 
-L'IRPEF lorda (23\% $\times$ 25.320 = 5.824 euro) si riduce a circa 5.305 euro;
-con le addizionali regionali e comunali (media nazionale 1,5\%), l'aliquota media
-effettiva si attesta al 22,4\%, per una pensione netta di:
+L'IRPEF lorda (23\% $\times$ 25.320 = 5.824 euro) si riduce così a 4.902 euro;
+con le addizionali regionali e comunali (media nazionale 1,5\%, circa 380 euro), l'imposta totale è di 5.282 euro. L'aliquota media effettiva si attesta quindi al 20,9\%, per una pensione netta di:
 
 \[
-P_{\text{netto}} = 25.320 \times (1 - 0{,}224) = 19.650 \text{ euro annui}
-= 1.511 \text{ euro mensili}
+P_{\text{netto}} = 25.320 \times (1 - 0{,}209) = 20.038 \text{ euro annui}
+= 1.541 \text{ euro mensili}
 \]
 
 Lo stipendio netto vale circa 21.700 euro annui (1.668 euro mensili). Il
 \textbf{tasso di sostituzione netto} è quindi:
 
 \[
-TS_{\text{netto}} = \frac{19.650}{21.700} = 90{,}5\%
+TS_{\text{netto}} = \frac{20.038}{21.700} = 92{,}3\%
 \]
 
 contro l'84\% lordo. Il differenziale si spiega con l'assenza, per il
-pensionato, dei contributi IVS che sul lavoratore equivalgono a un prelievo
+pensionato, dei contributi IVS (acronimo di Invalidità, Vecchiaia e Superstiti) che sul lavoratore equivalgono a un prelievo
 implicito di quasi 10 punti percentuali. Questa asimmetria è rilevante nella
 valutazione dell'adeguatezza: i confronti condotti esclusivamente su basi lorde
 sottostimano il reddito disponibile del pensionato rispetto all'ultimo anno
@@ -150,12 +152,7 @@ della speranza di vita, la pensione lorda cala a:
 P_{\text{lordo},2040} = 0{,}052 \times 451.440 = 23.475 \text{ euro}
 \]
 
-Con l'aliquota media effettiva al 22,1\% (l'imponibile è inferiore, la detrazione
-cresce leggermente), la pensione netta diventa circa 18.277 euro, pari a 1.406
-euro mensili. Il tasso di sostituzione netto scende all'84,2\%: una perdita di
-6,3 punti percentuali rispetto allo scenario base, conseguenza di un solo parametro
-su cui il lavoratore non esercita alcuna leva: la longevità aggregata della
-propria coorte.
+Applicando nuovamente l'art. 13 del TUIR su questo nuovo imponibile (la detrazione sale a circa 991 euro, senza maggiorazione perché il reddito è sotto i 25.000 euro), l'aliquota media effettiva scende al 20,3\%. La pensione netta diventa circa 18.715 euro, pari a 1.440 euro mensili. Il tasso di sostituzione netto scende così all'86,2\%: una perdita di 6,1 punti percentuali rispetto allo scenario base, conseguenza di un solo parametro su cui il lavoratore non esercita alcuna leva: la longevità aggregata della propria coorte.
 
 Su carriere con discontinuità contributiva, tipiche della Generazione Z, le
 proiezioni della Ragioneria Generale dello Stato portano il tasso di sostituzione
