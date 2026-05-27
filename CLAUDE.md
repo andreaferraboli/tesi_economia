@@ -295,7 +295,6 @@ per una tesi e non per un post personale?". Devono essere veri entrambi.
 
 ## Cosa NON fare mai
 - Non inventare dati o statistiche — solo da fonti verificate in `fonti/`
-- Non modificare `second_main.tex` senza che io te lo chieda esplicitamente
 - Non fare merge su `main`
 - Non usare `\newpage` a caso per aggiustare la formattazione
 - Non troncare sezioni con "da approfondire in seguito" — scrivi il contenuto
