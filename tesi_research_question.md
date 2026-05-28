@@ -96,19 +96,20 @@ nelle fonti, dati Mefop.
 
 | Capitolo | File | Sotto-tesi prevalente |
 |---|---|---|
-| 0 Introduzione | `00_introduzione.tex` | Inquadramento, domanda di ricerca |
-| 1 Fondamenta | `01_part_fondamenta.tex` | Quadro teorico per ST1 e ST2 |
-| 2 Riforme | `02_part_riforme.tex` | Storia che porta a ST1 e ST2 |
-| 3 NDC e adeguatezza | `03_ndc_adeguatezza.tex` | **Cuore di ST2** |
-| 4 Sfide strutturali | `04_sfide_strutturali.tex` | Demografia, lavoro discontinuo |
-| 5 Parte lavoratore | `05_part_lavoratore.tex` | **ST4 — strategie pratiche** |
-| 6 Secondo pilastro | `06_secondo_pilastro.tex` | **ST3 e ponte verso ST4** |
-| 7 Patrimonio integrato | `07_patrimonio_integrato.tex` | ST4 estensione |
-| 8 Conclusioni | `08_conclusioni.tex` | Sintesi delle 4 sotto-tesi |
+| 0 Introduzione | `00_introduzione.tex` | Inquadramento, domanda di ricerca, mappa |
+| 1 Fondamenta | `01_part_fondamenta.tex` | Quadro teorico per ST1 e ST2: previdenza pubblica, meccanica NDC, storia delle riforme |
+| 2 Criticita del sistema vigente | `02_part_riforme.tex` | ST1 e ST2: pressione demografica, riforme Dini e Fornero, deroghe |
+| 3 Riforme strutturali per l'adeguatezza | `03_ndc_adeguatezza.tex` | **Cuore di ST3** — riforme possibili e loro costi |
+| 4 Sfide strutturali e strategie individuali | `04_sfide_strutturali.tex` | **ST2 (diagnosi sui nuovi entranti) e ST4 (strategie pratiche)** |
+| 5 Conclusioni | `05_conclusioni.tex` | Sintesi delle 4 sotto-tesi |
 
-> NOTA: questa mappatura va validata contro `capitoli_second/00_introduzione.tex`.
-> Se l'introduzione esistente racconta una storia diversa, l'introduzione vince
-> e la mappatura va aggiornata.
+> NOTA: la struttura finale e di quattro capitoli di contenuto (1-4) piu le
+> conclusioni (capitolo 5). Le sotto-tesi ST3 (riforme) e ST4 (strategie
+> individuali), originariamente distribuite su piu capitoli, sono ora
+> concentrate rispettivamente nel capitolo 3 e nel capitolo 4. Questa mappatura
+> e stata validata contro `capitoli_second/00_introduzione.tex`: se
+> l'introduzione racconta una storia diversa, l'introduzione vince e la
+> mappatura va aggiornata.
 
 ## Posizioni di partenza esplicite (la voce dell'autore)
 
