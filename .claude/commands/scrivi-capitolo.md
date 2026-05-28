@@ -21,6 +21,6 @@ Procedura obbligatoria:
    - stile: ritmo non prevedibile, niente em dash, niente "in conclusione",
      niente "tuttavia" come tic
    - dati: solo da fonti verificate, altrimenti `\todo{VERIFICA DATO}`
-   - citazioni: `\cite{autore_anno}` con aggiornamento di `09_bibliografia.tex`
+   - citazioni: `\cite{autore_anno}` con aggiornamento di `06_bibliografia.tex`
 7. Compila con `pdflatex second_main.tex` per verificare che non ci siano errori
 8. Committa con messaggio descrittivo in italiano
