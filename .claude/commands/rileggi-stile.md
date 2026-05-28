@@ -11,7 +11,7 @@ Verifica e correggi rispetto a `CLAUDE.md`:
 4. Ritmo: alternare frasi brevi e lunghe senza pattern prevedibile
 5. Tono critico, non neutro: l'autore prende posizione
 6. Termini tecnici usati naturalmente, non spiegati come dizionario
-7. Citazioni `\cite{}` corrette e presenti in `09_bibliografia.tex`
+7. Citazioni `\cite{}` corrette e presenti in `references.bib` (chiavi CamelCase `CognomeAnno`)
 8. Coerenza con la funzione del capitolo come definita in
    `capitoli_second/00_introduzione.tex`
 

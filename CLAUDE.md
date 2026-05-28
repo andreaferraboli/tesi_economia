@@ -197,9 +197,12 @@ Segui sempre questo schema interno:
 
 ## Formato LaTeX
 
-**Citazioni:** usa `\cite{chiave}` — le chiavi bibliografiche seguono lo schema
-`autore_anno` (es: `\cite{bosi_2024}`, `\cite{mef_2025}`, `\cite{fornero_2011}`).
-Aggiorna `capitoli_second/09_bibliografia.tex` quando introduci nuove citazioni.
+**Citazioni:** usa `\cite{Chiave}` — le chiavi bibliografiche seguono lo schema
+CamelCase `CognomeAnno`, come gia presenti in `references.bib` (es:
+`\cite{Bosi2018}`, `\cite{MEF_RGS2025}`, `\cite{FrancoTommasino2020}`). Quando
+introduci una fonte nuova, aggiungi la voce BibTeX in `references.bib` nella root:
+il file `capitoli_second/06_bibliografia.tex` contiene solo
+`\bibliography{references}` e non va modificato per le citazioni.
 
 **Formule:** sempre in ambiente `equation` o `align` con numerazione, oppure
 inline con `\( \)`. Definisci sempre le variabili subito dopo.
