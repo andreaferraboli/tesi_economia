@@ -15,8 +15,25 @@
 - **ST4** — Strategie individuali step-by-step (fondo pensione, TFR, ETF,
   deduzione 5.164 EUR)
 
-## Mappa dei 9 capitoli
+## Mappa dei capitoli
 
+> ATTENZIONE — STRUTTURA SUPERATA. Questo dossier e stato compilato quando la
+> tesi era pianificata su 9 capitoli. La struttura FINALE e diversa: 4 capitoli
+> di contenuto + conclusioni.
+>   1. Fondamenta (`01_part_fondamenta`)
+>   2. Criticita del sistema vigente (`02_part_riforme`)
+>   3. Riforme strutturali per l'adeguatezza (`03_ndc_adeguatezza`)
+>   4. Sfide strutturali e strategie individuali (`04_sfide_strutturali`)
+>   5. Conclusioni (`05_conclusioni`)
+> I vecchi capitoli "5. Parte lavoratore", "6. Secondo pilastro" e
+> "7. Patrimonio integrato" NON esistono piu: i loro contenuti (ST4, strategie
+> individuali) sono confluiti nelle sezioni 4.7-4.9 del capitolo 4.
+> Di conseguenza, ogni riga "Capitoli tesi (peso 0-5)" delle schede e l'Indice 2
+> ("Fonti per capitolo") sono mappati sulla vecchia numerazione a 9 voci: vanno
+> reinterpretati su questa struttura a 4+conclusioni. La mappatura per
+> SOTTO-TESI (ST1-ST4, Indice 1) resta invece valida ed e il riferimento da usare.
+
+Struttura storica a 9 capitoli (per leggere i "pesi" delle schede):
 0. Introduzione · 1. Fondamenta · 2. Riforme · 3. NDC adeguatezza ·
 4. Sfide strutturali · 5. Parte lavoratore · 6. Secondo pilastro ·
 7. Patrimonio integrato · 8. Conclusioni · 9. Bibliografia
@@ -86,7 +103,7 @@
 | Dato | Valore | Anno | Pagina |
 |---|---|---|---|
 | Spesa pensionistica/PIL | 15,3% | 2025 | 16 |
-| Spesa pensionistica/PIL — PICCO | 17,1% | 2039 | 20 |
+| Spesa pensionistica/PIL — PICCO | 17,1% | 2040 (Rapporto base; 2042-2043 nella NdA) | 8, 20 |
 | Spesa pensionistica/PIL | 14,0% | 2070 | 16, 9 |
 | Spesa totale pensioni+sanita+LTC/PIL | 25,2% | 2045 | 16, 20 |
 | Costo eliminazione adeguamento automatico | +60 punti debito/PIL | 2070 | 5 |
@@ -937,7 +954,7 @@ Bias possibile: AI summarization tende ad appiattire posizioni nette.
 - (Bertonelli) riga ~380-394: «il tasso di fecondita previsto non e in linea con quello che e il tasso che stiamo effettivamente vedendo nei dati [...] in questi modelli e prevista una crescita della produttivita. Produttivita che in Italia e stagnante ormai da due decenni» → ST2, in contrasto con ST1.
 - riga ~519-744: sei consigli individuali (capitale fisico+mentale, reddito attivo, fondo pensione+TFR, riscatto laurea, ETF, long-term care, espatrio) → ST4.
 - riga ~678: «Cosa succede se a un certo punto ci viene l'Alzheimer? [...] buona parte dei nostri risparmi e del nostro capitale va a pagare la longterm care».
-- (Ciao Elsa) riga ~1302: «soltanto un lavoratore su tre ha un fondo pensione» → ST2/ST6.
+- (Ciao Elsa) riga ~1302: «soltanto un lavoratore su tre ha un fondo pensione» → ST2/ST4.
 - riga ~740: «trasferirsi all'estero solo per un motivo economico non e qualcosa di ammirevole, cioe non ha la mia stima chi decide di fare questa scelta solo per il motivo economico».
 
 **Dati numerici (selezione):**
@@ -1096,7 +1113,7 @@ Bias possibile: AI summarization tende ad appiattire posizioni nette.
 | Trasferimenti Stato a INPS | ~164 mld/anno | 2025 | segm. 2 |
 | Bilancio totale INPS | ~400 mld | 2025 | segm. 2 |
 | Contributi sociali INPS | ~264 mld | 2025 | segm. 2 |
-| Sentenza Corte Cost. perequazione | 167/2025 | 13/11/2024 | segm. 1 |
+| Sentenza Corte Cost. perequazione | 167/2025 | 13/11/2025 | segm. 1 |
 
 **Concetti tecnici:** perequazione automatica, diritto acquisito, sentenza 167/2025, PAYG (competenza vs cassa), paese bimodale, immigrazione neutra, retributivo residuo, Difference-in-Difference, TIAA-CREF.
 
