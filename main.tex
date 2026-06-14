@@ -10,6 +10,7 @@
 \usepackage{mathptmx}   % Times New Roman (consigliato dalle linee guida)
 \usepackage{setspace}   % Gestione interlinea
 \usepackage{microtype}  % Migliore giustificazione del testo
+\usepackage{graphicx}   % Inserimento immagini (loghi frontespizio)
 
 % -------------------------------------------------------
 % MARGINI: tutti 3 cm (linee guida: 3 sx, 3 dx, 3 sup, 3 inf)
@@ -73,12 +74,23 @@
 % -------------------------------------------------------
 \begin{titlepage}
     \begin{center}
-        \vspace*{1cm}
-        {\large \textsc{Università degli Studi di Milano}} \\[0.4cm]
-        {\normalsize Facoltà di Scienze Politiche Economiche e Sociali} \\[0.2cm]
+        \vspace*{0.5cm}
+
+        % Logo EMA (Economia & Management)
+        \includegraphics[width=0.30\textwidth]{images/logo_ema.png}
+
+        \vspace{0.8cm}
+
+        {\LARGE \textbf{Università degli Studi di Milano}} \\[0.4cm]
+        {\large Facoltà di Scienze Politiche Economiche e Sociali} \\[0.2cm]
         {\normalsize Corso di Laurea in Economia e Management}
 
-        \vspace{3.5cm}
+        \vspace{0.8cm}
+
+        % Sigillo Università degli Studi di Milano
+        \includegraphics[width=0.32\textwidth]{images/Unimi-logo.png}
+
+        \vspace{1.5cm}
 
         {\LARGE \textbf{TITOLO DELLA TESI}}
 
