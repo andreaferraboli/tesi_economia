@@ -16,7 +16,12 @@
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage{eurosym}
+\usepackage{xcolor}
 \hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+% Consente la spezzatura delle URL lunghe in bibliografia (evita sbordi nel margine)
+\Urlmuskip=0mu plus 1mu\relax
+\def\UrlBreaks{\do\/\do\.\do\-\do\_\do\=\do\?\do\&\do\#\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9}
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
 
 \title{%
     \textbf{Adeguatezza pensionistica e autonomia previdenziale:}\\[0.4em]
@@ -88,12 +93,9 @@
 \include{capitoli_second/00_introduzione}
 \include{capitoli_second/01_part_fondamenta}
 \include{capitoli_second/02_part_riforme}
-% \include{capitoli_second/03_ndc_adeguatezza}
-% \include{capitoli_second/04_sfide_strutturali}
-% \include{capitoli_second/05_part_lavoratore}
-% \include{capitoli_second/06_secondo_pilastro}
-% \include{capitoli_second/07_patrimonio_integrato}
-% \include{capitoli_second/08_conclusioni}
-\include{capitoli_second/09_bibliografia}
+\include{capitoli_second/03_ndc_adeguatezza}
+\include{capitoli_second/04_sfide_strutturali}
+\include{capitoli_second/05_conclusioni}
+\include{capitoli_second/06_bibliografia}
 
 \end{document}

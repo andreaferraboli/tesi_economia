@@ -1,0 +1,1021 @@
+ADEGUATEZZA PENSIONISTICA E AUTONOMIA
+                    PREVIDENZIALE:
+
+RIFORME DEL SISTEMA PENSIONISTICO ITALIANO E STRATEGIE
+ DI INTEGRAZIONE COMPLEMENTARE PER I NUOVI ENTRANTI
+                            NEL MERCATO DEL LAVORO
+
+Relatore: Michele Santoni
+
+                                                                                                                                      Tesi di:
+                                                                                                                                      Andrea Ferraboli
+                                                                                                                                      Matricola: 38241A
+
+                               Anno Accademico 2025/2026
+Indice
+
+Introduzione                                                      2
+
+1 Le Fondamenta del Sistema Previdenziale: Teoria e Scelte Storiche 8
+
+2 Il Corto Circuito: Analisi delle Criticità del Sistema Vigente  16
+
+Bibliograa e Sitograa                                             21
+
+                       1
+Introduzione
+
+                                 Un sistema pensionistico non è una macchina
+                                              per pagare assegni: è un meccanismo
+
+                                   per redistribuire il rischio tra le generazioni.
+
+                                 Elsa Fornero, Chi ha paura delle riforme (2018)
+
+quando Il dibattito previdenziale italiano ha storicamente privilegiato due domande:  si
+
+quanto può andare in pensione e  costerà farlo. Entrambe sono legittime. Entrambe, però,
+
+se presuppongono come risolto il problema più profondo: il sistema è in grado di garantire
+
+a chi lavora oggi un'esistenza dignitosa nella vecchiaia. È da questa terza domanda che
+
+muove la presente tesi.
+
+La previdenza pubblica obbligatoria risponde a fallimenti di mercato documentati dal-
+
+la teoria economica. I mercati privati non coprono il rischio demograco aggregato, che è
+
+sistemico e per denizione non diversicabile. A questo limite si aggiungono le asimmetrie
+
+informative che gravano sul mercato delle rendite vitalizie e una miopia intertemporale
+
+che, senza obbligo contributivo, lascia il risparmio individuale al di sotto del livello neces-
+
+sario [1, 2]. Nel sistema a ripartizione adottato dall'Italia, i lavoratori attivi nanziano
+
+le pensioni degli anziani coevi, nella ducia che le generazioni successive faranno altret-
+
+tanto: un patto intergenerazionale che funge da meccanismo di redistribuzione del rischio
+
+demograco collettivo [2].
+
+Un sistema alternativo, quello a capitalizzazione, lega il rendimento ai mercati nan-
+
+ziari anziché alla crescita del PIL. Il passaggio da un sistema all'altro comporta però
+
+un costo di transizione di estrema complessità per l'Italia, data una spesa pensionistica
+
+attestata al 15,4% del PIL nel 2024 [3]: la generazione che aronta il passaggio si trove-
+
+rebbe infatti a dover nanziare simultaneamente le pensioni già in erogazione e il proprio
+
+accumulo futuro. Sul piano teorico il confronto tra i due modelli resta aperto; sul piano
+
+attuativo, è il doppio onere di transizione a renderlo per l'Italia una strada dicilmente
+
+percorribile nel breve e medio periodo [1].
+
+La domanda che rimane aperta, e che quasi nessuna riforma ha mai arontato con
+
+rigore, riguarda l'adeguatezza delle prestazioni future. Il dibattito previdenziale ha attra-
+
+come versato decenni di interventi che hanno modicato  si calcola la pensione (riforma
+
+Dini, 1995), quando ci si può ritirare (riforma Fornero, 2011), e quanto tempo prima è
+
+                                             2
+possibile farlo cedendo a pressioni di breve periodo (Quota 100 nel 2019, Quota 103 nel
+2023). Ciascuno di questi interventi ha risposto a una domanda contingente senza torna-
+re al problema fondativo: garantire a tutti, e non soltanto ai lavoratori già prossimi alla
+quiescenza, una vecchiaia economicamente sostenibile.
+
+Il paradosso della sostenibilità senza adeguatezza
+
+sostenibilità fragile Il sistema previdenziale italiano si trova in una condizione di. Dal
+
+punto di vista macroeconomico, la traiettoria appare rassicurante: la spesa per pensioni si
+
+attesta al 15,4% del PIL nel 2024 [3], valore elevato nel confronto europeo ma destinato a
+
+ridursi strutturalmente dopo il picco previsto intorno al 2042-2044, quando l'ultima coor-
+
+baby boom te del  raggiungerà l'età pensionabile portando il rapporto spesa/PIL vicino al
+
+17%, per poi scendere al di sotto del 14% nel 2070 grazie all'applicazione generalizzata
+
+del metodo contributivo e alla stabilizzazione del rapporto demograco tra pensionati e
+
+occupati [3]. La parola fragile non è qui un giudizio ma una proprietà misurabile: la di-
+
+scesa attesa del rapporto spesa/PIL dopo il 2042 poggia su un recupero della produttività
+
+all'1,04% medio annuo, contro lo 0,12% del decennio 2015-2025, e il blocco del solo ade-
+
+guamento automatico dei requisiti basterebbe ad aggiungere circa 36 punti di debito/PIL
+
+al 2070 [4, 5].
+
+      Questa traiettoria discendente è il prodotto di una scelta tecnica con un costo sociale
+
+profondo. Il sistema contributivo nozionale (NDC, Notional Dened Contribution), intro-
+
+dotto dalla riforma Dini e generalizzato dalla riforma Fornero, calcola la pensione come
+
+funzione dell'intera vita lavorativa e la comprime sistematicamente all'aumentare della
+
+speranza di vita, attraverso la revisione periodica dei coecienti di trasformazione. In
+
+formula, la pensione annua lorda è:
+
+                  P = MCNDC                        L
+                           eL
+                                     con  MCNDC =       Cj (1 + g)L-j                  (1)
+
+                                                   j=1
+
+dove MCN DC è il montante contributivo nozionale, Cj = c · Sj i contributi versati nell'anno
+j (con c aliquota contributiva e Sj retribuzione), g il tasso di capitalizzazione nozionale
+e pari alla media mobile quinquennale del PIL nominale, L la speranza di vita all'età di
+pensionamento L [2, 3].
+
+Applicazione numerica. Si consideri un lavoratore dipendente con 35 anni di contri-
+
+buti, retribuzione lorda costante di 30.000 euro e aliquota c = 33% (contributi annui:
+9.900 euro), con tasso nozionale g = 1,5%, assunto a ni esemplicativi come ipotesi
+
+prudente e deliberatamente inferiore alla crescita nominale media di lungo periodo, così
+
+                                          3
+da non sovrastimare il montante.
+
+     MCN DC                       =  9.900  ·  (1,015)35 -  1
+                                                   0,015
+
+                                   9.900 × 45,6
+
+                                   451.440 euro
+
+      Con il coeciente di trasformazione a 67 anni ssato al 5,608% per il biennio 2025-2026
+[3], la pensione lorda annua è:
+
+     Plordo = 0,05608 × 451.440 = 25.320 euro annui
+
+      Il confronto al lordo è però parziale: il trattamento scale e contributivo di lavoratori e
+pensionati diverge in modo signicativo. Il lavoratore versa contributi a proprio carico pari
+al 9,19% della retribuzione lorda [6](circa 2.757 euro), che riducono l'imponibile IRPEF;
+la sua aliquota media eettiva complessiva si colloca attorno al 27,7% sul lordo.
+
+      Per capire in che misura la pensione riesca a sostituire il precedente reddito lavorativo,
+dobbiamo calcolare la pensione netta e confrontarla con l'ultimo stipendio netto. Il pen-
+sionato non versa contributi e gode di un regime scale disciplinato dall'art. 13 del Testo
+Unico delle Imposte sui Redditi (TUIR) [7]. Per un reddito di 25.320 euro, che rientra
+nello scaglione tra 8.500 e 28.000 euro (comma 3, lett. b), a cui si aggiunge la maggio-
+razione per i redditi tra 25.000 e 29.000 euro (comma 3-bis), la detrazione spettante nel
+2025 è:
+
+     Dpens = 700 + 1.255 ×           28.000 - 25.320  + 50  922 euro
+
+                                     19.500
+
+     × L'IRPEF lorda (23% 25.320 = 5.824 euro) si riduce così a 4.902 euro; con le addi-
+
+zionali regionali e comunali (media nazionale 1,5%, circa 380 euro), l'imposta totale è di
+
+5.282 euro. L'aliquota media eettiva si attesta quindi al 20,9%, per una pensione netta
+
+di:
+
+           Pnetto = 25.320 × (1 - 0,209) = 20.038 euro annui = 1.541 euro mensili
+
+   tasso di Lo stipendio netto vale circa 21.700 euro annui (1.668 euro mensili). Il
+sostituzione netto è quindi:
+
+                                                     20.038
+                                        T Snetto = 21.700 = 92,3%
+
+      contro l'84% lordo. Il dierenziale si spiega con l'assenza, per il pensionato, dei contri-
+buti IVS (acronimo di Invalidità, Vecchiaia e Superstiti) che sul lavoratore equivalgono a
+un prelievo implicito di quasi 10 punti percentuali. Questa asimmetria è rilevante nella va-
+
+                                     4
+lutazione dell'adeguatezza: i confronti condotti esclusivamente su basi lorde sottostimano
+
+il reddito disponibile del pensionato rispetto all'ultimo anno di lavoro.
+
+L'esempio è condotto a legislazione vigente, con scaglioni e detrazioni IRPEF 2025,
+
+scal drag e in termini reali correnti. Non incorpora il  né l'indicizzazione futura degli
+
+scaglioni, e va quindi letto come confronto fotograco tra un lavoratore e un pensionato
+
+di oggi a parità di importo lordo, non come previsione del montante reale che maturerà
+
+tra decenni.
+
+Il calcolo al netto precisa la dimensione del problema demograco senza attenuarlo.
+
+Se il coeciente di trasformazione scende al 5,2% nel 2040 per eetto dell'aumento della
+
+speranza di vita, la pensione lorda cala a:
+
+                              Plordo,2040 = 0,052 × 451.440 = 23.475 euro
+
+      Applicando nuovamente l'art. 13 del TUIR su questo nuovo imponibile (la detrazione
+sale a circa 991 euro, senza maggiorazione perché il reddito è sotto i 25.000 euro), l'aliquota
+media eettiva scende al 20,3%. La pensione netta diventa circa 18.715 euro, pari a 1.440
+euro mensili. Il tasso di sostituzione netto scende così all'86,2%: una perdita di 6,1
+punti percentuali rispetto allo scenario base, conseguenza di un solo parametro su cui il
+lavoratore non esercita alcuna leva: la longevità aggregata della propria coorte.
+
+      Su carriere con discontinuità contributiva, tipiche della Generazione Z, le proiezioni
+della Ragioneria Generale dello Stato portano il tasso di sostituzione lordo dei dipendenti
+privati al 58,4% nel 2070, dal 73,6% del 2010 [3]. Convertendo al netto, il guadagno
+scale è simmetrico tra generazioni e non compensa la perdita strutturale di rendimento
+del sistema a contribuzione denita. Lo stesso scarto si legge sui valori netti: il tasso di
+sostituzione netto del dipendente privato scende dall'82,7% del 2010 al 64,1% del 2070
+[3, 5]. La previdenza complementare risale al 66% lordo [3], ma sull'ipotesi di adesione
+piena che per i lavoratori discontinui rimane un'assunzione dicilmente vericabile nella
+pratica.
+
+   La contraddizione è strutturale. La sostenibilità nanziaria del sistema è stata
+acquistata al prezzo dell'adeguatezza futura delle prestazioni. Le riforme hanno
+
+risolto il problema del come nanziare le pensioni di domani senza rispondere al problema
+del se quelle pensioni saranno sucienti a garantire una vecchiaia dignitosa. Questo
+trade-o è il nucleo analitico attorno al quale si sviluppa la presente tesi.
+
+Le domande di ricerca
+
+La tesi si articola attorno a tre domande di ricerca strettamente interconnesse, che
+procedono dal livello macroeconomico-istituzionale a quello individuale.
+
+                                             5
+Domanda 1 (adeguatezza). Il sistema NDC italiano, nella sua congurazione attuale
+
+           e nelle sue proiezioni di lungo periodo, è in grado di garantire alle generazioni future
+           un tenore di vita dignitoso nella vecchiaia? In che misura il tasso di sostituzione
+           atteso è compatibile con le funzioni previdenziale, assicurativa e assistenziale che la
+           teoria economica assegna alla previdenza pubblica [2]?
+
+Domanda 2 (riforme strutturali). Quali interventi di politica economica, dai corret-
+
+           tivi tecnici al sistema NDC (revisione delle aliquote di capitalizzazione, garanzie di
+           minimo pensionistico, essibilità attuarialmente neutra dell'età di uscita) al più radi-
+
+      cale Contributo sull'Automazione come fonte alternativa di nanziamento, possono
+
+           correggere il trade-o tra sostenibilità e adeguatezza?
+
+Domanda 3 (agentività individuale). In quale misura il singolo lavoratore, in un si-
+
+           stema che ha progressivamente trasferito su di lui il rischio demograco e il rischio
+           di longevità, mantiene la capacità di agire sulla propria condizione futura? E questa
+           agentività è equamente distribuita tra chi ha carriere regolari e chi le ha discontinue,
+           o costituisce essa stessa un ulteriore fattore di disuguaglianza?
+
+Struttura della tesi
+
+La tesi è organizzata in tre parti logicamente consequenziali, che corrispondono a tre livelli
+
+di analisi progressivamente più orientati all'azione.
+
+Prima Parte La  costruisce le fondamenta teoriche, istituzionali e storiche del sistema
+
+previdenziale italiano. Il primo capitolo ricostruisce la logica economica della previdenza
+
+pubblica (fallimenti del mercato, funzione del patto intergenerazionale, modelli a riparti-
+
+zione e a capitalizzazione) per poi descrivere il funzionamento del sistema NDC e calco-
+
+larne il tasso di rendimento implicito, con riferimento alla letteratura canonica [1, 2]. Una
+
+sezione di sintesi storica chiude il capitolo ripercorrendo l'evoluzione del sistema pensioni-
+
+stico italiano dalla riforma Amato del 1992 alla riforma Fornero del 2011, analizzando le
+
+deroghe di Quota 100, Quota 102 e Quota 103 come manifestazioni di un conitto irrisolto
+
+tra equità attuariale e consenso elettorale.
+
+Seconda Parte La  aronta il nucleo del problema, analizzando il trade-o tra soste-
+
+diagnosi empirica nibilità e adeguatezza. Il secondo capitolo funge da: attraverso le
+
+proiezioni di lungo periodo della Ragioneria Generale dello Stato [3], identica il picco di
+
+spesa atteso e quantica il deterioramento del tasso di sostituzione per le generazioni fu-
+
+ture, confrontando scenari con e senza previdenza complementare. Il terzo capitolo passa
+
+soluzioni dalla diagnosi alle, mappando le proposte di riforma strutturale in discussione
+
+nel dibattito internazionale, dalla letteratura di VoxEU ai contributi di Lavoce.info e
+
+del CERP, valutandone l'ecacia e la fattibilità politica.
+
+                                              6
+Terza Parte La  sposta il fuoco dall'analisi macroeconomica di sistema all'azione
+
+del singolo, ponendo una domanda precisa: in un contesto di riforme rinviate e rischio
+
+demograco crescente, quanto può davvero fare il lavoratore per tutelarsi? Il quarto
+
+capitolo, attraverso simulazioni su diversi proli di carriera della Generazione Z, esamina
+
+la regressività implicita della previdenza complementare e delinea un framework di
+
+pianicazione individuale basato su risparmio e riscatti contributivi, condizionato però
+
+da soglie minime di reddito.
+
+Conclusioni Le  raccolgono le risposte alle tre domande di ricerca e formulano racco-
+
+mandazioni di policy, distinguendo tra misure adottabili nel breve periodo, senza necessità
+
+di riforma organica, e interventi strutturali di lungo respiro.
+
+                              7
+Capitolo 1
+
+Le Fondamenta del Sistema
+Previdenziale: Teoria e Scelte Storiche
+
+Un sistema pensionistico non è mai neutro. Dietro ogni aliquota contributiva, ogni for-
+mula di calcolo, ogni soglia anagraca, c'è una scelta su chi paga e chi riceve, su quale
+generazione sostiene il peso e quale lo scarica nel tempo. Per capire la crisi strutturale del
+sistema italiano occorre partire dalle fondamenta: le ragioni teoriche che giusticano l'in-
+tervento dello Stato, la logica matematica dei modelli di nanziamento, e le scelte storiche
+che hanno plasmato un'architettura previdenziale ancora gravata dalle sue contraddizioni
+originarie.
+
+1.1 Le ragioni dell'intervento pubblico
+
+1.1.1 Funzione previdenziale, assicurativa e assistenziale
+
+Il sistema pensionistico pubblico svolge tre funzioni distinte che nella realtà si sovrappon-
+gono, ma che la teoria tiene accuratamente separate. La prima è la funzione previdenziale:
+garantire ai lavoratori in pensione un tenore di vita simile a quello raggiunto durante l'at-
+tività, a condizione che abbiano contribuito in misura adeguata. La seconda è la funzione
+assicurativa: proteggere i cittadini dal rischio di riduzione del reddito legato a eventi come
+l'invalidità, la morte prematura del capofamiglia, o semplicemente una longevità superio-
+re alle aspettative. La terza è la funzione assistenziale: garantire un reddito minimo a
+chi non ha contribuito abbastanza per vivere in modo dignitoso, indipendentemente dalla
+storia lavorativa [2, 8].
+
+      Le tipologie di pensione corrispondono a queste funzioni in modo preciso [8]:
+
+                                                                                      8
+Tipologia      Beneciario                    Funzione prevalente
+                                             Previdenziale / assicurativa
+Vecchiaia      Ritirato per limiti di età    Previdenziale / assicurativa
+
+Anzianità (anticipata) Ritirato per anni di  Assistenziale / previdenziale
+
+               contribuzione                 Assicurativa / assistenziale
+                                             Assistenziale
+Ai superstiti  Familiare del lavoratore
+
+               deceduto
+
+Invalidità     Inabile al lavoro
+
+Sociale        Sprovvisto di reddito e
+
+               incapace di lavorare
+
+      La distinzione rileva sul piano dell'analisi positiva perché ciascuno strumento ha una
+propria logica di nanziamento e di accesso. La pensione di invalidità risponde a un
+criterio medico: si è invalidi oppure no. La pensione di anzianità risponde a un criterio
+contributivo: quanti anni di versamenti ha accumulato il lavoratore. Confondere i due
+piani produce distorsioni che si materializzano nei bilanci dell'ente previdenziale anni o
+decenni più tardi.
+
+      In Italia, tra gli anni Settanta e Ottanta, questi strumenti furono spesso impiegati al
+di fuori della loro logica originaria. Le pensioni di invalidità, in alcune aree del Mezzo-
+giorno, vennero talvolta utilizzate come forma di sostegno al reddito in assenza di un vero
+reddito minimo garantito. Le pensioni di anzianità, rese accessibili da requisiti relativa-
+mente bassi introdotti con la riforma del 1969, divennero invece uno dei principali canali
+di prepensionamento industriale: nelle grandi imprese del Nord, le ristrutturazioni e le
+chiusure di reparti potevano essere accompagnate dall'uscita anticipata dei lavoratori, con
+una parte rilevante dei costi trasferita al sistema previdenziale [2, 9].
+
+      Un sussidio temporaneo costa per un anno o due; una pensione anticipata può costare
+trenta anni di erogazione. Ogni lavoratore mandato in pensione a cinquant'anni invece che
+a sessantacinque rappresentava quindici anni di prestazione aggiuntiva rispetto a quanto
+tecnicamente dovuto, senza una corrispondente copertura contributiva. Questo accumulo
+è quello che Bosi chiama debito previdenziale: la dierenza tra il valore attuale di tutte le
+pensioni promesse e il valore attuale di tutti i contributi futuri attesi. Una volta formatosi,
+è quasi impossibile ridurlo senza toccare i diritti acquisiti di chi già percepisce la pensione,
+oppure scaricando il costo sui lavoratori attivi attraverso aliquote più alte [2].
+
+1.1.2 Fallimenti del mercato e miopia individuale
+
+In presenza di mercati completi e di agenti pienamente razionali, l'intervento pubblico in
+materia previdenziale sarebbe dicile da giusticare sul piano dell'ecienza: per il primo
+teorema dell'economia del benessere, l'allocazione di mercato risulterebbe già Pareto-
+eciente. L'individuo dell'ipotesi del ciclo vitale di Modigliani accumulerebbe risparmio
+durante la vita attiva per smobilizzarlo in vecchiaia, livellando il consumo nel tempo.
+
+                                  9
+La realtà si discosta da queste ipotesi su più fronti, e l'intervento pubblico risponde a
+fallimenti documentati [2].
+
+      I mercati assicurativi privati non riescono a orire copertura completa contro il rischio
+di inazione, e i rischi sistemici per denizione non si diversicano. La moltiplicazione di
+fondi privati in concorrenza genera costi di gestione e marketing che erodono il rendimento
+netto del pensionato [8]. Vi è poi la miopia individuale: gli esseri umani sistematicamente
+sottovalutano il futuro lontano e spesso sovrastimano la propria capacità di risparmio
+volontario. Se lo Stato non intervenisse con un obbligo contributivo, molti lavoratori
+arriverebbero alla vecchiaia senza riserve sucienti [8].
+
+      L'azzardo morale completa il quadro. Un lavoratore che non risparmia sa che lo Stato
+non lo lascerà in miseria nella vecchiaia; questa convinzione genera un incentivo perver-
+so che l'obbligatorietà del contributo risolve ex ante. A questo si aggiunge la selezione
+avversa: se la contribuzione fosse volontaria, i lavoratori più giovani e produttivi usci-
+rebbero dal sistema lasciando solo i soggetti a maggior rischio, la base contributiva si
+restringerebbe e il sistema imploderebbe [8].
+
+1.2 I modelli di nanziamento a confronto
+
+1.2.1 Il sistema a Ripartizione (PAYG): il patto intergenerazionale
+
+In un sistema a ripartizione i contributi versati oggi all'INPS escono immediatamente
+dall'ente per pagare le pensioni di chi è già in quiescenza. Il lavoratore di oggi nanzia il
+pensionato di oggi; quando raggiungerà a sua volta l'età pensionabile, sarà la generazione
+successiva a coprire il suo assegno. Il sistema regge nché ogni generazione accetta impli-
+citamente questo accordo e nché le condizioni demograche ed economiche non cambiano
+in modo tale da rendere impossibile l'adempimento [2].
+
+      Bosi denisce il meccanismo patto intergenerazionale: il rendimento non dipende dai
+mercati nanziari ma dalla dimensione e dalla produttività della generazione successiva.
+Una forza lavoro futura numerosa e produttiva sostiene pensioni adeguate; una forza
+lavoro scarsa e a bassa crescita salariale comprime il monte contributivo disponibile [2].
+
+      Per formalizzare il meccanismo si usa il modello a generazioni sovrapposte, nella for-
+mulazione che da Samuelson e Diamond in poi costituisce il riferimento canonico per
+
+N N l'analisi dei sistemi a ripartizione [2, 10, 11]. Siano t gli anziani (pensionati) e t+1 i
+giovani (lavoratori). La popolazione cresce al tasso costante n, per cui Nt+1 = (1 + n)Nt.
+n Il parametro misura il tasso di crescita della forza lavoro da un periodo al successivo:
+un valore n = 0,01 indica che la nuova generazione di lavoratori è l'1% più numerosa della
+
+precedente. Nelle economie mature contemporanee, con tassi di fertilità sotto il livello di
+
+n rimpiazzo, è prossimo a zero o negativo [2, 8].
+
+                                                                                     10
+    S m Il salario per lavoratore è t e cresce al tasso di produttività . L'aliquota contributiva
+c è . La pensione pro capite in ripartizione è [2, 8]:
+
+Ptr+ip1artizione  =  c · St+1  ·  Nt+1  =         c · St(1 + m)(1 + n)
+                                   Nt
+
+Il tasso di rendimento implicito del sistema è pari a m + n, ossia la somma del tasso di
+
+crescita della produttività e del tasso di crescita della popolazione occupata. In riparti-
+
+zione, il rendimento non dipende dai mercati nanziari ma dall'andamento dell'economia
+
+reale [8].
+
+    Con c = 0,33, S = 30.000 euro, m = 0,02, n = 0,01 e un rapporto di 2 lavoratori per
+
+ogni pensionato, la pensione annua pro capite è:
+
+                        P = 0,33 × 30.000 × 1,02 × 1,01 × 2 = 20.430 euro
+
+    Se la demograa peggiora e n scende a -0,01, il monte contributivo si contrae e ogni
+
+pensionato riceve di meno. Il sistema è strutturalmente esposto alla demograa: un calo
+della natalità, un allungamento della speranza di vita, una contrazione dell'occupazione
+riducono il monte contributivo o allungano il periodo di erogazione [8].
+
+1.2.2 Il sistema a Capitalizzazione (Fully Funded): rischi e oppor-
+tunità
+
+Nel sistema a capitalizzazione ogni lavoratore accumula su un conto individuale i propri
+contributi, investiti sui mercati nanziari. Al pensionamento, la pensione equivale al
+
+r montante accumulato rivalutato al tasso di rendimento , senza alcuna redistribuzione
+
+tra generazioni [2, 8]:
+
+                                       Ptc+ap1italizzazione = c · St(1 + r)
+    Il confronto tra i due sistemi si riduce al confronto tra r e (m + n). Il teorema di
+
+Samuelson-Aaron formalizza questa condizione [10, 12]: il PAYG è eciente solo quando il
+tasso di crescita demograca ed economica supera stabilmente il rendimento reale del capi-
+tale. Nelle economie mature, con popolazioni stagnanti e rendimenti reali di lungo periodo
+sui mercati nanziari intorno al 4-5%, la capitalizzazione sembrerebbe avvantaggiata. I
+rischi strutturali ne limitano però la superiorità [2].
+
+      Il rischio di mercato è il più evidente: crisi nanziarie come quella del 2008 posso-
+no azzerare decenni di accumulo senza meccanismi compensativi collettivi. Il rischio di
+longevità si aggiunge perché vivere più a lungo del previsto esaurisce il montante, e le
+rendite vitalizie oerte dal mercato sono costose proprio perché la longevità è un rischio
+aggregato non diversicabile [8].
+
+                                  11
+      Il rischio di inazione merita un'analisi più articolata. L'eetto Fisher descrive il com-
+portamento dei tassi nominali sui nuovi strumenti emessi dopo un aumento dell'inazione.
+Il punto critico è che un fondo pensione è fatto in larga parte di titoli acquistati anni o
+decenni prima, quando l'inazione era bassa e i tassi nominali erano corrispondentemente
+contenuti. Quelle posizioni sono aperte, i loro rendimenti sono ssi per contratto e non
+possono essere rivalutate retroattivamente: un portafoglio obbligazionario che rende il
+3-4% nominale subisce un'erosione reale signicativa se l'inazione sale al 7% nei cinque
+anni precedenti il pensionamento [13]. A questo si aggiunge un prolo istituzionale: nei
+mercati europei del dopoguerra, e in Italia durante la stagazione degli anni Settanta, i
+tassi d'interesse erano soggetti a controlli politici che impedivano al meccanismo correttivo
+di attivarsi [8].
+
+      In ripartizione le pensioni sono spesso indicizzate all'inazione per legge, e se i salari
+nominali crescono con l'inazione crescono anche i contributi versati. Il rischio diventa col-
+lettivo e lo Stato agisce come garante residuale. Questo meccanismo cede tuttavia in caso
+di stagazione: i contributi ristagnano perché i salari reali sono fermi, ma le pensioni indi-
+cizzate continuano a salire in termini nominali, producendo un disavanzo strutturale [14].
+L'eetto Fisher opera sui ussi futuri e non sugli stock passati, funziona imperfettamente
+nei mercati regolamentati, e non risolve il problema dell'incertezza individuale di lungo
+periodo [8].
+
+1.3 La genesi e l'evoluzione del sistema italiano
+
+1.3.1 Dalle origini al dopoguerra: il passaggio alla ripartizione
+
+Il sistema pensionistico italiano nasce come sistema a capitalizzazione. Le prime pensioni
+di invalidità e vecchiaia furono istituite nel 1864 per i soli dipendenti statali; nel 1919, con
+il decreto legislativo 603, l'assicurazione obbligatoria fu estesa ai lavoratori dipendenti
+privati dell'industria, dell'agricoltura e dei servizi, gestita dalla Cassa Nazionale delle
+Assicurazioni Sociali [15].
+
+      Due guerre mondiali e l'inazione bellica e post-bellica distrussero le riserve accumu-
+late. Con la legge 218 del 1952 si introduce il trattamento minimo di pensione e il sistema
+entra in una fase mista in cui il contributo pubblico diretto aanca i contributi dei lavo-
+ratori, operando già parzialmente con logica di ripartizione [2, 15]. Il passaggio denitivo
+avviene nel 1969, con la riforma Brodolini (legge 153/1969). La scelta non fu dettata sol-
+tanto da ragioni tecniche: i sindacati chiedevano pensioni più alte nell'immediato, e con
+la ripartizione bastava trasferire subito una quota più alta dei salari correnti, scaricando
+il costo sui lavoratori attivi anziché su riserve pregresse [16].
+
+      L'Italia del 1969 aveva una struttura demograca favorevole. Come scrive Favero su
+Lavoce.info, nessuno fece i conti su cosa sarebbe successo quando quel rapporto si fosse
+
+                                                                                     12
+invertito. Il decit primario passò dal 4,3 all'8,3% del PIL in soli tre anni tra il 1970 e il
+1973; il costo fu nascosto dall'inazione per un decennio, poi divenne visibile [17].
+
+1.3.2 Il metodo retributivo: logica, distorsioni e debito implicito
+
+L'abbandono della capitalizzazione coincise con l'adozione del metodo retributivo per il
+calcolo della pensione. La pensione non dipende dai contributi eettivamente versati, ma
+dalla retribuzione percepita negli ultimi anni di lavoro moltiplicata per un tasso legato
+agli anni di contribuzione [2]:
+
+                                            P =  × Wpensionabile
+     dove è il tasso di rendimento (2% per anno di contribuzione, da un minimo del
+40% per 20 anni a un massimo dell'80% per 40 anni) e Wpensionabile è la retribuzione di
+
+riferimento rivalutata per inazione più 1% [8].
+      Il metodo retributivo scollega quasi completamente i beneci dai contributi versati: un
+
+lavoratore che ha guadagnato poco per trent'anni e molto negli ultimi cinque riceve una
+pensione ben superiore a quanto giusticato dai suoi versamenti complessivi. Il rendimento
+implicito sui contributi era sistematicamente superiore al tasso di crescita dell'economia, in
+violazione del principio di sostenibilità nanziaria [17]. Le prime avvisaglie di squilibrio
+emergono negli anni Ottanta: il rallentamento della crescita, il calo demograco e la
+riduzione del tasso di occupazione comprimono il monte contributivo, mentre le promesse
+retributive continuano a pesare sul bilancio INPS a ritmo crescente. Il debito previdenziale
+non compariva nei bilanci uciali, ma era reale come il debito esplicito, e la crisi degli
+anni Novanta avrebbe reso quel debito improvvisamente visibile [2, 17].
+
+1.3.3 La stagione delle riforme: dal metodo retributivo al sistema
+NDC
+
+La riforma Amato del 1992 (decreto legislativo 503/1992) rappresenta il primo intervento
+organico: aumenta l'età pensionabile, porta il requisito contributivo minimo per la pensio-
+ne di vecchiaia da 15 a 20 anni, e amplia la nestra temporale di riferimento per il calcolo
+della retribuzione pensionabile. Si tratta di un intervento sul perimetro del sistema, senza
+toccare la logica di fondo del metodo retributivo [2, 18].
+
+      La riforma strutturale arriva con il governo Dini nel 1995 (legge 335/1995), in un
+contesto di pressione per l'ingresso nell'euro con il debito pubblico già oltre il 120% del
+PIL. L'obiettivo è sostituire il sistema retributivo con il sistema contributivo nozionale
+(NDC, Notional Dened Contribution): la pensione dipende dai contributi eettivamente
+versati durante l'intera vita lavorativa, capitalizzati a un tasso agganciato alla crescita del
+PIL. La scelta di usare la crescita del PIL come tasso di capitalizzazione ha una coerenza
+
+                                                                                     13
+interna precisa: in un sistema a ripartizione, come dimostrato nel modello a generazioni
+
+sovrapposte, il tasso di rendimento implicito è proprio (1 + m)(1 + n), ossia la crescita
+
+dell'economia. Usare quel tasso come coeciente di accumulazione virtuale rendeva il
+sistema internamente coerente e, almeno in teoria, attuarialmente neutrale [8].
+
+      La formula della pensione annuale lorda nel sistema NDC è:
+
+                                   P = L · MCNDC
+
+ dove L è il coeciente di trasformazione che dipende dalla speranza di vita residua
+
+e M all'età di pensionamento L, e N DC  è  il  montante  contributivo,  ottenuto  come  somma
+                                  C
+
+capitalizzata di tutti i contributi versati:
+
+                                                                                L
+
+                                       MCNDC = Cj · (1 + g)L-j
+
+                                                                              j=1
+
+    g con pari alla media mobile quinquennale del tasso di crescita del PIL nominale,
+Cj = c·Sj e l'aliquota c = 0,33 per i lavoratori dipendenti. Il coeciente di trasformazione
+
+si ricava imponendo l'equilibrio nanziario tra montante e pensioni attese [8]:
+
+MCN DC  =   eL       P                        =    P = MCNDC     (con rz = 0)
+           k=1  (1 + rz)k-1                                 eL
+
+      Quanto più lunga è la speranza di vita al momento del pensionamento, tanto più
+
+piccolo è L = 1/eL, e tanto più bassa è la pensione annua a parità di montante. Per
+
+il biennio 2023-2024 i coecienti vigenti variano da un minimo del 4,270% a 57 anni a
+
+un massimo del 6,655% a 71 anni [19], e la revisione biennale li riduce ulteriormente al
+
+crescere della speranza di vita.
+
+      Per rendere operativa la formula: si ipotizzi un lavoratore con tre anni di contribuzione
+
+(j = 1, 2, 3), che va in pensione al quarto periodo (L = 4) con speranza di vita eL = 2.
+Con c = 0,33, S = 100, m = 0,05 e g = 0,02, il montante contributivo è:
+
+        MCNDC = 33 · (1,02)3 + 33 · (1,05)(1,02)2 + 33 · (1,05)2(1,02) = 108,18
+La pensione annua che garantisce l'equilibrio nanziario, con eL = 2, è:
+
+                                   P=   108,18     = 54,09
+
+                                               2
+
+Se la speranza di vita salisse a 3, la pensione annua si ridurrebbe a 36. Questo è
+
+il meccanismo di aggiustamento automatico che la riforma Dini ha introdotto e che la
+
+riforma Fornero avrebbe poi esteso ai requisiti di accesso [2].
+
+La riforma Dini applicava il sistema NDC integralmente solo a chi entrava nel mercato
+
+del lavoro dal 1 gennaio 1996. Chi aveva già 18 anni di contributi al 31 dicembre 1995
+
+                                               14
+rimaneva interamente sotto il regime retributivo, anche per la parte maturata in seguito. Il
+risparmio eettivo sulla spesa pensionistica si sarebbe quindi materializzato solo decenni
+dopo, caricando sulle generazioni più giovani l'intero onere del riequilibrio e lasciando
+intatto il privilegio di chi era già profondamente radicato nel sistema [2, 17].
+
+      La risposta a questo gradualismo irrisolto arriva nel novembre 2011 con il decreto
+Salva Italia (decreto-legge 201/2011, convertito con legge 214/2011) del governo Monti,
+con lo spread a 570 punti base. La riforma Fornero estende il metodo contributivo a
+tutti i lavoratori a partire dal 1 gennaio 2012, unica l'età pensionabile di vecchiaia a
+67 anni per uomini e donne a partire dal 2019, e introduce il collegamento automatico
+biennale dei requisiti di accesso alla variazione della speranza di vita calcolata dall'Istat.
+I risparmi stimati ammontavano a oltre 22 miliardi di euro entro il 2020 [20]. La riforma
+si inserisce nel più ampio ciclo di interventi avviato nel 2004, al quale la Ragioneria
+Generale dello Stato attribuisce una riduzione del rapporto spesa/PIL di oltre 60 punti
+percentuali cumulati al 2060; alla sola riforma Fornero è ascrivibile circa un terzo di questo
+eetto [5, 21].
+
+      La risposta politica alla riforma si è tradotta in una serie di deroghe che hanno pro-
+gressivamente eroso la coerenza attuariale del sistema. Quota 100 (decreto-legge 4/2019,
+triennio 2019-2021) consentiva il pensionamento con 62 anni di età e 38 di contributi.
+Quota 102, attiva per il solo 2022, aumentava i requisiti a 64 anni di età e 38 di contri-
+buti. Quota 103, introdotta per il 2023 e prorogata al 2024, ha ssato i requisiti a 62
+anni di età e 41 di contribuzione, con la pensione calcolata integralmente con il metodo
+contributivo. Ciascuna di queste misure consente di percepire la pensione per più anni
+del previsto senza un corrispondente aumento del montante, scaricando il dierenziale di
+costo sulla collettività e riproducendo, in forma attenuata, il meccanismo che la riforma
+Dini aveva cercato di interrompere [3, 17].
+
+                                                                                     15
+Capitolo 2
+
+Il Corto Circuito: Analisi delle Criticità
+del Sistema Vigente
+
+2.0 Dal modello teorico alla dinamica delle riforme
+
+Le criticità emerse nel capitolo precedente non rimangono connate alla dimensione astrat-
+ta della teoria previdenziale, ma trovano una traduzione immediata nella storia istituzio-
+nale italiana. La logica del sistema a ripartizione chiarisce infatti che, quando il tasso
+di crescita della popolazione attiva rallenta e la produttività non è suciente a compen-
+sarne gli eetti, la sostenibilità del sistema dipende in misura crescente da due variabili
+decisive: l'età eettiva di uscita dal lavoro e l'adeguatezza del montante contributivo ac-
+cumulato [2, 8]. In altri termini, la tenuta nanziaria non è un fatto puramente contabile,
+ma il risultato di un equilibrio tra demograa, mercato del lavoro e regole di accesso alle
+prestazioni.
+
+      È precisamente in questo punto di intersezione che si collocano le riforme pensionistiche
+italiane degli ultimi decenni. Più che una sequenza discontinua di correzioni tecniche, esse
+rappresentano il tentativo di ricomporre una frattura aperta tra il principio attuariale
+introdotto con il sistema contributivo nozionale e la pressione politico-sociale verso canali
+di uscita anticipata dal mercato del lavoro [3, 17]. La questione delle deroghe, delle quote e
+delle nestre di essibilità non costituisce dunque un capitolo accessorio, ma il luogo in cui
+si manifesta con maggiore evidenza la tensione tra sostenibilità nanziaria, adeguatezza
+delle prestazioni e consenso distributivo.
+
+      Per questo motivo, l'analisi che segue prende avvio dalle condizioni macroeconomiche
+e demograche che hanno progressivamente eroso la base contributiva del sistema, per
+poi esaminare come le riforme Dini e Fornero abbiano ristabilito una coerenza di fondo,
+pur lasciando aperta la questione dell'equità intergenerazionale. Solo a partire da questa
+ricostruzione è possibile comprendere perché le successive misure di anticipo pensionistico
+abbiano inciso non soltanto sui conti dell'INPS, ma anche sulla credibilità stessa del patto
+
+                                                                                     16
+previdenziale tra generazioni [2, 3].
+
+2.1 La pressione macroeconomica: demograa e sosteni-
+bilità
+
+Il sistema pensionistico a ripartizione costruito dall'Italia tra gli anni Cinquanta e Settanta
+reggeva sotto precise condizioni demograche ed economiche: molti lavoratori giovani,
+poche pensioni da pagare, crescita sostenuta del PIL. Quando quelle condizioni hanno
+cominciato a venire meno, il meccanismo ha rivelato una fragilità strutturale che nessuna
+manutenzione ordinaria poteva correggere [2].
+
+2.1.1 La transizione demograca e l'inverno delle nascite
+
+Il tasso di fecondità italiano è passato dai 2,7 gli per donna del dopoguerra all'1,20 del
+2023 [22], mentre la speranza di vita ha continuato a crescere: secondo le proiezioni MEF
+2025 raggiungerà 85,8 anni per gli uomini, circa 4,8 in più, e 89,2 per le donne entro
+il 2070 [3]. L'eetto combinato è un aumento radicale dell'indice di dipendenza degli
+anziani, salito al 37,8% nel 2023 e proiettato al 62,3% nel 2070 [3].
+
+      In un sistema a ripartizione, questa dinamica si traduce direttamente nella formula
+
+n sviluppata nel capitolo precedente: una contrazione di comprime l'importo degli assegni
+c S oppure costringe ad alzare l'aliquota contributiva , a parità di salario medio e produt-
+m tività . La leva dell'aliquota non è però neutra sul mercato del lavoro. Con un cuneo
+c scale già tra i più alti dell'area OCSE, un ulteriore aumento di deprime la domanda
+
+di lavoro regolare e l'emersione, spostando il costo sull'occupazione invece di riassorbirlo.
+L'aritmetica non ore scappatoie indolori [2, 23].
+
+2.1.2 L'equazione di equilibrio della spesa pensionistica
+
+La sostenibilità macroeconomica si legge decomponendo il rapporto tra spesa pensionistica
+e PIL [8]:
+
+                                             Sp = Np × Sp/Np
+                                            PIL Nl PIL/Nl
+
+      Il primo termine è l'indice di dipendenza previdenziale; il secondo misura la generosità
+relativa del sistema. Una scomposizione più articolata include esplicitamente il tasso di
+occupazione [2]:
+
+Sp  = Np ×                             Na  ×   POP  ×  Sp/Np
+
+PIL Na POP                                     Nl      PIL/Nl
+
+                                           17
+    /N Il terzo termine, POP l, è l'inverso del tasso di occupazione e rivela come la bassa
+
+partecipazione femminile italiana abbia storicamente aggravato il divario tra massa con-
+tributiva e prestazioni da erogare [8]. Nell'Italia degli anni Novanta tutte e quattro le
+
+S / componenti spingevano nella direzione sbagliata: il rapporto p PIL aveva già raggiunto
+
+il 13,3% nel 1990 su una traiettoria non decrescente, rendendo inevitabile la stagione delle
+grandi riforme descritta nel Capitolo 1 [2].
+
+2.2 Gli eetti delle riforme: sostenibilità acquisita, ade-
+guatezza sacricata
+
+Le riforme Dini e Fornero hanno conseguito il loro obiettivo primario. Il complesso degli
+
+interventi dal 2004 in poi è atteso ridurre il rapporto spesa/PIL di circa 60 punti per-
+
+centuali cumulati al 2060 rispetto allo scenario controfattuale senza riforme, con circa un
+
+terzo del risparmio attribuibile specicamente alla riforma Fornero [5, 21]. La spesa si
+
+attesta al 15,4% del PIL nel 2024, raggiungerà un picco del 17,1% intorno al 2042-2043
+
+con l'esaurimento delle coorti del baby boom, per poi scendere strutturalmente al di sotto
+
+del 14% nel 2070 grazie all'applicazione generalizzata del metodo NDC [3].
+
+      Questa traiettoria discendente è il prodotto diretto del meccanismo di aggiustamento
+
+e automatico introdotto dalla riforma Dini e accelerato dalla Fornero: all'aumentare di L,
+il coeciente L = 1/eL si riduce, comprimendo la pensione annua a parità di montante.
+
+Per il periodo 2025-2026 il coeciente di trasformazione a 67 anni vale 5,608% [3]; a
+
+ni illustrativi, l'allungamento atteso della speranza di vita potrebbe portarlo attorno
+
+al 5,2% entro il 2040. Lo scenario controfattuale della Ragioneria stima che il blocco
+
+permanente del solo adeguamento automatico dei requisiti di accesso all'aspettativa di
+
+vita aumenterebbe il rapporto debito/PIL di circa 36 punti percentuali al 2070 [5]. La
+
+discesa del rapporto spesa/PIL dopo il picco non è però un esito acquisito: poggia su
+
+un recupero della produttività all'1,04% medio annuo, lontano dallo 0,12% registrato nel
+
+decennio 2015-2025, e una mancata ripresa ne riaprirebbe il disavanzo [4].
+
+come Il sistema ha quindi risolto il problema del  nanziare le pensioni future. Il
+
+se problema del quelle pensioni saranno sucienti è rimasto aperto, e i dati del MEF ne
+
+quanticano già oggi la dimensione [3].
+
+2.3 Le criticità residue
+
+2.3.1 Adeguatezza degli assegni e rischio di povertà strutturale
+
+Il tasso di sostituzione lordo, ossia il rapporto tra la prima rata di pensione e l'ultima
+retribuzione, è destinato a scendere signicativamente per le generazioni che si pensionano
+
+                                        18
+interamente sotto il regime contributivo. Secondo il Rapporto MEF aggiornamento 2025,
+per un lavoratore dipendente privato il tasso di sostituzione lordo si ridurrà dal 73,6% nel
+2010 al 58,4% nel 2070 nello scenario base. Per i lavoratori autonomi il calo è ben più
+severo: dal 72,1% al 46,7% nello stesso orizzonte temporale [3].
+
+      Queste proiezioni assumono carriere lavorative continue e complete. La realtà del mer-
+cato del lavoro italiano, caratterizzata da ingresso tardivo, contratti discontinui e lunghi
+periodi di bassa contribuzione, suggerisce che per molti lavoratori i tassi di sostituzione
+eettivi saranno inferiori a quelli teorici. L'analisi di sensibilità del MEF mostra che
+una carriera con anzianità contributiva inferiore di due anni rispetto allo scenario base
+comprime ulteriormente il tasso di sostituzione già al di sotto della soglia del 58,4% [3, 24].
+
+      Chi entra tardi nel mercato del lavoro, chi alterna lavoro dipendente a collaborazioni
+autonome, chi subisce interruzioni per ragioni familiari accumula un montante contributi-
+vo strutturalmente inferiore rispetto a quanto servirebbe per mantenere un tenore di vita
+dignitoso in vecchiaia. Il sistema NDC trasferisce questo rischio interamente sull'indivi-
+duo: garantisce la proporzionalità tra contributi versati e prestazione, ma il suo mandato
+si ferma lì, e l'adeguatezza resta fuori dal suo perimetro. Senza correttivi redistributi-
+vi o senza un secondo pilastro sviluppato, questa logica produce pensionati poveri per
+costruzione [2, 24].
+
+      L'antidoto previsto dal sistema è la previdenza complementare. Con la partecipazione
+ai fondi pensione, il tasso di sostituzione di un lavoratore dipendente nel 2070 sale dal
+58,4% al 66%, mentre per gli autonomi l'incremento è dal 46,7% al 55,2%. Il secondo
+pilastro rimane tuttavia sottosviluppato in Italia rispetto ai principali partner europei:
+la partecipazione volontaria è inferiore alle aspettative, e le carriere discontinue rendono
+dicile cumulare una contribuzione complementare adeguata [3].
+
+2.3.2 Il costo delle deroghe e la rottura della neutralità attuariale
+
+La logica del sistema NDC è coerente solo se i requisiti di accesso vengono rispettati.
+Le deroghe alla riforma Fornero, da Quota 100 a Quota 103, non alterano il metodo di
+calcolo, che resta contributivo e applica già il coeciente di trasformazione corrispondente
+all'età di uscita: il loro costo per il sistema nasce altrove. Deriva dal mancato incasso
+dei contributi relativi agli anni di anticipo e dall'allungamento del periodo di erogazione
+a parità di montante, in assenza di una penalizzazione attuarialmente piena dell'uscita
+precoce. Il dierenziale così generato ricade sulla collettività: ogni anno di anticipo non
+coperto da contributi aggiuntivi equivale a un trasferimento implicito dai lavoratori attivi
+di domani ai pensionati di oggi [2, 17].
+
+      Come documentato su Lavoce.info, il costo delle deroghe non è marginale. Ogni ne-
+stra di uscita anticipata che si mantiene strutturalmente nel sistema aumenta il numero
+
+ di anni di erogazione attesi per coorte e abbassa il valore medio del coeciente L ap-
+
+                                                                                     19
+plicato al montante, poiché i lavoratori escono a età più giovani quando il coeciente è
+più basso. Il risultato è un doppio svantaggio: pensioni più basse per chi esce prima e un
+onere aggiuntivo sul bilancio INPS che si ripercuote sulle generazioni future [3, 17].
+
+      Il paradosso è che ogni misura presentata come tutela dei lavoratori maturi porta con sé
+un costo pagato, con gli interessi, dai lavoratori più giovani. Il patto intergenerazionale che
+fonda il sistema a ripartizione regge solo nché le regole che lo governano mantengono una
+coerenza attuariale di fondo. Le deroghe iterate nel tempo non producono solo un costo
+contabile: erodono la credibilità stessa del contratto tra generazioni, rendendo razionale
+per i lavoratori giovani dubitare che il sistema onori le promesse che sta accumulando [2, 3].
+
+                                                                                     20
+Bibliograa e Sitograa
+
+[1] Roberto Artoni. Elementi di Scienza delle Finanze. Il Mulino, Bologna, 6 edition,
+
+       2014.
+
+[2] Paolo Bosi. Corso di Scienza delle Finanze. Il Mulino, Bologna, 7 edition, 2018.
+
+[3] Ministero dell'Economia e delle Finanze  Ragioneria Generale dello Stato. Le ten-
+       denze di medio-lungo periodo del sistema pensionistico e socio-sanitario. rappor-
+       to n. 26. Technical report, Ragioneria Generale dello Stato, Roma, 2025. URL
+
+    https://www.rgs.mef.gov.it.
+
+[4] Osservatorio sui Conti Pubblici Italiani. Pensioni, la spesa continua a salire. e il calo
+       dal 2040 è tutto da vericare. La Repubblica, sezione Economia, a cura di Enrico
+       Franzetti, February 2026. Nota OCPI basata su RGS Rapporto n. 26, OCSE Pensions
+       at a Glance 2025, Commissione UE Ageing Report 2024.
+
+[5] Ministero dell'Economia e delle Finanze and Ragioneria Generale dello Stato. Le
+       tendenze di medio-lungo periodo del sistema pensionistico e socio-sanitario. rapporto
+       n. 26  nota di aggiornamento. Technical report, MEF-RGS, Studi e pubblicazioni,
+       Roma, dicembre 2025.
+
+[6] INPS. Aliquote contributive inps dal 1° gennaio 2023. Portale INPS / Assimpredilan-
+
+    ce, 2023. URL https://portale.assimpredilance.it/uploads/allegati/2023_
+    1_gennaio_aliquote_contributive_inps_63ebb57d62366.pdf.
+
+[7] Repubblica Italiana.  Decreto del presidente della repubblica 22 dicembre
+
+1986, n. 917: Testo unico delle imposte sui redditi (tuir).  Normattiva,
+
+1986. URL https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.
+
+repubblica:decreto:1986-12-22;917. Testo vigente.
+
+[8] Harvey S. Rosen, Ted Gayer, and Chiara Rapallini. Scienza delle Finanze. McGraw-
+
+       Hill Education, Milano, 6 edition, 2023.
+
+[9] Ferrera, Maurizio. Il modello sud-europeo dl welfare state. Italian Political
+    Science Review/Rivista Italiana di Scienza Politica, 26(1), 1996. doi: 10.1017/
+
+       S0048840200024047.
+
+                          21
+[10] Paul A. Samuelson. An exact consumption-loan model of interest with or without
+
+     the social contrivance of money. Journal of Political Economy, 66(6):467482, 1958.
+
+         doi: 10.1086/258100.
+
+[11] Peter A. Diamond. National debt in a neoclassical growth model. American Economic
+     Review, 55(5):11261150, 1965.
+
+[12] Henry Aaron. The social insurance paradox. Canadian Journal of Economics and
+     Political Science, 32(3):371374, 1966. doi: 10.2307/139995.
+
+[13] Cobas Scuola Sardegna. Pensioni e inazione: l'eredità della storia previdenziale
+
+     italiana. Cobas Scuola Sardegna, 2020. URL https://www.cobasscuolasardegna.
+     it.
+
+[14] Fisac-Cgil. Sistema pensionistico italiano: analisi e proposte. Fisac-Cgil, 2023. URL
+
+     https://www.fisac-cgil.it.
+
+[15] CeRP  Center for Research on Pensions and Welfare Policies. Il sistema pensionistico
+         italiano: origini, evoluzione e prospettive. Technical report, Collegio Carlo Alberto,
+
+     Torino, 2008. URL https://www.carloalberto.org/cerp.
+
+[16] Fondapol  Fondation pour l'innovation politique. La transition démographique et
+         les systèmes de retraite en Europe. Fondation pour l'innovation politique, 2019. URL
+
+     https://www.fondapol.org.
+
+[17] Carlo Favero. Riforma Dini vent'anni dopo. Lavoce.info, 2015. URL https://
+     lavoce.info/archives/32211/riforma-dini-ventanni-dopo/.
+
+[18] Autore non indicato. Le riforme pensionistiche italiane: dall'amato alla Fornero.
+         Master's thesis, LUISS Guido Carli, 2020.
+
+[19] Docente Scienza delle Finanze EMA/25. Modulo 3  lezione 27. la spesa sociale in
+         italia: pensioni e sanità. Materiale didattico universitario, a.a. 2024/25, 2024. Testo
+
+     di riferimento: Rosen, Gayer, Rapallini, Scienza delle nanze, 6e, McGraw-Hill 2023.
+
+[20] La Repubblica  Finanza.  Pensioni Fornero: grazie alla riforma rispar-
+
+mi per 22 miliardi entro il 2020.      La Repubblica, 2012.  URL https:
+
+//finanza.repubblica.it/mobile/News/2012/07/11/pensioni_fornero_
+
+grazie_alla_riforma_risparmi_per_22_miliardi_entro_il_2020-666/.
+
+[21] Paolo Bosi and Maria Cecilia Guerra. I tributi nell'economia italiana  Capitolo 12.
+     La spesa previdenziale. Il Mulino, Bologna, 2022. Estratto in formato markdown;
+
+         riferimenti interni a MEF-RGS Rapporto n. 23/2022.
+
+                                   22
+[22] ISTAT. Natalità e fecondità della popolazione residente. anno 2023. ISTAT 
+
+     Statistiche Report, nov 2024. URL https://www.istat.it/it/files/2024/11/
+     REPORT-NATALITA-FECONDITA-2023.pdf.
+
+[23] OCSE. Pensions at a Glance 2023: OECD and G20 Indicators. OECD Publishing,
+
+         Parigi, 2023. doi: 10.1787/678d8133-en.
+
+[24] Tito Boeri and Pietro Garibaldi.      Pensioni per i giovani: il futuro è
+
+adesso. Lavoce.info, 2014. URL https://lavoce.info/archives/24193/
+
+pensioni-per-i-giovani-il-futuro-e-adesso/.
+
+                                       23
+
