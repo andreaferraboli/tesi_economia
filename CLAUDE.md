@@ -7,13 +7,12 @@ Il progetto e un documento LaTeX multi-file.
 - Cartella capitoli: `capitoli_second/`
 - Cartella fonti: `fonti/`
 - Cartella immagini: `images/`
-- MAI modificare il branch `main` senza mio consenso esplicito
-- Lavora sempre sul branch `sviluppo-test-agente`
+- Si lavora esclusivamente sul branch `main`
 
 ## Regola sul versioning
-Prima di iniziare qualsiasi lavoro, verifica di essere sul branch `sviluppo-test-agente`.
-Se non ci sei, fai checkout su quel branch e lavora solo li.
-Non creare branch alternativi, non fare merge su `main`, non fare rebase autonomi.
+Prima di iniziare qualsiasi lavoro, verifica di essere sul branch `main`.
+Se non ci sei, fai checkout su `main` e lavora solo li.
+Non creare branch alternativi e non fare rebase autonomi.
 Ogni modifica significativa va committata con messaggio descrittivo in italiano.
 
 ## Vincoli formali
@@ -220,7 +219,7 @@ se ci sono nuove citazioni, poi due volte `pdflatex` per i riferimenti incrociat
 ## Workflow operativo
 
 Prima di iniziare qualsiasi sezione:
-1. Verifica di essere su branch `sviluppo-test-agente`
+1. Verifica di essere su branch `main`
 2. Leggi `capitoli_second/00_introduzione.tex` per la mappa generale
 3. Leggi il file `.tex` del capitolo su cui devi lavorare
 4. Leggi le fonti pertinenti in `fonti/`
@@ -298,7 +297,6 @@ per una tesi e non per un post personale?". Devono essere veri entrambi.
 
 ## Cosa NON fare mai
 - Non inventare dati o statistiche — solo da fonti verificate in `fonti/`
-- Non fare merge su `main`
 - Non usare `\newpage` a caso per aggiustare la formattazione
 - Non troncare sezioni con "da approfondire in seguito" — scrivi il contenuto
   o metti un `\todo{}` esplicito
