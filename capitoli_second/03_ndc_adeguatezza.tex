@@ -2,7 +2,7 @@
 % Ultima modifica: 2026-05-28
 % Fonti principali usate: MEF_RGS2025, MEF_RGS2025_NdA, Mazzaferro2023,
 %   FrancoTommasino2020, Gronchi2024, BevilacquaGronchi2025, Altiparmakov2022,
-%   Marchionne2004, OCPI2026, ScienzaFinanze_lez27_2024, BosiGuerra2022,
+%   Marchionne2004, OCPI2026, RosenGayerRapallini2023, BosiGuerra2022,
 %   Bosi2018, Artoni2014
 
 %% ───────────────────────────────────────────────────────────────────
@@ -51,7 +51,7 @@ ricorrere a una transizione di sistema, perché la transizione di sistema, dove
 
 \noindent
 Il manuale italiano di scienza delle finanze \cite{Bosi2018, BosiGuerra2022,
-ScienzaFinanze_lez27_2024} riconduce gli interventi sul sistema previdenziale
+RosenGayerRapallini2023} riconduce gli interventi sul sistema previdenziale
 a sei leve, derivabili dalla decomposizione canonica del rapporto fra spesa
 pensionistica e PIL: età legale di pensionamento, immigrazione, tasso di
 fecondità, importo medio della pensione, aliquota contributiva, ricorso al
@@ -81,14 +81,46 @@ Importo pensione $\downarrow$ & migliora & peggiora & alto \\
 \addlinespace
 Aliquota contributiva $\uparrow$ & migliora & migliora (NDC) & medio \\
 \addlinespace
-Debito pubblico $\uparrow$ & peggiora & migliora (transitorio) & basso \\
+Ricorso al debito pubblico $\uparrow$ & neutrale nel breve; rinvia il costo come debito (anche implicito) & migliora (transitorio) & basso \\
 \bottomrule
 \end{tabularx}
 \par\smallskip
 \footnotesize Fonte: rielaborazione da \cite{Bosi2018} e
-\cite{ScienzaFinanze_lez27_2024}.
+\cite{RosenGayerRapallini2023}; la lettura del ricorso al debito come spesa
+previdenziale implicita si rifà a \cite{Fornero2018}.
 \end{table}
 
+\noindent
+Le sei leve non agiscono sullo stesso punto del rapporto, e la tabella va letta a
+partire dalla sua struttura: spesa pensionistica al numeratore, PIL al denominatore.
+Età legale e importo medio incidono direttamente sul numeratore, la prima riducendo
+gli anni di erogazione e accrescendo il montante, il secondo tagliando la prestazione.
+Fecondità, immigrazione netta e aliquota contributiva agiscono invece sulla base che
+alimenta il sistema, cioè sul monte contributivo e, più in generale, sul PIL a cui
+quel monte è agganciato. Che il riferimento sia il PIL e non i soli contributi non è
+un dettaglio: nulla impone che la spesa previdenziale sia finanziata unicamente dai
+contributi sociali, e destinarvi gettito di altra natura è una scelta politica, non
+un vincolo giuridico. Le tre leve sulla base hanno poi orizzonti diversi. La fecondità
+produce effetti solo nel lungo periodo, perché un nuovo nato diventa contribuente dopo
+vent'anni e nel frattempo non sposta nulla. L'immigrazione netta migliora subito il
+rapporto, ma rinvia un problema: chi versa contributi oggi maturerà domani un diritto
+a pensione, e se i flussi si interrompono la coorte autoctona si troverà a finanziare
+prestazioni a chi, nel frattempo, può anche aver lasciato il paese. È in quel punto
+che il patto intergenerazionale diventa politicamente fragile.
+
+\medskip
+\noindent
+Il ricorso al debito appartiene a una categoria diversa dalle prime cinque.
+Finanziare a debito una quota di spesa pensionistica non riduce il rapporto
+spesa/PIL che si legge nei conti, e non lo peggiora in modo diretto nel breve
+periodo: ne sposta il costo nel tempo, trasformandolo in debito. Parte della
+letteratura, nel solco di Castellino e Fornero, legge anzi quel debito come una
+componente implicita e non contabilizzata della spesa previdenziale, da sommare
+idealmente al numeratore quando se ne valuta la sostenibilità \cite{Bosi2018,
+Fornero2018}. In questa chiave il debito non è una leva di riequilibrio ma il modo
+di rinviarlo, a costo politico basso oggi e a carico delle coorti future.
+
+\medskip
 \noindent
 Il problema italiano non è mancanza di leve ma eccesso di vincoli politici. Le tre leve a costo
 elettorale alto, età, immigrazione, riduzione importo, sono quelle che già
@@ -184,7 +216,7 @@ pensione di circa 21.000 euro annui \cite{MEF_RGS2025_NdA}.
 \medskip
 \noindent
 La proposta di una \emph{pensione contributiva di garanzia}, formulata e
-valutata per il caso italiano da Michele Raitano \cite{Raitano2020}, colma la
+valutata per il caso italiano da Michele Raitano \citeyearpar{Raitano2020}, colma la
 distanza fra la pensione NDC calcolata sui contributi effettivi e una soglia di
 adeguatezza ancorata a un multiplo dell'assegno sociale, attraverso un
 trasferimento esplicito finanziato dalla fiscalità generale. Il meccanismo si
@@ -285,8 +317,8 @@ neutralità attuariale, da sola, non finanzia.
 \label{sec:carveout}
 
 \noindent
-La proposta storica di riforma strutturale del sistema italiano è quella di
-Francesco Marchionne \cite{Marchionne2004}, che già nel 2004 suggeriva il
+La proposta storica di riforma strutturale del sistema italiano è quella avanzata
+da Francesco Marchionne su \emph{Moneta e Credito} \citeyearpar{Marchionne2004}, che già nel 2004 suggeriva il
 passaggio a un sistema misto a tre pilastri: primo pilastro pubblico a
 ripartizione con aliquota ridotta al 25\%, secondo pilastro occupazionale a
 capitalizzazione con aliquota dell'8,5\%, terzo pilastro individuale al 4\%.
@@ -299,6 +331,16 @@ privatizzazioni a \emph{carve-out}, dove parte dei contributi PAYG viene
 dirottata verso fondi a capitalizzazione obbligatoria, e si appoggiava al
 filone dottrinale di Modigliani-Ceprini e Fornero-Castellino di inizio
 millennio.
+
+\medskip
+\noindent
+L'argomento ha un punto debole preciso. La transizione da un sistema a
+ripartizione a uno a capitalizzazione impone alla generazione di passaggio un
+doppio onere: continuare a pagare le pensioni in essere, che nessuno ha
+capitalizzato, e insieme accantonare il proprio risparmio previdenziale.
+Sostenere che il solo dirottamento dei contributi liberi le risorse per coprire
+quell'onere ne sottostima il costo, e l'evidenza accumulata da allora lo mostra
+con nettezza.
 
 \medskip
 \noindent
