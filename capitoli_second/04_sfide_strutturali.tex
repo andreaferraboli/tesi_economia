@@ -143,21 +143,30 @@ nel tempo.
 
 \noindent
 Per rendere concrete le implicazioni appena esposte, si simulano quattro
-profili di carriera rappresentativi della Generazione Z. Il punto di
-partenza è la formula del montante nozionale già presentata nell'introduzione:
+profili di carriera rappresentativi della Generazione Z. A differenza di un
+esercizio a retribuzione costante, che sovrastima il rapporto fra montante e
+ultima retribuzione, la retribuzione qui cresce lungo la carriera. Il montante
+nozionale è
 
 \begin{equation}
-MC_j = c \cdot S \cdot \frac{(1+g)^{T_j} - 1}{g}
+MC_j = c \sum_{t=1}^{T_j} S_t \,(1+\gamma)^{\,T_j - t},
+\qquad S_t = S_0\,(1+w)^{\,t-1}
 \label{eq:montante_profili}
 \end{equation}
 
-\noindent dove $c = 0{,}33$ è l'aliquota contributiva per il lavoro
-dipendente, $S = 25.000$ euro il salario lordo annuo costante,
-$g = 1{,}5\%$ il tasso di capitalizzazione nozionale (ipotesi prudenziale
-coerente con lo scenario base RGS \cite{MEF_RGS2025_NdA}),
-$T_j$ il numero di anni di contribuzione del profilo $j$. Tutti i profili
-assumono il pensionamento a 67 anni nel 2067 e un coefficiente di
-trasformazione del 5,0\%.\footnote{Il MEF-RGS non pubblica un coefficiente di
+\noindent dove $c$ è l'aliquota contributiva, $S_t$ la retribuzione reale
+dell'anno $t$, $S_0 = 25.000$ euro la retribuzione reale d'ingresso, $w = 1{,}0\%$
+il tasso di crescita reale della retribuzione e $\gamma = 0{,}7\%$ il tasso reale
+di capitalizzazione del montante. I due valori non sono scelti ad arbitrio. La
+Ragioneria assume che le retribuzioni crescano in media come la produttività per
+occupato, l'1\% reale annuo nel periodo 2025-2070, e capitalizza il montante
+nozionale al tasso di crescita del PIL nominale, in media il 2,7\% (0,7\% reale
+più un deflatore del 2\%) \cite{MEF_RGS2025_NdA}. La distanza fra i due tassi,
+retribuzioni che crescono più in fretta del montante perché l'occupazione si
+contrae, è il cuore del problema: il rendimento riconosciuto ai contributi resta
+strutturalmente sotto la dinamica salariale, ed è questo che comprime il tasso di
+sostituzione. Tutti i profili assumono il pensionamento a 67 anni nel 2067 e un
+coefficiente di trasformazione del 5,0\%.\footnote{Il MEF-RGS non pubblica un coefficiente di
 trasformazione puntuale al 2067. Il valore del 5,0\% è una stima dell'autore
 coerente con l'andamento tendenziale: il coefficiente vigente a 67 anni è il
 5,608\% per il biennio 2025-2026 \cite{MEF_RGS2025}, e l'allungamento della
@@ -170,21 +179,23 @@ potrebbe risultare inferiore, rendendo le pensioni simulate ancora più basse.}
 
 \noindent
 Ingresso nel mercato del lavoro a 27 anni, carriera continua fino al
-pensionamento. Quarant'anni di contribuzioni piena.
+pensionamento. Quarant'anni di contribuzione piena ($c = 0{,}33$).
 
 \[
-MC_A = 8.250 \times \frac{(1{,}015)^{40} - 1}{0{,}015}
-= 8.250 \times 54{,}27 \approx 447.700 \text{ euro}
+MC_A = 0{,}33 \sum_{t=1}^{40} 25.000\,(1{,}01)^{t-1}(1{,}007)^{40-t}
+\approx 459.300 \text{ euro}
 \]
 
 \[
-P_A = 0{,}050 \times 447.700 \approx 22.385 \text{ euro/anno}
-\quad (1.722 \text{ euro/mese})
+P_A = 0{,}050 \times 459.300 \approx 22.965 \text{ euro/anno}
+\quad (1.767 \text{ euro/mese})
 \]
 
-Il tasso di sostituzione lordo è $22.385 / 25.000 = 89{,}5\%$, valore
-prossimo alla soglia di adeguatezza convenzionalmente fissata all'80\%
-per i sistemi a prestazione definita.
+A fronte di un'ultima retribuzione di $25.000\,(1{,}01)^{39} \approx 36.850$
+euro, il tasso di sostituzione lordo è $22.965 / 36.850 \approx 62{,}3\%$, in
+linea con il 58,4\% che la RGS proietta per il dipendente privato al 2070
+\cite{MEF_RGS2025} e lontano dal 90\% che la stessa carriera produrrebbe
+nell'ipotesi, irrealistica, di retribuzione costante.
 
 \subsection*{Profilo B -- Gap contributivo iniziale (trentacinque anni)}
 
@@ -195,91 +206,70 @@ formazione post-laurea non retribuita). Trentacinque anni di
 contribuzioni effettive.
 
 \[
-MC_B = 8.250 \times \frac{(1{,}015)^{35} - 1}{0{,}015}
-= 8.250 \times 45{,}59 \approx 376.100 \text{ euro}
+MC_B = 0{,}33 \sum_{t=6}^{40} 25.000\,(1{,}01)^{t-1}(1{,}007)^{40-t}
+\approx 404.800 \text{ euro}
 \]
 
 \[
-P_B = 0{,}050 \times 376.100 \approx 18.805 \text{ euro/anno}
-\quad (1.446 \text{ euro/mese})
+P_B = 0{,}050 \times 404.800 \approx 20.240 \text{ euro/anno}
+\quad (1.557 \text{ euro/mese})
 \]
 
-Tasso di sostituzione lordo: $75{,}2\%$. La differenza rispetto al
-profilo A è di 14,3 punti percentuali e di circa 3.580 euro annui
-lordi, per effetto di cinque anni mancanti posizionati all'inizio della
-carriera, dove il fattore di capitalizzazione composta opera per
-quarant'anni contro i trentacinque del profilo stabile.
+Tasso di sostituzione lordo: $54{,}9\%$, circa sette punti e mezzo sotto il
+profilo A. Il peso dei cinque anni mancanti è amplificato dal fatto che cadono
+all'inizio della carriera, dove la capitalizzazione opera per il numero massimo
+di anni.
 
 \subsection*{Profilo C -- Dieci anni a regime ridotto (caregiving)}
 
 \noindent
-Carriera di quarant'anni in cui i primi dieci si svolgono a metà orario
-per carichi di cura (salario effettivo 12.500 euro, contribuzione
-annua 4.125 euro). Tipico di lavoratrici con figli o con genitori
-anziani a carico, che interrompono il lavoro a tempo pieno ma non
-escono dal mercato.
-
-Il montante si decompone in due periodi:
+Carriera di quarant'anni in cui i primi dieci si svolgono a metà retribuzione
+per carichi di cura, poi trenta a tempo pieno. Tipico di lavoratrici con figli o
+con genitori anziani a carico, che riducono l'orario ma non escono dal mercato.
 
 \[
-\begin{aligned}
-MC_{C,1}
-  &= 4.125 \times \frac{(1{,}015)^{10} - 1}{0{,}015} \times (1{,}015)^{30} \\
-  &= 4.125 \times 10{,}70 \times 1{,}563 \approx 69.010 \text{ euro}\\[6pt]
-MC_{C,2}
-  &= 8.250 \times \frac{(1{,}015)^{30} - 1}{0{,}015}
-  = 8.250 \times 37{,}54 \approx 309.700 \text{ euro}
-\end{aligned}
+MC_C = 0{,}33 \left[ \tfrac{1}{2}\sum_{t=1}^{10} + \sum_{t=11}^{40} \right]
+25.000\,(1{,}01)^{t-1}(1{,}007)^{40-t} \approx 404.400 \text{ euro}
 \]
 
 \[
-MC_C = 69.010 + 309.700 \approx 378.700 \text{ euro}
+P_C = 0{,}050 \times 404.400 \approx 20.220 \text{ euro/anno}
+\quad (1.555 \text{ euro/mese})
 \]
 
-\[
-P_C = 0{,}050 \times 378.700 \approx 18.935 \text{ euro/anno}
-\quad (1.456 \text{ euro/mese})
-\]
-
-Tasso di sostituzione lordo: $75{,}7\%$ (rapportato al salario di
-riferimento di 25.000 euro, per comparabilità con gli altri profili).
-Rispetto al profilo A, la perdita
-è di circa 3.450 euro annui lordi, distribuita su dieci anni di
-contribuzione parziale invece che su cinque anni di assenza completa.
-L'effetto finale è quasi identico al profilo B, confermando che
-la discontinuità previdenziale si genera tanto dall'assenza quanto
-dalla presenza ridotta.
+Tasso di sostituzione lordo: $54{,}9\%$. L'esito quasi coincide con quello del
+profilo B: dieci anni a metà contribuzione pesano come cinque anni di assenza
+piena, e la penalizzazione si genera tanto dall'assenza quanto dalla presenza
+ridotta.
 
 \subsection*{Profilo D -- Autonomo con reddito sotto-dichiarato}
 
 \noindent
-Lavoratore autonomo per quarant'anni, con aliquota contributiva del
-25\% (gestione separata INPS per autonomi) e reddito dichiarato di
-18.750 euro a fronte di un reddito effettivo di 25.000 euro. La
-contribuzione annua è 4.688 euro, il 56,8\% di quella del dipendente.
+Lavoratore autonomo per quarant'anni, con aliquota contributiva del 25\% e
+reddito dichiarato pari al 75\% di quello effettivo (18.750 contro 25.000 euro
+d'ingresso).
 
 \[
-MC_D = 4.688 \times 54{,}27 \approx 254.400 \text{ euro}
+MC_D = 0{,}25 \sum_{t=1}^{40} 0{,}75 \cdot 25.000\,(1{,}01)^{t-1}(1{,}007)^{40-t}
+\approx 261.000 \text{ euro}
 \]
 
 \[
-P_D = 0{,}050 \times 254.400 \approx 12.720 \text{ euro/anno}
-\quad (978 \text{ euro/mese})
+P_D = 0{,}050 \times 261.000 \approx 13.050 \text{ euro/anno}
+\quad (1.004 \text{ euro/mese})
 \]
 
-Il tasso di sostituzione lordo rispetto al reddito effettivo (25.000
-euro) è del $50{,}9\%$, tredici punti al di sotto della soglia di
-adeguatezza dell'80\% e quasi quaranta punti sotto il profilo stabile.
-La sotto-dichiarazione del reddito, fenomeno strutturale nel lavoro
-autonomo italiano documentato dall'INPS \cite{INPS2025}, produce una
-trappola previdenziale: l'autonomo che evade parzialmente l'imposta
-oggi costruisce una povertà pensionistica per sé stesso domani.
+Il tasso di sostituzione lordo rispetto al reddito effettivo è del $35{,}4\%$,
+ben sotto qualsiasi soglia di adeguatezza e quasi ventisette punti sotto il
+profilo stabile. La sotto-dichiarazione, fenomeno strutturale nel lavoro
+autonomo italiano documentato dall'INPS \cite{INPS2025}, costruisce una povertà
+pensionistica futura: l'imposta evasa oggi è pensione mancante domani.
 
 \begin{table}[h!]
 \centering
 \small
-\caption{Esercizio illustrativo su quattro profili Gen-Z: montante, pensione e
-         tasso di sostituzione lordo}
+\caption{Simulazione su quattro profili Gen-Z con retribuzione crescente:
+         montante, pensione e tasso di sostituzione lordo}
 \label{tab:profili}
 \begin{tabularx}{\textwidth}{X r r r r}
 \toprule
@@ -287,39 +277,34 @@ oggi costruisce una povertà pensionistica per sé stesso domani.
                  & \textbf{Pensione (euro/a)}
                  & \textbf{TS lordo} \\
 \midrule
-A -- Dipendente stabile       & 40 & 447.700 & 22.385 & 89,5\% \\
-B -- Gap 5 anni (NEET/precario)& 35 & 376.100 & 18.805 & 75,2\% \\
-C -- Regime ridotto 10 anni   & 40\,$^{a}$ & 378.700 & 18.935 & 75,7\% \\
-D -- Autonomo sotto-dichiarato & 40 & 254.400 & 12.720 & 50,9\% \\
+A -- Dipendente stabile       & 40 & 459.300 & 22.965 & 62,3\% \\
+B -- Gap 5 anni (NEET/precario)& 35 & 404.800 & 20.240 & 54,9\% \\
+C -- Regime ridotto 10 anni   & 40\,$^{a}$ & 404.400 & 20.220 & 54,9\% \\
+D -- Autonomo sotto-dichiarato & 40 & 261.000 & 13.050 & 35,4\% \\
 \bottomrule
 \end{tabularx}
 \par\smallskip
 \footnotesize
-Ipotesi comuni (illustrative): salario lordo 25.000 euro costante, capitalizzazione
-nozionale 1,5\%, coefficiente 2067 = 5,0\%, pensionamento a 67 anni. L'ipotesi di
-salario costante sovrastima il livello assoluto dei tassi di sostituzione (cfr. il
-testo seguente); il confronto fra i profili resta valido perché la stessa ipotesi
-vale per tutti.\\
-$^{a}$ Di cui 10 anni a regime ridotto (50\%). Tasso di sostituzione
-calcolato sul salario lordo di riferimento di 25.000 euro, per
-comparabilità con gli altri profili.\\
-Fonti: elaborazioni dell'autore su parametri MEF-RGS \cite{MEF_RGS2025}
+Ipotesi comuni: retribuzione d'ingresso 25.000 euro, in crescita reale dell'1\%
+annuo (dinamica della produttività MEF), montante capitalizzato allo 0,7\% reale
+(crescita del PIL reale MEF), coefficiente 2067 = 5,0\%, pensionamento a 67 anni.
+Tassi di sostituzione lordi calcolati sull'ultima retribuzione; importi in euro
+reali al pensionamento.\\
+$^{a}$ Di cui 10 anni a regime ridotto (50\%).\\
+Fonti: elaborazioni dell'autore su parametri MEF-RGS \cite{MEF_RGS2025, MEF_RGS2025_NdA}
 e INPS \cite{INPS2025}.
 \end{table}
 
 \medskip
 \noindent
-Un avvertimento sul livello di questi numeri. L'esercizio condivide con l'esempio
-dell'introduzione un'ipotesi semplificatrice, la retribuzione costante lungo tutta
-la carriera, che gonfia il tasso di sostituzione assoluto: capitalizzare al tasso
-nozionale contributi calcolati su un salario fermo avvicina il risultato a quello
-di un metodo retributivo, e porta il profilo stabile a sfiorare il 90\% lordo. Le
-proiezioni della Ragioneria collocano il tasso di sostituzione lordo del dipendente
-privato a regime molto più in basso, attorno al 58\% al 2070 \cite{MEF_RGS2025}. Il
-valore che conta qui non è perciò il livello dei singoli profili ma la loro distanza
-relativa, che dipende dalla sola struttura della carriera e che la stessa ipotesi,
-applicata a tutti, lascia intatta. È quella distanza, non la cifra assoluta, a
-misurare la regressività che la sezione seguente analizza.
+I livelli che emergono sono coerenti con le proiezioni ufficiali: il profilo
+stabile si colloca al 62\% lordo, vicino al 58,4\% che la Ragioneria stima per il
+dipendente privato al 2070 \cite{MEF_RGS2025}, e non al 90\% che la stessa carriera
+restituirebbe a retribuzione costante. È però la distanza fra i profili a contare:
+quasi ventisette punti di tasso di sostituzione separano il dipendente stabile
+dall'autonomo che sotto-dichiara, e quel divario dipende dalla sola struttura
+della carriera. È questo, non il livello assoluto, a misurare la regressività che
+la sezione seguente analizza.
 
 % --- §4.5 La regressività implicita del metodo NDC --------------------
 \section{La regressività implicita: chi paga il prezzo della neutralità attuariale}
@@ -331,9 +316,9 @@ che il metodo NDC, per costruzione, non considera ineguale. Ogni
 lavoratore riceve in pensione il valore attualizzato di quanto ha
 versato, modulato dalla longevità della propria coorte: non c'è
 privilegio né discriminazione nel calcolo. La neutralità attuariale è
-rispettata. Eppure i quattro profili, costruiti tutti sullo stesso salario
-lordo e sulle stesse ipotesi illustrative, si distribuiscono su un intervallo
-di quasi quaranta punti di tasso di sostituzione. La neutralità formale coesiste con una regressività sostanziale,
+rispettata. Eppure i quattro profili, costruiti tutti sulla stessa retribuzione
+d'ingresso e sulla stessa dinamica salariale, si distribuiscono su un intervallo
+di quasi ventisette punti di tasso di sostituzione. La neutralità formale coesiste con una regressività sostanziale,
 perché le discontinuità di carriera che producono questi esiti divergenti
 non sono distribuite casualmente nella forza lavoro.
 
@@ -418,46 +403,34 @@ rapporto al PIL.
 Le simulazioni della sezione~\ref{sec:simulazioni} dimostrano che
 il sistema NDC, tecnicamente neutro, produce esiti radicalmente diversi
 per profili di carriera la cui distribuzione nella forza lavoro
-non è neutra. La variabile che separa il 89,5\% del Profilo A dal
-50,9\% del Profilo D non è né il salario (uguale per entrambi) né il
+non è neutra. La variabile che separa il 62,3\% del Profilo A dal
+35,4\% del Profilo D non è né il salario (uguale per entrambi) né il
 numero di anni di lavoro (uguale o superiore nel Profilo D): è la
 qualità dell'integrazione nel mercato formale, che il metodo NDC non
 corregge ma amplifica.
 
 \medskip
 \noindent
-Il punto da tenere aperto, invece di chiudere con
-una raccomandazione ordinata, è la distribuzione della
-capacità di risposta. Gli strumenti di pianificazione individuale esistono e le sezioni
-che seguono li descrivono in relazione ai quattro profili simulati:
-TFR al fondo pensione, deducibilità fiscale dei contributi
-volontari, scelta della linea di investimento, ETF e piani di
-accumulo come complemento privato. Questi strumenti funzionano,
-e i dati della Ragioneria Generale mostrano
-che un lavoratore del Profilo B che aderisce al fondo pensione sin
-dall'inizio recupera fino a 7-10 punti di tasso di sostituzione
-\cite{MEF_RGS2025}. Ma l'accesso a questi strumenti è condizionato
-da un prerequisito che non riguarda la conoscenza finanziaria: è il
-reddito disponibile. Un lavoratore con €25.000 annui e due figli a
-carico non ha lo stesso margine di manovra di uno con €40.000 e
-carriera stabile. Il pilastro complementare non è neutro rispetto
-alla distribuzione del reddito: è efficiente per chi ha già qualcosa,
-meno per chi non ce l'ha.
+Da qui in avanti il capitolo cambia registro e diventa operativo. Le sezioni che
+seguono ricostruiscono, strumento per strumento, le mosse che un lavoratore può
+compiere oggi: destinazione del TFR, contributo del datore, deducibilità fiscale,
+scelta della linea di investimento, riscatti contributivi, piani di accumulo. Non
+sono opzioni equivalenti né di pari urgenza, e vengono presentate in ordine di
+priorità e di rendimento atteso, fino alla checklist riepilogativa della
+sezione~\ref{sec:checklist}. Attivarle presto conta: i dati della Ragioneria
+mostrano che un lavoratore del Profilo B che aderisce al fondo pensione fin
+dall'inizio recupera fino a 7-10 punti di tasso di sostituzione \cite{MEF_RGS2025}.
 
 \medskip
 \noindent
-Questo non è un argomento contro il pilastro complementare. È un
-argomento per costruirlo sapendo chi esclude strutturalmente, e per
-non affidarsi a esso come unica risposta al problema
-dell'adeguatezza. La generazione Z affronta un sistema che ha
-trasferito su di lei il rischio demografico attraverso meccanismi
-automatici, e al tempo stesso si trova in un mercato del lavoro che
-rende quella risposta individuale sistematicamente più difficile di
-quanto non fosse per i propri genitori. La distanza tra l'urgenza
-della risposta e la capacità di darla è la vera sfida strutturale
-di cui il titolo di questo capitolo porta il nome. Le sezioni
-che seguono non eliminano quella distanza: la misurano e indicano
-dove ciascun profilo può ridurla.
+Resta però un vincolo che nessuno strumento elimina, e che la tesi tiene fermo:
+l'accesso a queste mosse dipende dal reddito disponibile, non dalla competenza
+finanziaria. Chi guadagna €25.000 con due figli a carico non ha lo stesso margine
+di chi ne guadagna €40.000 con carriera stabile. Il pilastro complementare è
+efficiente per chi ha già un margine, meno per chi non ce l'ha: proprio i profili
+B, C e D, quelli con i tassi di sostituzione più bassi, sono anche quelli con meno
+capacità di correggerli. Le pagine seguenti danno perciò una gerarchia di mosse,
+segnalando per ciascuna a chi è davvero accessibile.
 
 % --- §4.7 Struttura del secondo pilastro --------------------------------
 \section{Il secondo pilastro: TFR, fondi pensione e deducibilità fiscale}
@@ -632,7 +605,7 @@ traduce in un aumento permanente del montante NDC. Per chi non dispone
 della liquidità, o per chi non ha un titolo da riscattare, posticipare
 il pensionamento di due anni oltre i 67 produce un effetto paragonabile
 perché aumenta il coefficiente di trasformazione (a 69 anni il
-coefficiente proiettato supera il 5,5\% \cite{MEF_RGS2025}) e
+coefficiente proiettato supera il 5,5\%, \citealp{MEF_RGS2025}) e
 capitalizza due anni aggiuntivi di contribuzione.
 
 \medskip
@@ -662,7 +635,7 @@ il problema a monte di qualsiasi strategia complementare. Ogni euro
 di reddito non dichiarato è un euro di montante NDC che non verrà
 capitalizzato: la simulazione della sezione~\ref{sec:simulazioni}
 mostra già che la sotto-dichiarazione al 75\% del reddito effettivo
-produce una pensione di \euro{}12.720 annui invece dei \euro{}22.385
+produce una pensione di \euro{}13.050 annui invece dei \euro{}22.965
 del profilo stabile. Il secondo passo è la scelta dello strumento:
 l'autonomo non ha accesso ai fondi negoziali di categoria, ma può
 aderire a un fondo aperto con costi inferiori alla metà rispetto al
@@ -675,3 +648,52 @@ differenziale di costo di 1,3 punti percentuali applicato a un patrimonio
 medio di \euro{}50.000 su quarant'anni di partecipazione.} Il PAC su ETF completa il piano per gli
 importi eccedenti il limite deducibile e gestisce la variabilità
 mensile tipica del reddito da lavoro autonomo.
+
+% --- §4.10 Sintesi operativa -------------------------------------------
+\section{Sintesi operativa: le mosse in ordine di priorità}
+\label{sec:checklist}
+
+\noindent
+Le quattro strategie convergono in una gerarchia unica, valida per chiunque entri
+oggi nel mercato del lavoro. L'ordine non è arbitrario: riflette il rendimento
+atteso e il costo di attivazione, dalle mosse a costo zero a quelle che richiedono
+reddito e liquidità.
+
+\begin{table}[h!]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{Checklist operativa: le mosse del lavoratore in ordine di priorità}
+\label{tab:checklist}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.24\textwidth} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{0.21\textwidth}}
+\toprule
+\textbf{Mossa} & \textbf{Parametro e beneficio} & \textbf{A chi è accessibile} \\
+\midrule
+1. Conferire il TFR al fondo pensione & Modulo TFR2 entro 6 mesi; rendimento di mercato contro il 2,4\% del TFR, tassazione finale dal 15\% al 9\% & Tutti i dipendenti (costo zero) \\
+\addlinespace
+2. Attivare il contributo del datore & Quota minima a carico da CCNL; dallo 0,55 al 2\% del lordo in più & Dipendenti con fondo negoziale (costo zero) \\
+\addlinespace
+3. Versamenti volontari deducibili & Fino a \euro{}5.164,57 l'anno; risparmio IRPEF dal 23 al 43\% del versato & Richiede reddito capiente \\
+\addlinespace
+4. Linea dinamica nella fase di accumulo & ISC più basso sul comparatore COVIP; 4-6\% reale contro meno dell'1\% della garantita & Under 50, orizzonte lungo \\
+\addlinespace
+5. Riscatto agevolato della laurea & \euro{}6.123 per anno (2025), deducibile; aumento permanente del montante NDC & Carriere con gap iniziali e liquidità \\
+\addlinespace
+6. PAC su ETF azionario globale & TER inferiore allo 0,2\%; nessun limite di importo, piena liquidabilità & Capacità contributiva residua \\
+\addlinespace
+7. RITA & Dai 63 anni con 5 anni di iscrizione; ponte di reddito fino a 67 anni & Chi ha maturato una posizione complementare \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+\footnotesize Fonte: elaborazione dell'autore su normativa vigente e dati COVIP
+\cite{COVIP2024} e INPS \cite{INPSRiscattoLaurea2025}.
+\end{table}
+
+\noindent
+La gerarchia è anche una mappa della disuguaglianza. Le prime due mosse non
+costano nulla e sono quindi universali; dalla terza in poi servono reddito
+disponibile e liquidità, cioè esattamente ciò che manca ai profili B, C e D,
+quelli con i tassi di sostituzione più bassi. Il dipendente stabile del Profilo A
+può percorrere l'intera scala; chi ha carriere discontinue si ferma ai primi
+gradini. È questa asimmetria, non l'assenza di strumenti, la ragione per cui il
+secondo pilastro, da solo, non chiude il problema dell'adeguatezza.
