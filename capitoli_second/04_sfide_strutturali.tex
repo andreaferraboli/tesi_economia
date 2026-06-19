@@ -84,9 +84,11 @@ definisce \guillemotleft{}lontano dalla dinamica recente\guillemotright{}
 L'implicazione per un lavoratore che entra nel mercato del lavoro nel 2025
 è diretta. Il rendimento implicito che il sistema PAYG gli riconosce sul
 lungo periodo si colloca, nelle ipotesi prudenziali, nell'ordine dello
-0,5-1,5\% reale annuo. Qualunque asset finanziario diversificato su un
-orizzonte di quaranta anni restituisce storicamente un rendimento reale
-di tre-cinque punti percentuali superiore \cite{OCSE2023}. La perdita
+0,5-1,5\% reale annuo. Un portafoglio diversificato a prevalente componente azionaria, sullo
+stesso orizzonte di quaranta anni, ha restituito storicamente molto di più:
+il database di lungo periodo di Dimson, Marsh e Staunton stima per le azioni
+mondiali un rendimento reale attorno al 5\% annuo dal 1900, con il mercato
+statunitense ancora più alto \cite{DimsonMarshStaunton2025}. La perdita
 relativa rispetto a un ipotetico sistema a capitalizzazione non è più
 una questione teorica: è la misura quantitativa del rischio demografico
 che la generazione attuale di lavoratori porta in dote.
@@ -102,9 +104,9 @@ delle coorti precedenti, non per scelta ma per composizione del mercato
 del lavoro che si trovano di fronte. Il tasso di NEET, giovani tra i 15
 e i 29 anni né occupati né in istruzione né in formazione, ha raggiunto
 il 16,1\% in Italia nel 2023, il valore più alto dell'Unione europea
-dopo la Romania \cite{EUROSTAT_NEET2024}. Tra gli occupati nella fascia
-25-34 anni, il 27\% dei dipendenti è inquadrato con contratto a tempo
-determinato, contro una media UE del 18\% \cite{INPS2025}. Questi numeri
+dopo la Romania \cite{EUROSTAT_NEET2024}. Tra i dipendenti
+under 30, la quota con contratto a tempo determinato ha raggiunto in Italia
+il 34,3\% nel 2024, sopra la media UE-27 del 31,1\% \cite{EUROSTAT_LFS_temporary2024}. Questi numeri
 non descrivono una transizione generazionale: descrivono il montante
 contributivo che verrà accumulato, o non accumulato, nei prossimi
 quarant'anni.
@@ -129,13 +131,13 @@ un'interruzione tardiva.
 
 \medskip
 \noindent
-A questo si aggiunge un effetto di composizione documentato dall'INPS:
-i lavoratori con carriere discontinue tendono a concentrarsi nei settori
-a bassa crescita salariale, il che riduce sia il numeratore (contributi
-versati) sia il tasso di capitalizzazione del montante, che dipende dalla
-crescita media del PIL nominale \cite{INPS2025}. Due canali di
-compressione del montante che operano simultaneamente e si autorinforzano
-nel tempo.
+A questo si aggiunge un dato documentato dall'INPS: l'anzianità
+contributiva media dei trentacinquenni è scesa da 9,6 anni nel 2002 a 7,8
+nel 2022, quasi un quinto in meno in vent'anni \cite{INPS2025}. Carriere
+che iniziano più tardi e si interrompono più spesso riducono il numeratore,
+i contributi versati, mentre il tasso di capitalizzazione del montante resta
+agganciato alla crescita del PIL nominale. Due canali di compressione del
+montante che operano simultaneamente.
 
 % --- §4.4 Simulazioni su quattro profili di carriera -------------------
 \section{Simulazioni: il costo previdenziale delle carriere discontinue}
@@ -159,7 +161,13 @@ dell'anno $t$, $S_0 = 25.000$ euro la retribuzione reale d'ingresso, $w = 1{,}0\
 il tasso di crescita reale della retribuzione e $\gamma = 0{,}7\%$ il tasso reale
 di capitalizzazione del montante. I due valori non sono scelti ad arbitrio. La
 Ragioneria assume che le retribuzioni crescano in media come la produttività per
-occupato, l'1\% reale annuo nel periodo 2025-2070, e capitalizza il montante
+occupato, l'1\% reale annuo nel periodo 2025-2070,\footnote{Si tratta di una media
+di lungo periodo, adottata qui per comparabilità con le proiezioni RGS. Il profilo
+retributivo individuale è in realtà più ripido: i dati ISTAT mostrano che la
+retribuzione oraria degli under 30 è circa il 36\% inferiore a quella degli over 50,
+con gli incrementi maggiori nei primi anni di anzianità \cite{ISTAT_Retribuzioni2022}.
+Un profilo più ripido amplierebbe la distanza fra dinamica salariale e capitalizzazione
+del montante, spingendo i tassi di sostituzione simulati lievemente più in basso.} e capitalizza il montante
 nozionale al tasso di crescita del PIL nominale, in media il 2,7\% (0,7\% reale
 più un deflatore del 2\%) \cite{MEF_RGS2025_NdA}. La distanza fra i due tassi,
 retribuzioni che crescono più in fretta del montante perché l'occupazione si
@@ -261,14 +269,19 @@ P_D = 0{,}050 \times 261.000 \approx 13.050 \text{ euro/anno}
 
 Il tasso di sostituzione lordo rispetto al reddito effettivo è del $35{,}4\%$,
 ben sotto qualsiasi soglia di adeguatezza e quasi ventisette punti sotto il
-profilo stabile. La sotto-dichiarazione, fenomeno strutturale nel lavoro
-autonomo italiano documentato dall'INPS \cite{INPS2025}, costruisce una povertà
-pensionistica futura: l'imposta evasa oggi è pensione mancante domani.
+profilo stabile. La sotto-dichiarazione del reddito è un fenomeno strutturale del lavoro
+autonomo italiano: la Relazione del MEF sull'economia non osservata stima la
+propensione all'evasione dell'IRPEF da lavoro autonomo e impresa al 63,9\%
+dell'imposta potenziale nella media 2017-2021 \cite{MEF_EvasioneFiscale2024}, e
+stime accademiche indicano che gli autonomi dichiarano circa un terzo di reddito
+in meno di quello effettivo \cite{Albarea2020}. Quel reddito non dichiarato
+costruisce una povertà pensionistica futura: l'imposta evasa oggi è pensione
+mancante domani.
 
 \begin{table}[h!]
 \centering
 \small
-\caption{Simulazione su quattro profili Gen-Z con retribuzione crescente:
+\caption{Simulazione su quattro profili della Generazione Z con retribuzione crescente:
          montante, pensione e tasso di sostituzione lordo}
 \label{tab:profili}
 \begin{tabularx}{\textwidth}{X r r r r}
@@ -376,7 +389,7 @@ quanto versato \cite{Mazzaferro2023}. Il dato, già citato nel capitolo
 precedente, acquista qui un'ulteriore valenza: quella generosità si è
 tradotta in un sussidio implicito di 80 miliardi di euro a valori
 presenti, finanziato per costruzione dalle coorti successive. La
-generazione Z non eredita soltanto un sistema adeguato al suo
+Generazione Z non eredita soltanto un sistema adeguato al suo
 sostenimento: eredita il conto sospeso delle generazioni che l'hanno
 preceduta, che il metodo NDC pone a carico dei loro montanti attraverso
 un tasso di capitalizzazione nozionale agganciato alla crescita del PIL
@@ -464,10 +477,10 @@ lordo secondo il contratto collettivo: un trasferimento aggiuntivo
 accessibile solo attivando il fondo, non rinviandone l'adesione. I
 \emph{fondi aperti}, offerti da banche e assicurazioni, sono
 accessibili a qualunque lavoratore, con un ISC medio a dieci anni
-dell'1,72\%. I \emph{piani individuali pensionistici} (PIP), prodotti
+dell'1,35\%. I \emph{piani individuali pensionistici} (PIP), prodotti
 assicurativi a prevalente distribuzione bancaria, presentano
 l'indicatore sintetico dei costi più elevato, pari in media al
-2,61\% annuo a dieci anni, e sono i meno efficienti per orizzonti di
+2,17\% annuo a dieci anni, e sono i meno efficienti per orizzonti di
 quarant'anni, nonostante restino tra i più venduti per effetto della
 rete commerciale \cite{COVIP2024}.
 
@@ -477,14 +490,14 @@ La deducibilità fiscale è il vantaggio strutturale che trasforma
 il fondo pensione in uno strumento con un rendimento garantito
 \emph{prima} dell'investimento. I contributi versati dal lavoratore
 sono deducibili dal reddito imponibile fino a un massimo di
-\euro{}5.164,57 annui \cite{BosiGuerra2022}. Per un lavoratore
-nella fascia IRPEF del 23\% (redditi fino a \euro{}28.000 lordi),
-il risparmio fiscale immediato è di \euro{}1.188 annui; nella fascia
-del 35\% (da \euro{}28.001 a \euro{}50.000), è di \euro{}1.807
+5.164,57 euro annui \cite{BosiGuerra2022}. Per un lavoratore
+nella fascia IRPEF del 23\% (redditi fino a 28.000 euro lordi),
+il risparmio fiscale immediato è di 1.188 euro annui; nella fascia
+del 35\% (da 28.001 euro a 50.000 euro), è di 1.807 euro
 annui. Il plafond si accumula: nei primi cinque anni di lavoro,
 l'eventuale mancata deducibilità genera uno spazio aggiuntivo
 utilizzabile negli anni successivi, fino a un massimale di
-\euro{}7.746,86 nell'anno di utilizzo.
+7.746,86 euro nell'anno di utilizzo.
 
 \medskip
 \noindent
@@ -525,16 +538,20 @@ atteso verso il basso.
 \medskip
 \noindent
 La linea dinamica, a prevalente componente azionaria, è volatile
-nel breve periodo ma produce rendimenti storicamente dell'ordine
-del 4-6\% reale annuo su orizzonti di trenta-quarant'anni
-\cite{OCSE2023}. La differenza tra un rendimento reale dell'1,5\%
-(linea garantita) e del 5\% (linea dinamica) su quarant'anni di
-capitalizzazione composta su un versamento mensile di \euro{}200
-è la differenza tra un montante complementare di circa \euro{}131.000
-e di circa \euro{}306.000.\footnote{Elaborazione dell'autore: versamento
-mensile anticipato di \euro{}200 capitalizzato mensilmente su 480 mesi, a
-tasso reale annuo dell'1,5\% e del 5\% rispettivamente.} Non una differenza
-marginale: un multiplo di circa 2,3.
+nel breve periodo ma punta a rendimenti reali nettamente più alti. Il
+benchmark azionario globale di lungo periodo si colloca attorno al 5\%
+reale annuo \cite{DimsonMarshStaunton2025}, ma è un rendimento lordo di
+indice: una linea dinamica reale non è integralmente azionaria e sconta
+l'ISC del fondo, per cui ne cattura prudenzialmente una frazione, attorno
+al 4\% reale netto su un orizzonte di quarant'anni. La differenza tra un
+rendimento reale dello 0,5\% (linea garantita, vicino allo zero come
+osservato sopra) e del 4\% (linea dinamica al netto dei costi), su
+quarant'anni di capitalizzazione composta su un versamento mensile di
+200 euro, è la differenza tra un montante complementare di circa
+106.000 euro e di circa 233.000 euro.\footnote{Elaborazione dell'autore:
+versamento mensile anticipato di 200 euro capitalizzato mensilmente su
+480 mesi, a tasso reale annuo dello 0,5\% e del 4\% rispettivamente.} Non una
+differenza marginale: un multiplo di circa 2,2.
 
 \medskip
 \noindent
@@ -577,7 +594,7 @@ partenza migliore ma il rischio maggiore di inerzia. La sequenza
 operativa è: (1) trasferire immediatamente il TFR al fondo negoziale
 di categoria e attivare il contributo aggiuntivo del datore di
 lavoro, perché ogni mese di ritardo è un mese di matching non
-incassato; (2) versare fino al massimale di \euro{}5.164,57 annui
+incassato; (2) versare fino al massimale di 5.164,57 euro annui
 su linea dinamica, sfruttando l'intero beneficio fiscale;
 (3) avviare un PAC mensile per gli importi eccedenti il limite.
 La RITA (Rendita Integrativa Temporanea Anticipata), accessibile
@@ -598,8 +615,8 @@ della vita lavorativa. Nella formula agevolata, applicabile quando i
 periodi da riscattare ricadono nel sistema contributivo, come accade
 per chi è privo di anzianità al 31 dicembre 1995, il costo è fisso e
 indipendente dal reddito, pari all'aliquota IVS del 33\% sul minimale
-di artigiani e commercianti: nel 2025, \euro{}18.555 $\times$ 33\% $=$
-\euro{}6.123 per ciascun anno riscattato \cite{INPSRiscattoLaurea2025}.
+di artigiani e commercianti: nel 2025, 18.555 euro $\times$ 33\% $=$
+6.123 euro per ciascun anno riscattato \cite{INPSRiscattoLaurea2025}.
 Gli importi versati sono fiscalmente deducibili e il riscatto si
 traduce in un aumento permanente del montante NDC. Per chi non dispone
 della liquidità, o per chi non ha un titolo da riscattare, posticipare
@@ -619,7 +636,7 @@ biennale disciplinato dall'art.~42, comma~5, del D.Lgs. 151/2001, in
 attuazione della L. 104/1992: uno strumento poco utilizzato per scarsa
 conoscenza. La seconda è finanziaria: aprire
 un fondo pensione aperto (l'accesso al negoziale è spesso legato al
-contratto di categoria) e versarvi anche \euro{}50-100 mensili
+contratto di categoria) e versarvi anche 50-100 euro mensili
 durante il periodo part-time. La regola del ciclo di vita si applica
 con forza particolare a questo profilo: ogni euro versato a
 trent'anni capitalizza per trentasei-trentasette anni prima del
@@ -635,17 +652,18 @@ il problema a monte di qualsiasi strategia complementare. Ogni euro
 di reddito non dichiarato è un euro di montante NDC che non verrà
 capitalizzato: la simulazione della sezione~\ref{sec:simulazioni}
 mostra già che la sotto-dichiarazione al 75\% del reddito effettivo
-produce una pensione di \euro{}13.050 annui invece dei \euro{}22.965
+produce una pensione di 13.050 euro annui invece dei 22.965 euro
 del profilo stabile. Il secondo passo è la scelta dello strumento:
 l'autonomo non ha accesso ai fondi negoziali di categoria, ma può
-aderire a un fondo aperto con costi inferiori alla metà rispetto al
-PIP medio. Su quarant'anni di partecipazione, la differenza tra un
-costo dello 0,7\% annuo (fondo aperto) e il 2\% annuo (PIP medio),
-applicata a un patrimonio medio di \euro{}50.000, vale circa
-\euro{}650 annui di minor costo, ovvero circa \euro{}26.000 cumulati in
-valore reale lungo l'intero periodo.\footnote{Elaborazione dell'autore:
-differenziale di costo di 1,3 punti percentuali applicato a un patrimonio
-medio di \euro{}50.000 su quarant'anni di partecipazione.} Il PAC su ETF completa il piano per gli
+aderire a un fondo aperto, il cui ISC medio a dieci anni è circa il 38\%
+più basso di quello del PIP medio (1,35\% contro 2,17\%). Su quarant'anni
+di partecipazione, il differenziale di costo di 0,82 punti percentuali,
+applicato a un patrimonio medio di 50.000 euro, vale circa 410 euro
+annui di minor costo, ovvero circa 16.400 euro cumulati in valore reale
+lungo l'intero periodo.\footnote{Elaborazione dell'autore: differenziale
+di costo di 0,82 punti percentuali (ISC medio a dieci anni: 1,35\% per i
+fondi aperti, 2,17\% per i PIP, \citealp{COVIP2024}) applicato a un
+patrimonio medio di 50.000 euro su quarant'anni di partecipazione.} Il PAC su ETF completa il piano per gli
 importi eccedenti il limite deducibile e gestisce la variabilità
 mensile tipica del reddito da lavoro autonomo.
 
@@ -673,11 +691,11 @@ reddito e liquidità.
 \addlinespace
 2. Attivare il contributo del datore & Quota minima a carico da CCNL; dallo 0,55 al 2\% del lordo in più & Dipendenti con fondo negoziale (costo zero) \\
 \addlinespace
-3. Versamenti volontari deducibili & Fino a \euro{}5.164,57 l'anno; risparmio IRPEF dal 23 al 43\% del versato & Richiede reddito capiente \\
+3. Versamenti volontari deducibili & Fino a 5.164,57 euro l'anno; risparmio IRPEF dal 23 al 43\% del versato & Richiede reddito capiente \\
 \addlinespace
-4. Linea dinamica nella fase di accumulo & ISC più basso sul comparatore COVIP; 4-6\% reale contro meno dell'1\% della garantita & Under 50, orizzonte lungo \\
+4. Linea dinamica nella fase di accumulo & ISC più basso sul comparatore COVIP; circa 4\% reale netto contro meno dell'1\% della garantita & Under 50, orizzonte lungo \\
 \addlinespace
-5. Riscatto agevolato della laurea & \euro{}6.123 per anno (2025), deducibile; aumento permanente del montante NDC & Carriere con gap iniziali e liquidità \\
+5. Riscatto agevolato della laurea & 6.123 euro per anno (2025), deducibile; aumento permanente del montante NDC & Carriere con gap iniziali e liquidità \\
 \addlinespace
 6. PAC su ETF azionario globale & TER inferiore allo 0,2\%; nessun limite di importo, piena liquidabilità & Capacità contributiva residua \\
 \addlinespace
