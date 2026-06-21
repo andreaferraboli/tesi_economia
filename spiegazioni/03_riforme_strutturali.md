@@ -103,10 +103,24 @@ La riforma Dini ha adottato la regola NDC di capitalizzazione dei montanti al ta
 **Lo "stato confusionale" (citazione Bevilacqua-Gronchi).**
 Gli autori chiamano questo dispositivo "paradosso italiano" e scrivono che lo "stato confusionale in cui versa il sistema contributivo italiano appare destinato a lunga vita, protetto com'e dal duplice scudo dell'insostenibilita sociale delle vie d'uscita e dell'indisponibilita della classe politica a impegnarsi nella faticosa comprensione dei tecnicismi." E' una citazione diretta che la tesi richiama: vale a dire che il problema e noto tecnicamente, ma nessuno lo tocca.
 
-**Le tre vie tecniche di uscita.**
-1. Prima via: allineare i coefficienti alla regola di indicizzazione effettiva riducendoli. Effetto: pensioni iniziali apparenti scendono del 5-6%. Politicamente esplosivo.
-2. Seconda via: estendere l'indicizzazione al PIL nominale con lo sconto coerente. Preserva la pensione iniziale ma riduce il tasso di crescita reale lungo la vita del pensionato.
-3. Terza via (ibrida): ricalibra entrambi i parametri e distribuisce l'aggiustamento.
+**Le tre vie d'uscita (sono della fonte, non interpretazioni dell'autore).**
+Bevilacqua e Gronchi le elencano esplicitamente nell'articolo ("Dal paradosso si puo
+uscire in tre modi"); il `.tex` ora le attribuisce in modo esplicito. La differenza
+fra le tre sta tutta nello sconto applicato all'indicizzazione al PIL:
+1. Accettare lo sconto di 1,5 punti gia implicito nei coefficienti (indicizzazione al
+   PIL netto di 1,5): preserva la maggiorazione dei coefficienti e l'assegno iniziale,
+   ma espone il potere d'acquisto a un'erosione severa (dimostrata dagli autori sul
+   2010-2026).
+2. Mutuare la scelta norvegese di uno sconto di 0,75 punti: riduce il rischio di
+   erosione al prezzo di una maggiorazione dei coefficienti piu piccola (pensioni
+   iniziali leggermente piu basse).
+3. Indicizzazione piena al PIL: la piu protettiva per il potere d'acquisto, ma
+   impedisce qualunque maggiorazione dei coefficienti e ridurrebbe le pensioni
+   iniziali apparenti del 5-6% (effetto politico esplosivo).
+
+> Attenzione in sede d'esame: la struttura "tre vie" e della fonte; la quantificazione
+> del 5-6% e una lettura dell'autore basata sull'entita delle maggiorazioni documentate
+> dagli autori (le loro Tavole 1-2), non un numero scritto in lettere nell'articolo.
 
 **Conclusione del capitolo su questo punto.**
 Nessuna delle tre e oggi sul tavolo del legislatore. La sola correzione che il dispositivo accettera senza traumi e quella incorporata nella revisione biennale dei coefficienti, che proseguira lungo la traiettoria gia codificata. La prima via (la piu pulita tecnicamente: -5/-6% sulle pensioni iniziali apparenti) e politicamente impraticabile. Per dirlo a voce: "il paradosso e noto, le vie di uscita ci sono, nessun governo le tocchera; l'unica correzione che passera e quella gia automatizzata per via biennale."
@@ -182,7 +196,13 @@ La separazione richiederebbe di finanziare esplicitamente una spesa che il Centr
 
 ---
 
-## Il costo del non riformare
+## Il costo di sospendere gli adeguamenti automatici
+
+> Nota di revisione: la sezione si chiamava "Il costo del non riformare". Titolo
+> cambiato perche il contenuto non riguarda il "non riformare" in generale (che
+> suonava come una spinta a riformare per forza), ma il costo specifico di
+> sospendere i due automatismi gia in vigore: l'adeguamento dei coefficienti di
+> trasformazione e quello dei requisiti anagrafici.
 
 **Lo scenario controfattuale MEF.**
 La nota di aggiornamento al Rapporto n. 26 stima che il blocco simultaneo dei due meccanismi automatici (coefficienti di trasformazione e requisiti anagrafici) a partire dal 2025 comporterebbe un incremento del rapporto debito/PIL di 58 punti percentuali al 2070. Piu di mezzo punto di PIL all'anno, in media, di debito accumulato solo per impedire che i meccanismi tecnici facciano il loro lavoro.
@@ -236,10 +256,29 @@ La via che resta e una combinazione di tre leve:
 E' meno ambiziosa di una grande riforma strutturale, ma e l'unica che sopravvive simultaneamente ai vincoli fiscali, politici ed empirici.
 
 **La settima leva: il denominatore della base contributiva.**
-Tutte le sei leve della tabella e tutte le riforme della matrice operativa agiscono sui parametri interni al sistema: aliquote, coefficienti, eta di uscita, indicizzazione. Il capitolo introduce pero, dopo la matrice, una leva che ne esula perche non ritocca un parametro del sistema ma ne erode il denominatore. Se l'automazione riduce la quota di valore aggiunto che remunera il lavoro -- cioe se la labour share scende strutturalmente -- la base contributiva si assottiglia a prescindere dai coefficienti: gli stessi parametri producono meno gettito, semplicemente perche ci sono meno salari su cui applicarli. E' un problema alla radice, non nei suoi meccanismi interni. Nel dibattito italiano Bacchiocchi (2025) ha formalizzato la proposta di un contributo sull'automazione che appartenga a questa famiglia: tassare il capitale che sostituisce lavoro per ricostituire la base contributiva erosa. Il capitolo lo rinvia alle conclusioni perche tocca la sostenibilita alla radice -- non attraverso un parametro corretto ma attraverso una ridefinizione di cosa costituisce base imponibile previdenziale -- e perche richiede un quadro normativo e valutativo che va oltre l'analisi parametrica del capitolo.
+Tutte le sei leve della tabella e tutte le riforme della matrice operativa agiscono sui parametri interni al sistema: aliquote, coefficienti, eta di uscita, indicizzazione. Il capitolo introduce pero, dopo la matrice, una leva che ne esula perche non ritocca un parametro del sistema ma ne erode il denominatore. Se l'automazione riduce la quota di valore aggiunto che remunera il lavoro -- cioe se la labour share scende strutturalmente -- la base contributiva si assottiglia a prescindere dai coefficienti: gli stessi parametri producono meno gettito, semplicemente perche ci sono meno salari su cui applicarli. E' un problema alla radice, non nei suoi meccanismi interni. Nel dibattito italiano Bacchiocchi (2025) ha formalizzato la proposta di un contributo sull'automazione che appartenga a questa famiglia: tassare il capitale che sostituisce lavoro per ricostituire la base contributiva erosa.
 
-**Come difenderla a voce se Santoni chiede perche non la tratti qui.**
-"E' una leva di ordine diverso: non ritocca un parametro del sistema ma cambia il denominatore su cui quei parametri operano. Includerla nella matrice operativa avrebbe richiesto stime di impatto sulla labour share che la letteratura non offre ancora con il rigore che ho applicato alle altre riforme. Ho scelto di nominarla esplicitamente nelle conclusioni come orizzonte di ricerca, senza simularne gli effetti con cifre che non potevo fondare su fonte primaria."
+> Nota di revisione (cambio di struttura): nella versione precedente il capitolo 3
+> "rinviava alle conclusioni" il dettaglio di questa leva. Ora il **dettaglio e nel
+> capitolo 3** (§3.7, due paragrafi) e nelle **conclusioni resta una sintesi**. In
+> ch3 si trovano: il meccanismo di erosione del denominatore (Acemoglu-Restrepo e
+> Acemoglu-Johnson sull'effetto di robot e automazione cognitiva su occupazione e
+> salari), la proposta Bacchiocchi (~8 miliardi annui), e soprattutto lo scetticismo
+> della letteratura -- l'imposta sui robot efficiente e piccola e tende a zero
+> (Thuemmel 2022); un modello di equilibrio generale UE la giudica controproducente
+> (Furgase 2025) -- piu la tensione decisiva: tassare la tecnologia da cui dipende il
+> recupero di produttivita all'1,04% rischia di indebolire la condizione che la
+> sostenibilita dovrebbe difendere, e la risposta coerente e allargare la base verso
+> il capitale dentro una struttura fiscale riformata (Hotte 2024), non un tributo
+> isolato sui robot.
+
+**Come difenderla a voce se Santoni chiede perche non la metti nella matrice.**
+"E' una leva di ordine diverso: non ritocca un parametro del sistema ma cambia il
+denominatore su cui quei parametri operano. Per questo la tratto fuori dalla matrice
+operativa, in coda al capitolo, e ne tiro le fila nelle conclusioni come orizzonte
+strutturale. Non la simulo con cifre puntuali sulla labour share perche la letteratura
+non le offre con il rigore che ho applicato alle altre riforme; quello che posso
+fondare e la direzione, non un numero."
 
 **Il ponte verso il capitolo 4.**
 Il capitolo 4 passa dalla riforma di sistema alla sua versione individuale. La domanda diventa: data l'eta legale crescente, dato il tasso di sostituzione strutturalmente in discesa, dato il rischio politico che le riforme qui discusse non vengano implementate, quali sono le strategie operative che un lavoratore Gen Z puo mettere in campo per costruire da solo l'adeguatezza che il sistema pubblico non garantira piu? Il problema si sposta dal disegno istituzionale alla pianificazione finanziaria personale. La materia sottostante e la stessa: un sistema che funziona come tregua e non come equilibrio, che richiede a ogni coorte di costruirsi un margine di sicurezza.

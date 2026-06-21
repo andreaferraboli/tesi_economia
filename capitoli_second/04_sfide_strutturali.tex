@@ -383,21 +383,6 @@ retribuzioni inferiori alla media, li spingerebbe sotto.
 
 \medskip
 \noindent
-Carlo Mazzaferro ha documentato che il 92,6\% degli individui
-pensionati tra il 1996 e il 2019 ha ricevuto in valore attuale più di
-quanto versato \cite{Mazzaferro2023}. Il dato, già citato nel capitolo
-precedente, acquista qui un'ulteriore valenza: quella generosità si è
-tradotta in un sussidio implicito di 80 miliardi di euro a valori
-presenti, finanziato per costruzione dalle coorti successive. La
-Generazione Z non eredita soltanto un sistema adeguato al suo
-sostenimento: eredita il conto sospeso delle generazioni che l'hanno
-preceduta, che il metodo NDC pone a carico dei loro montanti attraverso
-un tasso di capitalizzazione nozionale agganciato alla crescita del PIL
-nominale di un'economia che cresce poco.
-
-\medskip
-\noindent
-Il dibattito tra gli esperti su questo punto non è privo di sfumature.
 La correzione di questa regressività non può venire dall'interno del primo
 pilastro senza romperne l'equilibrio finanziario: richiede trasferimenti
 espliciti dalla fiscalità generale verso i lavoratori più svantaggiati, nella
@@ -553,6 +538,37 @@ versamento mensile anticipato di 200 euro capitalizzato mensilmente su
 480 mesi, a tasso reale annuo dello 0,5\% e del 4\% rispettivamente.} Non una
 differenza marginale: un multiplo di circa 2,2.
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.92\textwidth, height=6.4cm,
+  xlabel={Anni di accumulo}, ylabel={Montante (migliaia di euro)},
+  xmin=0, xmax=40, ymin=0, ymax=250,
+  xtick={0,5,10,15,20,25,30,35,40},
+  ytick={0,50,100,150,200,250},
+  legend pos=north west, legend cell align=left,
+  grid=major, grid style={gray!18},
+  tick label style={font=\footnotesize}, label style={font=\small},
+]
+\addplot[thick, dashed, mark=*, mark size=1.1pt] coordinates {
+ (0,0)(5,12.2)(10,24.6)(15,37.4)(20,50.5)(25,63.9)(30,77.7)(35,91.8)(40,106.3)};
+\addlegendentry{Linea garantita (0,5\% reale)}
+\addplot[thick, mark=square*, mark size=1.1pt] coordinates {
+ (0,0)(5,13.3)(10,29.4)(15,49.1)(20,73.0)(25,102.1)(30,137.5)(35,180.6)(40,233.0)};
+\addlegendentry{Linea dinamica (4\% reale netto)}
+\end{axis}
+\end{tikzpicture}
+\caption{Montante complementare accumulato da un versamento mensile di 200 euro
+capitalizzato per quarant'anni, secondo la linea di investimento. A parità di
+versamento la linea dinamica restituisce a scadenza circa 233.000 euro contro i
+106.000 della garantita, un multiplo di 2,2 prodotto dalla sola scelta del comparto.
+La forbice si apre lentamente e diventa decisiva solo nell'ultimo terzo
+dell'orizzonte, ed è la ragione per cui la scelta va fatta presto e non corretta
+tardi. Elaborazione dell'autore.}
+\label{fig:montante_linee}
+\end{figure}
+
 \medskip
 \noindent
 La strategia coerente con un orizzonte lungo è quella del ciclo di
@@ -585,7 +601,45 @@ aggiuntiva.
 \noindent
 I quattro profili della tabella~\ref{tab:profili} non differiscono
 solo nella pensione attesa: differiscono anche negli strumenti
-accessibili e nell'ordine di priorità con cui usarli.
+accessibili e nell'ordine di priorità con cui usarli. La
+figura~\ref{fig:recupero_ts} anticipa il punto in forma visiva: il secondo pilastro
+recupera tasso di sostituzione per tutti, ma il recupero è più ampio proprio per
+chi parte meglio.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.92\textwidth, height=6.4cm,
+  ybar, bar width=11pt,
+  symbolic x coords={A, B, C, D},
+  xtick=data,
+  ymin=0, ymax=82,
+  ylabel={Tasso di sostituzione lordo (\%)},
+  xlabel={Profilo di carriera},
+  nodes near coords, nodes near coords style={font=\scriptsize},
+  every node near coord/.append style={/pgf/number format/precision=1,
+     /pgf/number format/fixed, /pgf/number format/fixed zerofill},
+  legend pos=north east, legend cell align=left,
+  enlarge x limits=0.22,
+  tick label style={font=\footnotesize}, label style={font=\small},
+]
+\addplot coordinates {(A,62.3)(B,54.9)(C,54.9)(D,35.4)};
+\addlegendentry{Solo pilastro pubblico}
+\addplot coordinates {(A,70.3)(B,61.9)(C,61.9)(D,39.9)};
+\addlegendentry{Con secondo pilastro}
+\end{axis}
+\end{tikzpicture}
+\caption{Tasso di sostituzione lordo per profilo, senza e con adesione al secondo
+pilastro fin dall'inizio della carriera. Il recupero, dell'ordine di sette-otto
+punti per i profili dipendenti coerentemente con le proiezioni MEF-RGS sulla
+previdenza complementare, scende per l'autonomo (Profilo D), privo di TFR e con
+minore capacità contributiva \cite{MEF_RGS2025}. Il grafico misura il recupero
+\emph{potenziale} ad adesione piena: la possibilità di realizzarlo dipende dal
+reddito disponibile, ed è proprio nei profili a tasso più basso che quella capacità
+manca. Elaborazione dell'autore su parametri MEF-RGS.}
+\label{fig:recupero_ts}
+\end{figure}
 
 \medskip
 \noindent
