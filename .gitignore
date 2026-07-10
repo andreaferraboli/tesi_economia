@@ -54,3 +54,15 @@ ehthumbs.db
 # === Python (if any) ===
 __pycache__/
 *.pyc
+
+# === Backup / diff / temp cleanup (aggiunto in pulizia) ===
+*_VECCHIO*
+*_DIFF.*
+_old_*/
+_perllib/
+.firecrawl/
+_check.*
+_chk.*
+_latexdiff.*
+compile*.log
+build*.log
